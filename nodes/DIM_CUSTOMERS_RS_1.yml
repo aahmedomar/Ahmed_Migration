@@ -25,26 +25,6 @@ steps:
               hasNull: true
               isDistinct: false
             columnReference:
-              columnCounter: 8c8900d12e4817c4ce09b71621e2d06e6275295a88f4e9c26bf28bd358e8d781
-              stepCounter: d6428a8bfcd303023bef01fd0c90e8eb00507e113fcc0f07f31fdcd96f329f35
-            dataType: ""
-            description: ""
-            hashColumns: []
-            hashDetails: null
-            name: *
-            nullable: false
-            sourceColumnReferences:
-              - columnReferences:
-                  - columnCounter: 8054ec8dcf6506c8260bcc7dc7e0ce9adec76ad1becec9170100e64dbaae2380
-                    stepCounter: d2e3b16dd518fc5a30ac4fe0227b092e053968697743a2d84210fcf060f9a611
-                transform:     select * from analytics.DBT_GGITHIRI.stg_customers
-          - acceptedValues:
-              strictMatch: true
-              values: []
-            appliedColumnTests:
-              hasNull: true
-              isDistinct: false
-            columnReference:
               columnCounter: df36d9a927ede9c562edec4643131b8a9e669cd3a816d12224f0a38262161b16
               stepCounter: d6428a8bfcd303023bef01fd0c90e8eb00507e113fcc0f07f31fdcd96f329f35
             dataType: ""

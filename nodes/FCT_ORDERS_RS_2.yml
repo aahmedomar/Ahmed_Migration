@@ -25,26 +25,6 @@ steps:
               hasNull: true
               isDistinct: false
             columnReference:
-              columnCounter: 924c10fce7a86f248aaaf15b0991aeaaead1cb1c7fc36d4403dbcfc1e57fdb9e
-              stepCounter: b02d9b7245db82faa2b9a20407f63bd971cc13ce8bc333a21cf4f485063985ba
-            dataType: ""
-            description: ""
-            hashColumns: []
-            hashDetails: null
-            name: *
-            nullable: false
-            sourceColumnReferences:
-              - columnReferences:
-                  - columnCounter: cd408bb221fd73c7545be7c5e6ab75e95b602f8a4632bc7fcb2eefcd2fab117d
-                    stepCounter: c0641b1c47f16ae0224f47fafcecbc0fcbed3b5deca0dfcf8446ef3057f15e75
-                transform:     select * from analytics.DBT_GGITHIRI.stg_payments
-          - acceptedValues:
-              strictMatch: true
-              values: []
-            appliedColumnTests:
-              hasNull: true
-              isDistinct: false
-            columnReference:
               columnCounter: e4dc20f7fd07da16c78bbc0e5d623d049dea0d2ddca9ecfb276bfe43eb015231
               stepCounter: b02d9b7245db82faa2b9a20407f63bd971cc13ce8bc333a21cf4f485063985ba
             dataType: ""

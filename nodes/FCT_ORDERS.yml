@@ -42,26 +42,6 @@ steps:
             hasNull: true
             isDistinct: false
           columnReference:
-            columnCounter: e3aa585784adc9b8b2a02b3cce0f64a722700360aeadbc8fa8124fc203ec6563
-            stepCounter: 3996660bfc1545c9a8a6396bbdef83d56bc5e59a4040fff481617b8bf0057350
-          dataType: ""
-          description: ""
-          hashColumns: []
-          hashDetails: null
-          name: *
-          nullable: false
-          sourceColumnReferences:
-          - columnReferences:
-            - columnCounter: None
-              stepCounter: None
-            transform:     select * from analytics.DBT_GGITHIRI.fct_orders
-        - acceptedValues:
-            strictMatch: true
-            values: []
-          appliedColumnTests:
-            hasNull: true
-            isDistinct: false
-          columnReference:
             columnCounter: 7d3c9ad8783451c7cf63518407d04ad2a3ddeac9aba3413e49fae9d5feba4888
             stepCounter: 3996660bfc1545c9a8a6396bbdef83d56bc5e59a4040fff481617b8bf0057350
           dataType: ""
