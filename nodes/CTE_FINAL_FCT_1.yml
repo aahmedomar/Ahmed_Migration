@@ -1,3 +1,4 @@
+
 steps:
   CTE_FINAL_FCT_1-e2e513394a77e140dadcf9f6dffb7b4305baf1d4b7453972db0cc68cdb0ac299:
     operation:
@@ -17,26 +18,6 @@ steps:
       metadata:
         appliedNodeTests: []
         columns:
-          - acceptedValues:
-              strictMatch: true
-              values: []
-            appliedColumnTests:
-              hasNull: true
-              isDistinct: false
-            columnReference:
-              columnCounter: 666c1e4f8fc7a43d3e02a350d9d43aed52b830e40c026a5f267ee22671a057c9
-              stepCounter: e2e513394a77e140dadcf9f6dffb7b4305baf1d4b7453972db0cc68cdb0ac299
-            dataType: ""
-            description: ""
-            hashColumns: []
-            hashDetails: null
-            name: RELATIONROWS
-            nullable: false
-            sourceColumnReferences:
-              - columnReferences:
-                  - columnCounter: efada2a4b27acb3c4ef38b79f6953b7ddb35819fc1c0ce4686ab201d08e994da
-                    stepCounter: 3e6e9cd529b018df0f97c86fd944204768b65af83555eff998ed33bef8f45a96
-                transform: ""
           - acceptedValues:
               strictMatch: true
               values: []
