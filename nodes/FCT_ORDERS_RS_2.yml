@@ -77,6 +77,7 @@ steps:
                   - columnCounter: 3c347b08bb8aab36d96ab41814f35aa5bb076b8334312bb9f68c30b545b0645e
                     stepCounter: c0641b1c47f16ae0224f47fafcecbc0fcbed3b5deca0dfcf8446ef3057f15e75
                 transform: sum(case when status = 'success' then amount end)
+        cteString: ""
         enabledColumnTestIDs: []
         sourceMapping:
           - customSQL:

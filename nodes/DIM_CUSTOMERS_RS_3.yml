@@ -117,6 +117,7 @@ steps:
                   - columnCounter: None
                     stepCounter: 30b7387e9519c0188a8737facc1ec6200e985df2a32f8aa0f5129904ae90c90c
                 transform: count(order_id)
+        cteString: ""
         enabledColumnTestIDs: []
         sourceMapping:
           - customSQL:

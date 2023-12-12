@@ -77,6 +77,7 @@ steps:
                   - columnCounter: 4758c389777bae212e4cae05db01ae0242e871afab16741bae44465090609e73
                     stepCounter: 0197bbb384da8438b21bbbc5bf9dff81496493c1dd97b2a9d6037aa14eba4337
                 transform: ""
+        cteString: ""
         enabledColumnTestIDs: []
         sourceMapping:
           - customSQL:
