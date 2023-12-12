@@ -1,4 +1,3 @@
-
 steps:
   CTE_ORDERS_FCT_1-858270e2fed0d6e20099c88e762bd982807aa77e881e579dbaadfc623ae90eb5:
     operation:
@@ -37,7 +36,7 @@ steps:
               - columnReferences:
                   - columnCounter: 21feaa4f5b64e488152986784d78752fb2b6fb61e5634575037be02d34681248
                     stepCounter: 8e2ab271baabf88f42bf431e5830683386862f6895c1dc237c9c7a46263f2326
-                transform:
+                transform: ""
           - acceptedValues:
               strictMatch: true
               values: []
@@ -57,7 +56,7 @@ steps:
               - columnReferences:
                   - columnCounter: 8abdac9265b1cc3644371b823dd11945cf01b826b36078b01038e3cc2be04555
                     stepCounter: 8e2ab271baabf88f42bf431e5830683386862f6895c1dc237c9c7a46263f2326
-                transform:
+                transform: ""
           - acceptedValues:
               strictMatch: true
               values: []
@@ -77,7 +76,7 @@ steps:
               - columnReferences:
                   - columnCounter: d3af21e973fcb06d0f5d7195ef51541f27a9a18718b4250721ad8c2c13aa1416
                     stepCounter: 8e2ab271baabf88f42bf431e5830683386862f6895c1dc237c9c7a46263f2326
-                transform:
+                transform: ""
         enabledColumnTestIDs: []
         sourceMapping:
           - customSQL:

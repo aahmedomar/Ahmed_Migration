@@ -36,7 +36,7 @@ steps:
               - columnReferences:
                   - columnCounter: dc75b010a61cd5cbd0732c76bf4f615a8f93223ac501350493c62b1f991b1e04
                     stepCounter: ff51d45c19d5f519bc45b8d90b3bce0936ee0716ace19266940f3d970db22370
-                transform:
+                transform: ""
           - acceptedValues:
               strictMatch: true
               values: []
@@ -76,7 +76,7 @@ steps:
               - columnReferences:
                   - columnCounter: 4d06be8db7de36b5a865b52f2627ada1c4f497fe8ccff04645f96a053a410685
                     stepCounter: ff51d45c19d5f519bc45b8d90b3bce0936ee0716ace19266940f3d970db22370
-                transform:
+                transform: ""
           - acceptedValues:
               strictMatch: true
               values: []
@@ -136,7 +136,7 @@ steps:
               - columnReferences:
                   - columnCounter: fec8453b3a5fb2751f7bcd8c8adb42e0cf4f293650cfa7d9b11239e30bd02031
                     stepCounter: ff51d45c19d5f519bc45b8d90b3bce0936ee0716ace19266940f3d970db22370
-                transform:
+                transform: ""
         enabledColumnTestIDs: []
         sourceMapping:
           - customSQL:

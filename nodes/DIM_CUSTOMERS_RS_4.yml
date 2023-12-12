@@ -1,4 +1,3 @@
-
 steps:
   DIM_CUSTOMERS_RS_4-baa76cef9fc87ecffc294c1b810e4cd402bc0a04f46eb075f9bc826d82f2adaf:
     operation:
@@ -25,26 +24,6 @@ steps:
               hasNull: true
               isDistinct: false
             columnReference:
-              columnCounter: 516cb9d2c01f0dbc15927821e590854e4ced3e3060580fc9b65c1696df5e4e67
-              stepCounter: baa76cef9fc87ecffc294c1b810e4cd402bc0a04f46eb075f9bc826d82f2adaf
-            dataType: ""
-            description: ""
-            hashColumns: []
-            hashDetails: null
-            name: RELATIONROWS
-            nullable: false
-            sourceColumnReferences:
-              - columnReferences:
-                  - columnCounter: None
-                    stepCounter: 550ec08da16546559d594b1c3cacfeac9a5b3c7c76f1560d875c1e6465f54195
-                transform: customers_dim.customer_id, customers_dim.first_name, customers_dim.last_name, customer_orders_dim.first_order_date, customer_orders_dim.most_recent_order_date, customer_orders_dim.lifetime_value, coalesce(customer_orders_dim.number_of_orders, 0)
-          - acceptedValues:
-              strictMatch: true
-              values: []
-            appliedColumnTests:
-              hasNull: true
-              isDistinct: false
-            columnReference:
               columnCounter: ef68c4b6456c2478d015b0b476067973b09d1fcdbe9c47fe1e920c79a0bede81
               stepCounter: baa76cef9fc87ecffc294c1b810e4cd402bc0a04f46eb075f9bc826d82f2adaf
             dataType: ""
@@ -57,7 +36,7 @@ steps:
               - columnReferences:
                   - columnCounter: a4f6d24e4044d882c7b517516773e84836dee6dd080c26236bc96d9d2af8f01c
                     stepCounter: 550ec08da16546559d594b1c3cacfeac9a5b3c7c76f1560d875c1e6465f54195
-                transform:
+                transform: ""
           - acceptedValues:
               strictMatch: true
               values: []
@@ -77,7 +56,7 @@ steps:
               - columnReferences:
                   - columnCounter: f60a689df71bd1249e801e5ce63f53a29eb8dbcf212e3704b346807b401646cf
                     stepCounter: 550ec08da16546559d594b1c3cacfeac9a5b3c7c76f1560d875c1e6465f54195
-                transform:
+                transform: ""
           - acceptedValues:
               strictMatch: true
               values: []
@@ -97,7 +76,7 @@ steps:
               - columnReferences:
                   - columnCounter: None
                     stepCounter: 550ec08da16546559d594b1c3cacfeac9a5b3c7c76f1560d875c1e6465f54195
-                transform:
+                transform: ""
           - acceptedValues:
               strictMatch: true
               values: []
@@ -117,7 +96,7 @@ steps:
               - columnReferences:
                   - columnCounter: 9e333997573288e34c7d3ce8063b2f9bf2972b504afdd36a8d6e2452afadff0c
                     stepCounter: 550ec08da16546559d594b1c3cacfeac9a5b3c7c76f1560d875c1e6465f54195
-                transform:
+                transform: ""
           - acceptedValues:
               strictMatch: true
               values: []
@@ -137,7 +116,7 @@ steps:
               - columnReferences:
                   - columnCounter: None
                     stepCounter: 550ec08da16546559d594b1c3cacfeac9a5b3c7c76f1560d875c1e6465f54195
-                transform:
+                transform: ""
           - acceptedValues:
               strictMatch: true
               values: []
@@ -157,7 +136,7 @@ steps:
               - columnReferences:
                   - columnCounter: None
                     stepCounter: 550ec08da16546559d594b1c3cacfeac9a5b3c7c76f1560d875c1e6465f54195
-                transform:
+                transform: ""
           - acceptedValues:
               strictMatch: true
               values: []
@@ -177,7 +156,7 @@ steps:
               - columnReferences:
                   - columnCounter: None
                     stepCounter: 550ec08da16546559d594b1c3cacfeac9a5b3c7c76f1560d875c1e6465f54195
-                transform:
+                transform: ""
         enabledColumnTestIDs: []
         sourceMapping:
           - customSQL:

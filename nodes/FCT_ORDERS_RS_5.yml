@@ -1,4 +1,3 @@
-
 steps:
   FCT_ORDERS_RS_5-dfd3955f051309557669ad6b4c170496930d4bbac8bfe69d51d893b51097b7d0:
     operation:
@@ -25,26 +24,6 @@ steps:
               hasNull: true
               isDistinct: false
             columnReference:
-              columnCounter: 7650a675de3b8be94490adf3ce5188c76f2eb46a023148b5380f5ff6005a13cd
-              stepCounter: dfd3955f051309557669ad6b4c170496930d4bbac8bfe69d51d893b51097b7d0
-            dataType: ""
-            description: ""
-            hashColumns: []
-            hashDetails: null
-            name: RELATIONROWS
-            nullable: false
-            sourceColumnReferences:
-              - columnReferences:
-                  - columnCounter: 666c1e4f8fc7a43d3e02a350d9d43aed52b830e40c026a5f267ee22671a057c9
-                    stepCounter: e2e513394a77e140dadcf9f6dffb7b4305baf1d4b7453972db0cc68cdb0ac299
-                transform:
-          - acceptedValues:
-              strictMatch: true
-              values: []
-            appliedColumnTests:
-              hasNull: true
-              isDistinct: false
-            columnReference:
               columnCounter: bb1215d9a4f8b76d1bee0c3b458a66a00515f85a47c14a99de908828ecd8b8a5
               stepCounter: dfd3955f051309557669ad6b4c170496930d4bbac8bfe69d51d893b51097b7d0
             dataType: ""
@@ -57,7 +36,7 @@ steps:
               - columnReferences:
                   - columnCounter: a2fd97a65f9cbe19469b46b3b24bae4272d5c62cefe22e4afebc1846af7053fc
                     stepCounter: e2e513394a77e140dadcf9f6dffb7b4305baf1d4b7453972db0cc68cdb0ac299
-                transform:
+                transform: ""
           - acceptedValues:
               strictMatch: true
               values: []
@@ -77,7 +56,7 @@ steps:
               - columnReferences:
                   - columnCounter: b6904b7b80a4375b364d509529762d31e25595911904f27d97c6d7990bcb8ecf
                     stepCounter: e2e513394a77e140dadcf9f6dffb7b4305baf1d4b7453972db0cc68cdb0ac299
-                transform:
+                transform: ""
           - acceptedValues:
               strictMatch: true
               values: []
@@ -97,7 +76,7 @@ steps:
               - columnReferences:
                   - columnCounter: 1e67d5b24909ac783f6b9ee9cc0d5d93f1aa6ac719cb2f6ec3d2999e51ccbc53
                     stepCounter: e2e513394a77e140dadcf9f6dffb7b4305baf1d4b7453972db0cc68cdb0ac299
-                transform:
+                transform: ""
           - acceptedValues:
               strictMatch: true
               values: []
@@ -117,7 +96,7 @@ steps:
               - columnReferences:
                   - columnCounter: f099cbf0cbcd7dc09d55c132a5077db0e705a728cd4fc4bf4bfdab642e4d3f48
                     stepCounter: e2e513394a77e140dadcf9f6dffb7b4305baf1d4b7453972db0cc68cdb0ac299
-                transform:
+                transform: ""
         enabledColumnTestIDs: []
         sourceMapping:
           - customSQL:

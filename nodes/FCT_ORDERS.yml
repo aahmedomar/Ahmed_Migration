@@ -74,7 +74,7 @@ steps:
             - columnReferences:
               - columnCounter: 87b520612d1f7129bf2596a8c5f997ce4bb8d8109bd1999e9a3456f47bd69829
                 stepCounter: dfd3955f051309557669ad6b4c170496930d4bbac8bfe69d51d893b51097b7d0
-              transform:
+              transform: ""
           - acceptedValues:
               strictMatch: true
               values: []
