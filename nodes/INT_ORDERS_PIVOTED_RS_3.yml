@@ -37,7 +37,7 @@ steps:
               - columnReferences:
                   - columnCounter: 9e2a3f8278cb5067cf5234b3e54fdb4e813985b338bbe68cc2cc49488ff201a3
                     stepCounter: ea6efbe3cf151bbf6a699139168eddace3ac661067e8a0de43ebca197fbc96f8
-                transform: select * from final
+                transform:
           - acceptedValues:
               strictMatch: true
               values: []
@@ -57,7 +57,7 @@ steps:
               - columnReferences:
                   - columnCounter: e2c3429218c4501cdc3201730584e3e551506f00b5fa19746c2ab3740b5cfdb5
                     stepCounter: ea6efbe3cf151bbf6a699139168eddace3ac661067e8a0de43ebca197fbc96f8
-                transform: select * from final
+                transform:
           - acceptedValues:
               strictMatch: true
               values: []
@@ -77,7 +77,7 @@ steps:
               - columnReferences:
                   - columnCounter: ca271cddab3bbf49c7276611b0bbdfe678450e79a6811a35cdaac08787f34238
                     stepCounter: ea6efbe3cf151bbf6a699139168eddace3ac661067e8a0de43ebca197fbc96f8
-                transform: select * from final
+                transform:
           - acceptedValues:
               strictMatch: true
               values: []
@@ -97,7 +97,7 @@ steps:
               - columnReferences:
                   - columnCounter: 2db849b131d3a1ffca85ed8ca5550d9844cbcf1642ab2f73437bacca1896438f
                     stepCounter: ea6efbe3cf151bbf6a699139168eddace3ac661067e8a0de43ebca197fbc96f8
-                transform: select * from final
+                transform:
           - acceptedValues:
               strictMatch: true
               values: []
@@ -117,7 +117,7 @@ steps:
               - columnReferences:
                   - columnCounter: 8b62bac24e46bcdba18fff18e1976de057bac5e31edcf70a5cf92c0d4ff5fc45
                     stepCounter: ea6efbe3cf151bbf6a699139168eddace3ac661067e8a0de43ebca197fbc96f8
-                transform: select * from final
+                transform:
         enabledColumnTestIDs: []
         sourceMapping:
           - customSQL:

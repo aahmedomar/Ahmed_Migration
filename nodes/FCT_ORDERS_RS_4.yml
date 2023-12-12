@@ -37,10 +37,7 @@ steps:
               - columnReferences:
                   - columnCounter: None
                     stepCounter: 858270e2fed0d6e20099c88e762bd982807aa77e881e579dbaadfc623ae90eb5
-                transform:         orders_fct.order_id,
-        orders_fct.customer_id,
-        orders_fct.order_date,
-        coalesce(order_payments_fct.amount, 0) as amount
+                transform: orders_fct.order_id, orders_fct.customer_id, orders_fct.order_date, coalesce(order_payments_fct.amount, 0)
           - acceptedValues:
               strictMatch: true
               values: []
@@ -60,7 +57,7 @@ steps:
               - columnReferences:
                   - columnCounter: None
                     stepCounter: 858270e2fed0d6e20099c88e762bd982807aa77e881e579dbaadfc623ae90eb5
-                transform:         coalesce(order_payments_fct.amount, 0) as amount
+                transform:
           - acceptedValues:
               strictMatch: true
               values: []
@@ -80,7 +77,7 @@ steps:
               - columnReferences:
                   - columnCounter: 5abb74f5192678bf2945cb45c7543ef314c103991267cbb68509f17d90e4a486
                     stepCounter: 858270e2fed0d6e20099c88e762bd982807aa77e881e579dbaadfc623ae90eb5
-                transform:         orders_fct.customer_id,
+                transform:
           - acceptedValues:
               strictMatch: true
               values: []
@@ -100,7 +97,7 @@ steps:
               - columnReferences:
                   - columnCounter: ff3e4dd49e685de8a292fcdb223af2582f360deff50ca4aabba14a4b367ce576
                     stepCounter: 858270e2fed0d6e20099c88e762bd982807aa77e881e579dbaadfc623ae90eb5
-                transform:         orders_fct.order_date,
+                transform:
           - acceptedValues:
               strictMatch: true
               values: []
@@ -120,7 +117,7 @@ steps:
               - columnReferences:
                   - columnCounter: 42597aa56c47d6c87cb0617a9a9f65177720af6682b38708a06e1ff3266f2801
                     stepCounter: 858270e2fed0d6e20099c88e762bd982807aa77e881e579dbaadfc623ae90eb5
-                transform:         orders_fct.order_id,
+                transform:
         enabledColumnTestIDs: []
         sourceMapping:
           - customSQL:

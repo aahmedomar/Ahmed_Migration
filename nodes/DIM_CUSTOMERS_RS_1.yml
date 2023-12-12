@@ -37,7 +37,7 @@ steps:
               - columnReferences:
                   - columnCounter: e149de0c8d762521e2f879d447d99e08c19e07c0862c5726d3baa46f9de4e6ba
                     stepCounter: d2e3b16dd518fc5a30ac4fe0227b092e053968697743a2d84210fcf060f9a611
-                transform:     select * from analytics.DBT_GGITHIRI.stg_customers
+                transform:
           - acceptedValues:
               strictMatch: true
               values: []
@@ -57,7 +57,7 @@ steps:
               - columnReferences:
                   - columnCounter: a873adafd5ec543792f2ff93581d8e208fb05e7d7678d1680739b377f733ff12
                     stepCounter: d2e3b16dd518fc5a30ac4fe0227b092e053968697743a2d84210fcf060f9a611
-                transform:     select * from analytics.DBT_GGITHIRI.stg_customers
+                transform:
           - acceptedValues:
               strictMatch: true
               values: []
@@ -77,7 +77,7 @@ steps:
               - columnReferences:
                   - columnCounter: 17c6b7408023b0969958e2b87e7127682860c40d4539c85a680a91798a9c711e
                     stepCounter: d2e3b16dd518fc5a30ac4fe0227b092e053968697743a2d84210fcf060f9a611
-                transform:         customers_dim.customer_id,
+                transform:
         enabledColumnTestIDs: []
         sourceMapping:
           - customSQL:

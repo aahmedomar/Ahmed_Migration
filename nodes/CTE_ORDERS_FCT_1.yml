@@ -37,7 +37,7 @@ steps:
               - columnReferences:
                   - columnCounter: 21feaa4f5b64e488152986784d78752fb2b6fb61e5634575037be02d34681248
                     stepCounter: 8e2ab271baabf88f42bf431e5830683386862f6895c1dc237c9c7a46263f2326
-                transform:     select * from analytics.DBT_GGITHIRI.stg_orders
+                transform:
           - acceptedValues:
               strictMatch: true
               values: []
@@ -57,7 +57,7 @@ steps:
               - columnReferences:
                   - columnCounter: 8abdac9265b1cc3644371b823dd11945cf01b826b36078b01038e3cc2be04555
                     stepCounter: 8e2ab271baabf88f42bf431e5830683386862f6895c1dc237c9c7a46263f2326
-                transform:     select * from analytics.DBT_GGITHIRI.stg_orders
+                transform:
           - acceptedValues:
               strictMatch: true
               values: []
@@ -77,7 +77,7 @@ steps:
               - columnReferences:
                   - columnCounter: d3af21e973fcb06d0f5d7195ef51541f27a9a18718b4250721ad8c2c13aa1416
                     stepCounter: 8e2ab271baabf88f42bf431e5830683386862f6895c1dc237c9c7a46263f2326
-                transform:     left join order_payments_fct on orders_fct.order_id = order_payments_fct.order_id
+                transform:
         enabledColumnTestIDs: []
         sourceMapping:
           - customSQL:

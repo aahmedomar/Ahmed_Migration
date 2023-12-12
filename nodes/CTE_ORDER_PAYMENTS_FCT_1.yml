@@ -37,7 +37,7 @@ steps:
               - columnReferences:
                   - columnCounter: d5994aa05c6a2e710bcd6beab0b3ffbc02433f61d9c93d7db339c96b69c777fa
                     stepCounter: 94bea2fa5143d3f7b043992f0774b8e89567dee3c9ccb53d278d76592fc1023b
-                transform:         sum(case when status = 'success' then amount end) as amount
+                transform: sum(case when status = 'success' then amount end)
           - acceptedValues:
               strictMatch: true
               values: []
@@ -57,7 +57,7 @@ steps:
               - columnReferences:
                   - columnCounter: efe516a1af629fcec19f8dbdeb6dca0464fbaded6f09cc39233d5bc394095486
                     stepCounter: 94bea2fa5143d3f7b043992f0774b8e89567dee3c9ccb53d278d76592fc1023b
-                transform:         order_id,
+                transform:
         enabledColumnTestIDs: []
         sourceMapping:
           - customSQL:

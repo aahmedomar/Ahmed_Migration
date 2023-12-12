@@ -37,7 +37,7 @@ steps:
               - columnReferences:
                   - columnCounter: 516cb9d2c01f0dbc15927821e590854e4ced3e3060580fc9b65c1696df5e4e67
                     stepCounter: baa76cef9fc87ecffc294c1b810e4cd402bc0a04f46eb075f9bc826d82f2adaf
-                transform: select * from final_dim
+                transform:
           - acceptedValues:
               strictMatch: true
               values: []
@@ -57,7 +57,7 @@ steps:
               - columnReferences:
                   - columnCounter: ef68c4b6456c2478d015b0b476067973b09d1fcdbe9c47fe1e920c79a0bede81
                     stepCounter: baa76cef9fc87ecffc294c1b810e4cd402bc0a04f46eb075f9bc826d82f2adaf
-                transform:         customers_dim.customer_id,
+                transform:
           - acceptedValues:
               strictMatch: true
               values: []
@@ -77,7 +77,7 @@ steps:
               - columnReferences:
                   - columnCounter: 1a6fe8a38fb26fe420679053087089ad8d84e3735a2b657bd430ecf761adde14
                     stepCounter: baa76cef9fc87ecffc294c1b810e4cd402bc0a04f46eb075f9bc826d82f2adaf
-                transform:         customers_dim.first_name,
+                transform:
           - acceptedValues:
               strictMatch: true
               values: []
@@ -97,7 +97,7 @@ steps:
               - columnReferences:
                   - columnCounter: dc9bc82124d2d1f710a542929e757548ec74695174dabe419a5c4a687297c5b8
                     stepCounter: baa76cef9fc87ecffc294c1b810e4cd402bc0a04f46eb075f9bc826d82f2adaf
-                transform:         customer_orders_dim.first_order_date,
+                transform:
           - acceptedValues:
               strictMatch: true
               values: []
@@ -117,7 +117,7 @@ steps:
               - columnReferences:
                   - columnCounter: a218088d40195c71bc638ee8932b95dd1fd084ea31330b7a19e5e5ade7edf60a
                     stepCounter: baa76cef9fc87ecffc294c1b810e4cd402bc0a04f46eb075f9bc826d82f2adaf
-                transform:         customers_dim.last_name,
+                transform:
           - acceptedValues:
               strictMatch: true
               values: []
@@ -137,7 +137,7 @@ steps:
               - columnReferences:
                   - columnCounter: af704e6eb623009c995e48051d64e38a35e03fe4f1070d41fd02cf2fd991de8c
                     stepCounter: baa76cef9fc87ecffc294c1b810e4cd402bc0a04f46eb075f9bc826d82f2adaf
-                transform:         customer_orders_dim.lifetime_value,
+                transform:
           - acceptedValues:
               strictMatch: true
               values: []
@@ -157,7 +157,7 @@ steps:
               - columnReferences:
                   - columnCounter: 80b82e362756016baa61b24697e3469db8d92eacf255f5bfd8b572129dcdc1fe
                     stepCounter: baa76cef9fc87ecffc294c1b810e4cd402bc0a04f46eb075f9bc826d82f2adaf
-                transform:         customer_orders_dim.most_recent_order_date,
+                transform:
           - acceptedValues:
               strictMatch: true
               values: []
@@ -177,7 +177,7 @@ steps:
               - columnReferences:
                   - columnCounter: 88150d9465cf693732e66960ba89460e00aff760d08279713833246c876ab0f3
                     stepCounter: baa76cef9fc87ecffc294c1b810e4cd402bc0a04f46eb075f9bc826d82f2adaf
-                transform:         coalesce(customer_orders_dim.number_of_orders, 0) as number_of_orders
+                transform:
         enabledColumnTestIDs: []
         sourceMapping:
           - customSQL:

@@ -37,7 +37,7 @@ steps:
               - columnReferences:
                   - columnCounter: d9c3c5fd3fe82b5918a345d1ec3436ed067624392f6813abc6d94aee0d121205
                     stepCounter: c0641b1c47f16ae0224f47fafcecbc0fcbed3b5deca0dfcf8446ef3057f15e75
-                transform:     select * from analytics.DBT_GGITHIRI.stg_payments
+                transform:
           - acceptedValues:
               strictMatch: true
               values: []
@@ -57,7 +57,7 @@ steps:
               - columnReferences:
                   - columnCounter: 091a47b16670ed8b892bf5e2c7457526ebef32f7deea59ff6c0e92e959139f2c
                     stepCounter: c0641b1c47f16ae0224f47fafcecbc0fcbed3b5deca0dfcf8446ef3057f15e75
-                transform:     select * from analytics.DBT_GGITHIRI.stg_payments
+                transform:
           - acceptedValues:
               strictMatch: true
               values: []
@@ -77,7 +77,7 @@ steps:
               - columnReferences:
                   - columnCounter: 3c347b08bb8aab36d96ab41814f35aa5bb076b8334312bb9f68c30b545b0645e
                     stepCounter: c0641b1c47f16ae0224f47fafcecbc0fcbed3b5deca0dfcf8446ef3057f15e75
-                transform:         sum(case when status = 'success' then amount end) as amount
+                transform: sum(case when status = 'success' then amount end)
         enabledColumnTestIDs: []
         sourceMapping:
           - customSQL:

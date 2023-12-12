@@ -37,7 +37,7 @@ steps:
               - columnReferences:
                   - columnCounter: efada2a4b27acb3c4ef38b79f6953b7ddb35819fc1c0ce4686ab201d08e994da
                     stepCounter: 3e6e9cd529b018df0f97c86fd944204768b65af83555eff998ed33bef8f45a96
-                transform: select * from final_fct
+                transform:
           - acceptedValues:
               strictMatch: true
               values: []
@@ -57,7 +57,7 @@ steps:
               - columnReferences:
                   - columnCounter: 840bb2d181502e8c88635e343ef148e4b9cc0897be3121cf89b702172e58454a
                     stepCounter: 3e6e9cd529b018df0f97c86fd944204768b65af83555eff998ed33bef8f45a96
-                transform:         coalesce(order_payments_fct.amount, 0) as amount
+                transform:
           - acceptedValues:
               strictMatch: true
               values: []
@@ -77,7 +77,7 @@ steps:
               - columnReferences:
                   - columnCounter: 9e0e335072fd7764ac14ba38b069f4ffacd8252238280066cab9e05ddaa28d92
                     stepCounter: 3e6e9cd529b018df0f97c86fd944204768b65af83555eff998ed33bef8f45a96
-                transform:         orders_fct.customer_id,
+                transform:
           - acceptedValues:
               strictMatch: true
               values: []
@@ -97,7 +97,7 @@ steps:
               - columnReferences:
                   - columnCounter: 29913c063806220037875b47f2256b414216820bdce7a1d7fef5a85c94669a12
                     stepCounter: 3e6e9cd529b018df0f97c86fd944204768b65af83555eff998ed33bef8f45a96
-                transform:         orders_fct.order_date,
+                transform:
           - acceptedValues:
               strictMatch: true
               values: []
@@ -117,7 +117,7 @@ steps:
               - columnReferences:
                   - columnCounter: 75c0a8fdefa08ebbf1ed7795011947eca2cef7a75a4b0ed3797973441c753113
                     stepCounter: 3e6e9cd529b018df0f97c86fd944204768b65af83555eff998ed33bef8f45a96
-                transform:         orders_fct.order_id,
+                transform:
         enabledColumnTestIDs: []
         sourceMapping:
           - customSQL:

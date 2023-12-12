@@ -37,7 +37,7 @@ steps:
               - columnReferences:
                   - columnCounter: 529305dac800a7b13ddddf8ce15aa9dea177790521a18fc9e1f7b21243b21188
                     stepCounter: 5bde98a5d970551e295dc9028fb18627f4ffb88a7fc3f4278de9367e8bb3893f
-                transform: select * from final_dim
+                transform:
           - acceptedValues:
               strictMatch: true
               values: []
@@ -57,7 +57,7 @@ steps:
               - columnReferences:
                   - columnCounter: 7b2778ce7a65e8bd86eef08cf1bdc64975b076b3eb3329df12698fee7f01eb59
                     stepCounter: 5bde98a5d970551e295dc9028fb18627f4ffb88a7fc3f4278de9367e8bb3893f
-                transform: select * from final_dim
+                transform:
           - acceptedValues:
               strictMatch: true
               values: []
@@ -77,7 +77,7 @@ steps:
               - columnReferences:
                   - columnCounter: 642992617f5cc3ef3443606c3f9a285d89146608f2e345a104288cbd8d948a23
                     stepCounter: 5bde98a5d970551e295dc9028fb18627f4ffb88a7fc3f4278de9367e8bb3893f
-                transform: select * from final_dim
+                transform:
           - acceptedValues:
               strictMatch: true
               values: []
@@ -97,7 +97,7 @@ steps:
               - columnReferences:
                   - columnCounter: 88701f232c9a4ae8433744ebe6545d040649b2f47697994ef12bab2fe4c66905
                     stepCounter: 5bde98a5d970551e295dc9028fb18627f4ffb88a7fc3f4278de9367e8bb3893f
-                transform: select * from final_dim
+                transform:
           - acceptedValues:
               strictMatch: true
               values: []
@@ -117,7 +117,7 @@ steps:
               - columnReferences:
                   - columnCounter: 006bacc99b91ee037ed36c98deb7a9e1a8450312b3b23fd3e88e29bef20fa28d
                     stepCounter: 5bde98a5d970551e295dc9028fb18627f4ffb88a7fc3f4278de9367e8bb3893f
-                transform: select * from final_dim
+                transform:
           - acceptedValues:
               strictMatch: true
               values: []
@@ -137,7 +137,7 @@ steps:
               - columnReferences:
                   - columnCounter: 6c2345767cd3b9b11f022b54efa515e49a22993059fe5fa1b3552b72e6ad0daa
                     stepCounter: 5bde98a5d970551e295dc9028fb18627f4ffb88a7fc3f4278de9367e8bb3893f
-                transform: select * from final_dim
+                transform:
           - acceptedValues:
               strictMatch: true
               values: []
@@ -157,7 +157,7 @@ steps:
               - columnReferences:
                   - columnCounter: aecb521fd4433f742a5eef7f531873ca70b25e25e062e56474750ba09fefafcb
                     stepCounter: 5bde98a5d970551e295dc9028fb18627f4ffb88a7fc3f4278de9367e8bb3893f
-                transform: select * from final_dim
+                transform:
           - acceptedValues:
               strictMatch: true
               values: []
@@ -177,7 +177,7 @@ steps:
               - columnReferences:
                   - columnCounter: 184ea8bc6058638827d5121cc55dfaa4d3e2f6589ebfa48596b43e34bcea8375
                     stepCounter: 5bde98a5d970551e295dc9028fb18627f4ffb88a7fc3f4278de9367e8bb3893f
-                transform: select * from final_dim
+                transform:
         enabledColumnTestIDs: []
         sourceMapping:
           - customSQL:

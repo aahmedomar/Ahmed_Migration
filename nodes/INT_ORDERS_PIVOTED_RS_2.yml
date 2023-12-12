@@ -37,12 +37,7 @@ steps:
               - columnReferences:
                   - columnCounter: None
                     stepCounter: 11af66fa0ae44e342966716c415d51e029fa01b156c72a85515fcd8f5e022de7
-                transform:             sum(
-                case
-                    when payment_method = 'bank_transfer' then amount
-                    else 0
-                end
-            ) as bank_transfer_a,
+                transform: sum( case when payment_method = 'bank_transfer' then amount else 0 end )
           - acceptedValues:
               strictMatch: true
               values: []
@@ -62,12 +57,7 @@ steps:
               - columnReferences:
                   - columnCounter: None
                     stepCounter: 11af66fa0ae44e342966716c415d51e029fa01b156c72a85515fcd8f5e022de7
-                transform:             sum(
-                case
-                    when payment_method = 'coupon' then amount
-                    else 0
-                end
-            ) as coupon_a,
+                transform: sum( case when payment_method = 'coupon' then amount else 0 end )
           - acceptedValues:
               strictMatch: true
               values: []
@@ -87,12 +77,7 @@ steps:
               - columnReferences:
                   - columnCounter: None
                     stepCounter: 11af66fa0ae44e342966716c415d51e029fa01b156c72a85515fcd8f5e022de7
-                transform:             sum(
-                case
-                    when payment_method = 'credit_card' then amount
-                    else 0
-                end
-            ) as credit_card_a,
+                transform: sum( case when payment_method = 'credit_card' then amount else 0 end )
           - acceptedValues:
               strictMatch: true
               values: []
@@ -112,12 +97,7 @@ steps:
               - columnReferences:
                   - columnCounter: None
                     stepCounter: 11af66fa0ae44e342966716c415d51e029fa01b156c72a85515fcd8f5e022de7
-                transform:             sum(
-                case
-                    when payment_method = 'gift_card' then amount
-                    else 0
-                end
-            ) as gift_card_a
+                transform: sum( case when payment_method = 'gift_card' then amount else 0 end )
           - acceptedValues:
               strictMatch: true
               values: []
@@ -137,7 +117,7 @@ steps:
               - columnReferences:
                   - columnCounter: dc2814965921c4a4fbbc71a4677c913257677571e6e8c5f9b43a88af0af278f7
                     stepCounter: 11af66fa0ae44e342966716c415d51e029fa01b156c72a85515fcd8f5e022de7
-                transform:         order_id, -- orde
+                transform: order_id, -- orde
         enabledColumnTestIDs: []
         sourceMapping:
           - customSQL:
