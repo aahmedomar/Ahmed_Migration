@@ -1,0 +1,19 @@
+steps:
+  PAYMENT_TYPE-0204c288aba54860470db8a4d72af481d2a97da279ba8a417ca472bee1747945:
+    operation:
+      database: ""
+      dataset: ""
+      deployEnabled: true
+      description: ""
+      locationID: ""
+      locationName: DBO
+      metadata:
+        columns:
+        join:
+          joinCondition: FROM { ref(f'DBO', 'PAYMENT_TYPE') }
+      name: PAYMENT_TYPE
+      schema: ""
+      sqlType: Source
+      table: PAYMENT_TYPE
+      type: sourceInput
+    stepCounter: 0204c288aba54860470db8a4d72af481d2a97da279ba8a417ca472bee1747945

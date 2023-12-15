@@ -1,0 +1,19 @@
+steps:
+  CALLS-086520f08ce8c7f5bb8023785049fe45afa36dba31c578866459e4cee22498c9:
+    operation:
+      database: ""
+      dataset: ""
+      deployEnabled: true
+      description: ""
+      locationID: ""
+      locationName: DBO
+      metadata:
+        columns:
+        join:
+          joinCondition: FROM { ref(f'DBO', 'CALLS') }
+      name: CALLS
+      schema: ""
+      sqlType: Source
+      table: CALLS
+      type: sourceInput
+    stepCounter: 086520f08ce8c7f5bb8023785049fe45afa36dba31c578866459e4cee22498c9

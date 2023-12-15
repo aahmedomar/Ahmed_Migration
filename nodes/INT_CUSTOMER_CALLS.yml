@@ -1,0 +1,140 @@
+steps:
+  INT_CUSTOMER_CALLS-5bf2f2e5d24da48802ad7a0839eac7b5eb47ea2d3ce1a582944a59363b60ef9a:
+    operation:
+      config:
+        postSQL: ""
+        preSQL: ""
+        testsEnabled: true
+      database: ""
+      deployEnabled: true
+      description: ""
+      isDataVault: false
+      isMultisource: false
+      locationName: ANALYTICS
+      materializationType: Table
+      metadata:
+        appliedNodeTests: []
+        columns:
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: 33a728246aa201b1e3807ad33d9b1c7aeb2a5ebeb149ae0e4caa00ecf4346f3b
+              stepCounter: 5bf2f2e5d24da48802ad7a0839eac7b5eb47ea2d3ce1a582944a59363b60ef9a
+            dataType: ""
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            isBusinessKey: true
+            name: MISSED_CALLS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: None
+                    stepCounter: None
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: 4a5063a359a19b07ad149fb578ce078bf9984082471dcf614a24f56d411d3bf2
+              stepCounter: 5bf2f2e5d24da48802ad7a0839eac7b5eb47ea2d3ce1a582944a59363b60ef9a
+            dataType: ""
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            isBusinessKey: true
+            name: CALL_DURATION
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: None
+                    stepCounter: None
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: 490ec57202e3746c6c52229e11127c7ece6f1321cc870cd618ebdbfefc2888fb
+              stepCounter: 5bf2f2e5d24da48802ad7a0839eac7b5eb47ea2d3ce1a582944a59363b60ef9a
+            dataType: ""
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            isBusinessKey: true
+            name: CUSTOMER_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: None
+                    stepCounter: None
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: aac5a290a82b1e5ec65f87a15508efc038ae5f5f9776fb78741103deaae96a1d
+              stepCounter: 5bf2f2e5d24da48802ad7a0839eac7b5eb47ea2d3ce1a582944a59363b60ef9a
+            dataType: ""
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            isBusinessKey: true
+            name: LOCATION
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: None
+                    stepCounter: None
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: 771ccc402e90416d2828bb9b3ec34f37d6cb66145a37609e8159fe3e66632a3a
+              stepCounter: 5bf2f2e5d24da48802ad7a0839eac7b5eb47ea2d3ce1a582944a59363b60ef9a
+            dataType: ""
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            isBusinessKey: true
+            name: OUTBOUND
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: None
+                    stepCounter: None
+                transform: ""
+        cteString: ""
+        enabledColumnTestIDs: []
+        sourceMapping:
+          - customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: ANALYTICS
+                nodeName: INT_CUSTOMER_CALLS_RS_5
+            join:
+              joinCondition: FROM {{ ref('ANALYTICS', 'INT_CUSTOMER_CALLS_RS_5') }} "INT_CUSTOMER_CALLS_RS_5"
+              name: INT_CUSTOMER_CALLS
+              noLinkRefs: []
+      name: INT_CUSTOMER_CALLS
+      overrideSQL: false
+      schema: ""
+      sqlType: Dimension
+      type: sql
+    stepCounter: 5bf2f2e5d24da48802ad7a0839eac7b5eb47ea2d3ce1a582944a59363b60ef9a

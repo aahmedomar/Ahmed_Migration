@@ -1,0 +1,19 @@
+steps:
+  PAYMENTS-48979bd0a48ed3b902a86d72cfad41dbc2879a6e8f321dd840c6543bb0f2a86b:
+    operation:
+      database: ""
+      dataset: ""
+      deployEnabled: true
+      description: ""
+      locationID: ""
+      locationName: DBO
+      metadata:
+        columns:
+        join:
+          joinCondition: FROM { ref(f'DBO', 'PAYMENTS') }
+      name: PAYMENTS
+      schema: ""
+      sqlType: Source
+      table: PAYMENTS
+      type: sourceInput
+    stepCounter: 48979bd0a48ed3b902a86d72cfad41dbc2879a6e8f321dd840c6543bb0f2a86b

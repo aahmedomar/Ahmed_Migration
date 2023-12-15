@@ -1,0 +1,119 @@
+steps:
+  INT_PAYMENTS_WITH_METHODS-2476fe9d05b9c0cc7980f3159944a7870d97b2d8cbfbcc04845771757d142fc5:
+    operation:
+      config:
+        postSQL: ""
+        preSQL: ""
+        testsEnabled: true
+      database: ""
+      deployEnabled: true
+      description: ""
+      isDataVault: false
+      isMultisource: false
+      locationName: ANALYTICS
+      materializationType: Table
+      metadata:
+        appliedNodeTests: []
+        columns:
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: 96b683fff7dbcc953b72a02dc601df67d8c7972f20ccfdbdd6ec590d14ee5b74
+              stepCounter: 2476fe9d05b9c0cc7980f3159944a7870d97b2d8cbfbcc04845771757d142fc5
+            dataType: ""
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            isBusinessKey: true
+            name: AMOUNT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: None
+                    stepCounter: None
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: 62e348f88bc775ad400012a9de67a03498c634bcce20556886dc26546f2460f4
+              stepCounter: 2476fe9d05b9c0cc7980f3159944a7870d97b2d8cbfbcc04845771757d142fc5
+            dataType: ""
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            isBusinessKey: true
+            name: CUSTOMER_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: None
+                    stepCounter: None
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: 7ade4aad6bc58f7cb5e717183c7056f0c36f6d126d43e99687748304a17340e2
+              stepCounter: 2476fe9d05b9c0cc7980f3159944a7870d97b2d8cbfbcc04845771757d142fc5
+            dataType: ""
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            isBusinessKey: true
+            name: SUBSCRIPTED_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: None
+                    stepCounter: None
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: 297b520998b2d1c9cca0a9388262fe7c5fd3f96aa82cde2f78ad82bd9ced585b
+              stepCounter: 2476fe9d05b9c0cc7980f3159944a7870d97b2d8cbfbcc04845771757d142fc5
+            dataType: ""
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            isBusinessKey: true
+            name: UPDATED_AT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: None
+                    stepCounter: None
+                transform: ""
+        cteString: ""
+        enabledColumnTestIDs: []
+        sourceMapping:
+          - customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: ANALYTICS
+                nodeName: INT_PAYMENTS_WITH_METHODS_RS_5
+            join:
+              joinCondition: FROM {{ ref('ANALYTICS', 'INT_PAYMENTS_WITH_METHODS_RS_5') }} "INT_PAYMENTS_WITH_METHODS_RS_5"
+              name: INT_PAYMENTS_WITH_METHODS
+              noLinkRefs: []
+      name: INT_PAYMENTS_WITH_METHODS
+      overrideSQL: false
+      schema: ""
+      sqlType: Dimension
+      type: sql
+    stepCounter: 2476fe9d05b9c0cc7980f3159944a7870d97b2d8cbfbcc04845771757d142fc5

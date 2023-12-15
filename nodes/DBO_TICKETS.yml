@@ -1,0 +1,19 @@
+steps:
+  TICKETS-9715aa36e04ee8b3448cff740f869ed9761082d16579b77a3268ee80d07d0bcc:
+    operation:
+      database: ""
+      dataset: ""
+      deployEnabled: true
+      description: ""
+      locationID: ""
+      locationName: DBO
+      metadata:
+        columns:
+        join:
+          joinCondition: FROM { ref(f'DBO', 'TICKETS') }
+      name: TICKETS
+      schema: ""
+      sqlType: Source
+      table: TICKETS
+      type: sourceInput
+    stepCounter: 9715aa36e04ee8b3448cff740f869ed9761082d16579b77a3268ee80d07d0bcc

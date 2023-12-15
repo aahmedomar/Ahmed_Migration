@@ -1,0 +1,78 @@
+
+steps:
+  CTE_LOCATIONS_1-78a574c145b0bc38e4b18e7e7a741c1109487340ca3ea5986d58b7420460fdbd:
+    operation:
+      config:
+        insertStrategy: INSERT
+        postSQL: ""
+        preSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      deployEnabled: true
+      description: ""
+      isDataVault: false
+      isMultisource: true
+      locationName: ANALYTICS
+      materializationType: view
+      metadata:
+        appliedNodeTests: []
+        columns:
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: d1764222404ea3516fc9f918d18a14afe5a191c2fe06255482f4fb0f047286a0
+              stepCounter: 78a574c145b0bc38e4b18e7e7a741c1109487340ca3ea5986d58b7420460fdbd
+            dataType: ""
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: LOCATION_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: d2f3783908f249606fd16af000314da8647fde5c9dc889cca3ea8fb8cd233d3c
+                    stepCounter: None
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: c21d2580fae1b117f5ab58473520aacc0d5bac2ef4aa4f66d707d38ecb691f45
+              stepCounter: 78a574c145b0bc38e4b18e7e7a741c1109487340ca3ea5986d58b7420460fdbd
+            dataType: ""
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: LOCATION_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 5c4f9ba8f2f2a2c52a13c12e253a97b684ba31ea0ddc25836cf0994426ba63f2
+                    stepCounter: None
+                transform: ""
+        cteString: ""
+        enabledColumnTestIDs: []
+        sourceMapping:
+          - customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: ANALYTICS
+                nodeName: INT_CUSTOMER_PER_CORRECT_LOCATION_RS_2
+            join:
+                joinCondition: FROM {{ ref('ANALYTICS', 'INT_CUSTOMER_PER_CORRECT_LOCATION_RS_2') }} "INT_CUSTOMER_PER_CORRECT_LOCATION_RS_2"
+            name: CTE_LOCATIONS_1
+            noLinkRefs: []
+      name: CTE_LOCATIONS_1
+      overrideSQL: false
+      schema: ""
+      sqlType: Stage
+      type: sql
+    stepCounter: 78a574c145b0bc38e4b18e7e7a741c1109487340ca3ea5986d58b7420460fdbd

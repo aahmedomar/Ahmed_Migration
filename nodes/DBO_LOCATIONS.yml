@@ -1,0 +1,19 @@
+steps:
+  LOCATIONS-cd0b6a62d5a924f57b6a86a2b0f375ca0be06afa3642fdec05bd0201617f7ffd:
+    operation:
+      database: ""
+      dataset: ""
+      deployEnabled: true
+      description: ""
+      locationID: ""
+      locationName: DBO
+      metadata:
+        columns:
+        join:
+          joinCondition: FROM { ref(f'DBO', 'LOCATIONS') }
+      name: LOCATIONS
+      schema: ""
+      sqlType: Source
+      table: LOCATIONS
+      type: sourceInput
+    stepCounter: cd0b6a62d5a924f57b6a86a2b0f375ca0be06afa3642fdec05bd0201617f7ffd
