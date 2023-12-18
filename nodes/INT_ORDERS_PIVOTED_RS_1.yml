@@ -77,7 +77,7 @@ steps:
               - columnReferences:
                   - columnCounter: 202434074cb7278cce6e235083ef66be6ff0e0d3080c9b318cc97e54df58779a
                     stepCounter: c0641b1c47f16ae0224f47fafcecbc0fcbed3b5deca0dfcf8446ef3057f15e75
-                transform: when payment_method = 'bank_transfer' then amount
+                transform: ""
         cteString: ""
         enabledColumnTestIDs: []
         sourceMapping:

@@ -34,7 +34,7 @@ steps:
             - columnReferences:
               - columnCounter: 60426c7997e90fd9f0fc2b94941d7515e4bb29c05e0cb50214d6eab69327a5a7
                 stepCounter: 9d813b61d89f0e792b15c58bcb0cececbc124830f184683b3939bdd8ed948eb3
-              transform: count(order_id)
+              transform: ""
           - acceptedValues:
               strictMatch: true
               values: []
@@ -54,7 +54,7 @@ steps:
             - columnReferences:
               - columnCounter: eae16034423d0999bf6a6ab5f7e232724ca9fce04530da95b6172d6a471ac0d9
                 stepCounter: 9d813b61d89f0e792b15c58bcb0cececbc124830f184683b3939bdd8ed948eb3
-              transform: sum(amount)
+              transform: ""
           - acceptedValues:
               strictMatch: true
               values: []
@@ -94,7 +94,7 @@ steps:
             - columnReferences:
               - columnCounter: a190048965ae5a0ce3ebcd7f60fba3d4f941943fbc6819ea331f26de3ee0fbea
                 stepCounter: dfd3955f051309557669ad6b4c170496930d4bbac8bfe69d51d893b51097b7d0
-              transform: min(order_date)
+              transform: ""
         cteString: ""
         enabledColumnTestIDs: []
         sourceMapping:

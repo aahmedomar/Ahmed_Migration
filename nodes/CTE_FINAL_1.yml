@@ -1,6 +1,6 @@
 
 steps:
-  CTE_FINAL_1-ca08605ad2cdd4686cec4592878a2da716a9fd1d48f47647fdb68b63cb7e80d4:
+  CTE_FINAL_1-ea6efbe3cf151bbf6a699139168eddace3ac661067e8a0de43ebca197fbc96f8:
     operation:
       config:
         insertStrategy: INSERT
@@ -13,7 +13,7 @@ steps:
       description: ""
       isDataVault: false
       isMultisource: true
-      locationName: ANALYTICS
+      locationName: DBT_GGITHIRI
       materializationType: view
       metadata:
         appliedNodeTests: []
@@ -25,19 +25,19 @@ steps:
               hasNull: true
               isDistinct: false
             columnReference:
-              columnCounter: e3369238b90bce98a81f19eb9e2ac717b583a0aa75b6e90e5911078c844d6296
-              stepCounter: ca08605ad2cdd4686cec4592878a2da716a9fd1d48f47647fdb68b63cb7e80d4
+              columnCounter: 9e2a3f8278cb5067cf5234b3e54fdb4e813985b338bbe68cc2cc49488ff201a3
+              stepCounter: ea6efbe3cf151bbf6a699139168eddace3ac661067e8a0de43ebca197fbc96f8
             dataType: ""
             description: ""
             hashColumns: []
             hashDetails: null
-            name: MISSED_CALLS
+            name: BANK_TRANSFER_A
             nullable: false
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 5a2df002ffc08071ff4f716bfd2e3328094537fc553d435eaf9367d6b7a5d948
-                    stepCounter: None
-                transform: ""
+                  - columnCounter: 2c85bb3716f24695e14c8e7a3ce170d7a85ff1ad5d9e76279e72cd01cdbebd99
+                    stepCounter: e1359010275f8b0b7e3a44bf4dd90a6a494c205368c2d5f1043f6558d28dacaf
+                transform: sum( case when payment_method = 'bank_transfer' then amount else 0 end )
           - acceptedValues:
               strictMatch: true
               values: []
@@ -45,19 +45,19 @@ steps:
               hasNull: true
               isDistinct: false
             columnReference:
-              columnCounter: 870198ec17d0e1f84811cb552c8d34129ca0272a099435a09ae7c1922241fd71
-              stepCounter: ca08605ad2cdd4686cec4592878a2da716a9fd1d48f47647fdb68b63cb7e80d4
+              columnCounter: e2c3429218c4501cdc3201730584e3e551506f00b5fa19746c2ab3740b5cfdb5
+              stepCounter: ea6efbe3cf151bbf6a699139168eddace3ac661067e8a0de43ebca197fbc96f8
             dataType: ""
             description: ""
             hashColumns: []
             hashDetails: null
-            name: UNANSWERED_CALLS
+            name: COUPON_A
             nullable: false
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 61e9b95250dc15e34b2257533468c1de251c0d14bc2f412cdaeacd1dd8be21ba
-                    stepCounter: None
-                transform: ""
+                  - columnCounter: f3a9e0d25c6b47a59d5dc528ec27e0fc77ea1221f6251128173303f17bb183c8
+                    stepCounter: e1359010275f8b0b7e3a44bf4dd90a6a494c205368c2d5f1043f6558d28dacaf
+                transform: sum( case when payment_method = 'coupon' then amount else 0 end )
           - acceptedValues:
               strictMatch: true
               values: []
@@ -65,19 +65,19 @@ steps:
               hasNull: true
               isDistinct: false
             columnReference:
-              columnCounter: 3de1eec4e3cabca1722cd3ab8006ee3ceaab31b54fd4d7d05b517cf4d9e1a1f8
-              stepCounter: ca08605ad2cdd4686cec4592878a2da716a9fd1d48f47647fdb68b63cb7e80d4
+              columnCounter: ca271cddab3bbf49c7276611b0bbdfe678450e79a6811a35cdaac08787f34238
+              stepCounter: ea6efbe3cf151bbf6a699139168eddace3ac661067e8a0de43ebca197fbc96f8
             dataType: ""
             description: ""
             hashColumns: []
             hashDetails: null
-            name: BILLING_TYPE
+            name: CREDIT_CARD_A
             nullable: false
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 62db5116ed1cbc6631f0ae19dce316c2692ce07b8fc37a12cebba025316205b9
-                    stepCounter: None
-                transform: ""
+                  - columnCounter: 7d45376a42ee57609f9f6bb623c9c12874f76e8ba1c7d674bff801e382f0f2c3
+                    stepCounter: e1359010275f8b0b7e3a44bf4dd90a6a494c205368c2d5f1043f6558d28dacaf
+                transform: sum( case when payment_method = 'credit_card' then amount else 0 end )
           - acceptedValues:
               strictMatch: true
               values: []
@@ -85,19 +85,19 @@ steps:
               hasNull: true
               isDistinct: false
             columnReference:
-              columnCounter: 6710bd3c408cead394492d5868854bd3c1ef1e9e9f952b85f1797853754ab1d2
-              stepCounter: ca08605ad2cdd4686cec4592878a2da716a9fd1d48f47647fdb68b63cb7e80d4
+              columnCounter: 2db849b131d3a1ffca85ed8ca5550d9844cbcf1642ab2f73437bacca1896438f
+              stepCounter: ea6efbe3cf151bbf6a699139168eddace3ac661067e8a0de43ebca197fbc96f8
             dataType: ""
             description: ""
             hashColumns: []
             hashDetails: null
-            name: CALL_DATE
+            name: GIFT_CARD_A
             nullable: false
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 8a7614100686b4cce4eb5bd24ab941db1092388a593e9e42658c8faeaef33061
-                    stepCounter: None
-                transform: ""
+                  - columnCounter: 0b661db0b7f5fe197ba076e476a8259e07876e44e8697b50456721a098d76e13
+                    stepCounter: e1359010275f8b0b7e3a44bf4dd90a6a494c205368c2d5f1043f6558d28dacaf
+                transform: sum( case when payment_method = 'gift_card' then amount else 0 end )
           - acceptedValues:
               strictMatch: true
               values: []
@@ -105,258 +105,18 @@ steps:
               hasNull: true
               isDistinct: false
             columnReference:
-              columnCounter: c88e8c1a7cff19873162a1abac53e9ff9e507ef45a06bc2cca878a2d8ad40d06
-              stepCounter: ca08605ad2cdd4686cec4592878a2da716a9fd1d48f47647fdb68b63cb7e80d4
+              columnCounter: 8b62bac24e46bcdba18fff18e1976de057bac5e31edcf70a5cf92c0d4ff5fc45
+              stepCounter: ea6efbe3cf151bbf6a699139168eddace3ac661067e8a0de43ebca197fbc96f8
             dataType: ""
             description: ""
             hashColumns: []
             hashDetails: null
-            name: CALL_DURATION
+            name: ORDER_ID
             nullable: false
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 0baa781794b911c954586244e5c1a3c1237a4e7eef470cfdeca8269931385766
-                    stepCounter: None
-                transform: ""
-          - acceptedValues:
-              strictMatch: true
-              values: []
-            appliedColumnTests:
-              hasNull: true
-              isDistinct: false
-            columnReference:
-              columnCounter: e46c9228897b3f593e036bf3e6ac55578dae50857b156fe7686097133e2d26fb
-              stepCounter: ca08605ad2cdd4686cec4592878a2da716a9fd1d48f47647fdb68b63cb7e80d4
-            dataType: ""
-            description: ""
-            hashColumns: []
-            hashDetails: null
-            name: CALL_ID
-            nullable: false
-            sourceColumnReferences:
-              - columnReferences:
-                  - columnCounter: 3fa636129a9307fbb227f22fa9a8b08086dc3d13e2e6682939465e0cf7fa9d84
-                    stepCounter: None
-                transform: ""
-          - acceptedValues:
-              strictMatch: true
-              values: []
-            appliedColumnTests:
-              hasNull: true
-              isDistinct: false
-            columnReference:
-              columnCounter: 779ae1bc210960750728a91a2d92e2f3ceb5f5fc74c25678729054beea7917c8
-              stepCounter: ca08605ad2cdd4686cec4592878a2da716a9fd1d48f47647fdb68b63cb7e80d4
-            dataType: ""
-            description: ""
-            hashColumns: []
-            hashDetails: null
-            name: CATEGORY
-            nullable: false
-            sourceColumnReferences:
-              - columnReferences:
-                  - columnCounter: ceaee1c8c631b1dabfcc3dbefe677abc4b1129cffe71bff7ad1336d7ca648e94
-                    stepCounter: None
-                transform: ""
-          - acceptedValues:
-              strictMatch: true
-              values: []
-            appliedColumnTests:
-              hasNull: true
-              isDistinct: false
-            columnReference:
-              columnCounter: e4ca291e726dce9cfddda609eb08032ee95626ac0f21f0dc061f7a9f2486b4bb
-              stepCounter: ca08605ad2cdd4686cec4592878a2da716a9fd1d48f47647fdb68b63cb7e80d4
-            dataType: ""
-            description: ""
-            hashColumns: []
-            hashDetails: null
-            name: CUSTOMER_DELETED
-            nullable: false
-            sourceColumnReferences:
-              - columnReferences:
-                  - columnCounter: 2b967e2d9e242562a71e6e61758b71e9798c8783e3f39d813bb93d2ae00c7617
-                    stepCounter: None
-                transform: ""
-          - acceptedValues:
-              strictMatch: true
-              values: []
-            appliedColumnTests:
-              hasNull: true
-              isDistinct: false
-            columnReference:
-              columnCounter: 6e1511c773767903173b43394c7275431684d60a0f1d7d0645c3ba107f5c309d
-              stepCounter: ca08605ad2cdd4686cec4592878a2da716a9fd1d48f47647fdb68b63cb7e80d4
-            dataType: ""
-            description: ""
-            hashColumns: []
-            hashDetails: null
-            name: CUSTOMER_ID
-            nullable: false
-            sourceColumnReferences:
-              - columnReferences:
-                  - columnCounter: 367d398355a6cb78ecd9f1801bb8d860a755e54df760fe8d3d5c3a502c1c0e07
-                    stepCounter: None
-                transform: ""
-          - acceptedValues:
-              strictMatch: true
-              values: []
-            appliedColumnTests:
-              hasNull: true
-              isDistinct: false
-            columnReference:
-              columnCounter: 535df73564cd87588937f55a1b778da0c10eb46d817080f7f694bb9ab3d80e31
-              stepCounter: ca08605ad2cdd4686cec4592878a2da716a9fd1d48f47647fdb68b63cb7e80d4
-            dataType: ""
-            description: ""
-            hashColumns: []
-            hashDetails: null
-            name: FULL_NAME
-            nullable: false
-            sourceColumnReferences:
-              - columnReferences:
-                  - columnCounter: 3e353ffd4a274da5cf1e462b23334015b8fcd845c84c9014ccb7b01804c2473d
-                    stepCounter: None
-                transform: ""
-          - acceptedValues:
-              strictMatch: true
-              values: []
-            appliedColumnTests:
-              hasNull: true
-              isDistinct: false
-            columnReference:
-              columnCounter: fdd9dee4af7679bed3a4f88d8e05d43c8fa56c6d774fa2ef97ab55d4726de314
-              stepCounter: ca08605ad2cdd4686cec4592878a2da716a9fd1d48f47647fdb68b63cb7e80d4
-            dataType: ""
-            description: ""
-            hashColumns: []
-            hashDetails: null
-            name: INBOUND
-            nullable: false
-            sourceColumnReferences:
-              - columnReferences:
-                  - columnCounter: d8884aa8df316c91ce43d81fba9c60d40ebbf3d23b99cedc11b63e0c27c157da
-                    stepCounter: None
-                transform: ""
-          - acceptedValues:
-              strictMatch: true
-              values: []
-            appliedColumnTests:
-              hasNull: true
-              isDistinct: false
-            columnReference:
-              columnCounter: 1991ef2e0385c020bf1aa84653d4fa9f1bb8239da49030413023ca255eef7509
-              stepCounter: ca08605ad2cdd4686cec4592878a2da716a9fd1d48f47647fdb68b63cb7e80d4
-            dataType: ""
-            description: ""
-            hashColumns: []
-            hashDetails: null
-            name: LOCATION
-            nullable: false
-            sourceColumnReferences:
-              - columnReferences:
-                  - columnCounter: 259e0cf0d20490d13a195e9d3ac63f9da24bc0c565a19764e287195612430c74
-                    stepCounter: None
-                transform: ""
-          - acceptedValues:
-              strictMatch: true
-              values: []
-            appliedColumnTests:
-              hasNull: true
-              isDistinct: false
-            columnReference:
-              columnCounter: 6132db9890f187e98c286e8fe7c1a63b44a1aa3b0121f8a49caac88af2b06eb8
-              stepCounter: ca08605ad2cdd4686cec4592878a2da716a9fd1d48f47647fdb68b63cb7e80d4
-            dataType: ""
-            description: ""
-            hashColumns: []
-            hashDetails: null
-            name: MOBILE_CALLS
-            nullable: false
-            sourceColumnReferences:
-              - columnReferences:
-                  - columnCounter: d73b4e3770fe691740d63ac0cf4afd171ee3a555bf7b62e982bc8ab843a497a9
-                    stepCounter: None
-                transform: ""
-          - acceptedValues:
-              strictMatch: true
-              values: []
-            appliedColumnTests:
-              hasNull: true
-              isDistinct: false
-            columnReference:
-              columnCounter: 8a0443b28267c7667a594ff638ded43c4196f85192dccb1a588c022e45d3eac2
-              stepCounter: ca08605ad2cdd4686cec4592878a2da716a9fd1d48f47647fdb68b63cb7e80d4
-            dataType: ""
-            description: ""
-            hashColumns: []
-            hashDetails: null
-            name: MRR_TOTAL
-            nullable: false
-            sourceColumnReferences:
-              - columnReferences:
-                  - columnCounter: 51983c0ac6b22550ee30a9d1132d5e9101e51abf4855e694f4bcd6da395cabe9
-                    stepCounter: None
-                transform: ""
-          - acceptedValues:
-              strictMatch: true
-              values: []
-            appliedColumnTests:
-              hasNull: true
-              isDistinct: false
-            columnReference:
-              columnCounter: 2d2e31056f7346e47adf8c67550caf41c620eb2f219b0cd72b5341ac3d46505f
-              stepCounter: ca08605ad2cdd4686cec4592878a2da716a9fd1d48f47647fdb68b63cb7e80d4
-            dataType: ""
-            description: ""
-            hashColumns: []
-            hashDetails: null
-            name: OUTBOUND
-            nullable: false
-            sourceColumnReferences:
-              - columnReferences:
-                  - columnCounter: 38df4076cceec7f7f59a6eeaaafff3cdce2c01a5c96dbedc50a2741425fec0b4
-                    stepCounter: None
-                transform: ""
-          - acceptedValues:
-              strictMatch: true
-              values: []
-            appliedColumnTests:
-              hasNull: true
-              isDistinct: false
-            columnReference:
-              columnCounter: 7ec48565f09bc7d4cbf9acd4d4e66883a8b1439a03400ed15e78db74cd2441a4
-              stepCounter: ca08605ad2cdd4686cec4592878a2da716a9fd1d48f47647fdb68b63cb7e80d4
-            dataType: ""
-            description: ""
-            hashColumns: []
-            hashDetails: null
-            name: STATUS
-            nullable: false
-            sourceColumnReferences:
-              - columnReferences:
-                  - columnCounter: eaf4407bb83f2f8a33ef9944dee91d049b3a37631f1b75041d3cb05c0b0ad4a2
-                    stepCounter: None
-                transform: ""
-          - acceptedValues:
-              strictMatch: true
-              values: []
-            appliedColumnTests:
-              hasNull: true
-              isDistinct: false
-            columnReference:
-              columnCounter: de0bc3933a20de98c32cc6522d4c251281304170fd8a11e1c322424df9c2e5df
-              stepCounter: ca08605ad2cdd4686cec4592878a2da716a9fd1d48f47647fdb68b63cb7e80d4
-            dataType: ""
-            description: ""
-            hashColumns: []
-            hashDetails: null
-            name: SUBSCRIPTED_DATE
-            nullable: false
-            sourceColumnReferences:
-              - columnReferences:
-                  - columnCounter: c7ca62c0b8545a8b76e171708cce43801cb0016ca6ced10499e1648d90afac4c
-                    stepCounter: None
+                  - columnCounter: 4bf38f31ae3a3b70ffecf69ef0b052e40bb53e096522f80e385aade1174b4271
+                    stepCounter: e1359010275f8b0b7e3a44bf4dd90a6a494c205368c2d5f1043f6558d28dacaf
                 transform: ""
         cteString: ""
         enabledColumnTestIDs: []
@@ -364,10 +124,10 @@ steps:
           - customSQL:
               customSQL: ""
             dependencies:
-              - locationName: ANALYTICS
-                nodeName: INT_CUSTOMER_CALLS_RS_4
+              - locationName: DBT_GGITHIRI
+                nodeName: INT_ORDERS__PIVOTED_RS_2
             join:
-                joinCondition: FROM {{ ref('ANALYTICS', 'INT_CUSTOMER_CALLS_RS_4') }} "INT_CUSTOMER_CALLS_RS_4"
+                joinCondition: FROM {{ ref('DBT_GGITHIRI', 'INT_ORDERS__PIVOTED_RS_2') }} "INT_ORDERS__PIVOTED_RS_2"
             name: CTE_FINAL_1
             noLinkRefs: []
       name: CTE_FINAL_1
@@ -375,4 +135,4 @@ steps:
       schema: ""
       sqlType: Stage
       type: sql
-    stepCounter: ca08605ad2cdd4686cec4592878a2da716a9fd1d48f47647fdb68b63cb7e80d4
+    stepCounter: ea6efbe3cf151bbf6a699139168eddace3ac661067e8a0de43ebca197fbc96f8

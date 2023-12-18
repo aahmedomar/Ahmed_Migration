@@ -11,16 +11,7 @@ data migration and processing tasks.
 
 ## :file_folder: Migrated Tables/Views  :
 
-- `CTE_ALL_PAYMENTS_1`:
-        This is a Others node,
-        placeholder descriptions` file in the `nodes/` directory.
-- `CTE_CALLS_1`:
-        This is a Others node,
-        placeholder descriptions` file in the `nodes/` directory.
 - `CTE_CUSTOMERS_DIM_1`:
-        This is a Others node,
-        placeholder descriptions` file in the `nodes/` directory.
-- `CTE_CUSTOMER_CALLS_1`:
         This is a Others node,
         placeholder descriptions` file in the `nodes/` directory.
 - `CTE_CUSTOMER_ORDERS_DIM_1`:
@@ -33,9 +24,6 @@ data migration and processing tasks.
         This is a Others node,
         placeholder descriptions` file in the `nodes/` directory.
 - `CTE_FINAL_FCT_1`:
-        This is a Others node,
-        placeholder descriptions` file in the `nodes/` directory.
-- `CTE_LOCATIONS_1`:
         This is a Others node,
         placeholder descriptions` file in the `nodes/` directory.
 - `CTE_ORDERS_DIM_1`:
@@ -51,30 +39,6 @@ data migration and processing tasks.
         This is a Others node,
         placeholder descriptions` file in the `nodes/` directory.
 - `CTE_PAYMENTS_FCT_1`:
-        This is a Others node,
-        placeholder descriptions` file in the `nodes/` directory.
-- `CTE_PAYMENT_TYPE_1`:
-        This is a Others node,
-        placeholder descriptions` file in the `nodes/` directory.
-- `DBO_ADMINS`:
-        This is a Others node,
-        placeholder descriptions` file in the `nodes/` directory.
-- `DBO_CALLS`:
-        This is a Others node,
-        placeholder descriptions` file in the `nodes/` directory.
-- `DBO_CUSTOMERS`:
-        This is a Others node,
-        placeholder descriptions` file in the `nodes/` directory.
-- `DBO_LOCATIONS`:
-        This is a Others node,
-        placeholder descriptions` file in the `nodes/` directory.
-- `DBO_PAYMENTS`:
-        This is a Others node,
-        placeholder descriptions` file in the `nodes/` directory.
-- `DBO_PAYMENT_TYPE`:
-        This is a Others node,
-        placeholder descriptions` file in the `nodes/` directory.
-- `DBO_TICKETS`:
         This is a Others node,
         placeholder descriptions` file in the `nodes/` directory.
 - `DIM_CUSTOMERS`:
@@ -113,12 +77,6 @@ data migration and processing tasks.
 - `FCT_ORDERS_RS_5`:
         This is a fact node,
         placeholder descriptions` file in the `nodes/` directory.
-- `INT_CUSTOMER_CALLS`:
-        This is a intermediate node,
-        placeholder descriptions` file in the `nodes/` directory.
-- `INT_CUSTOMER_PER_CORRECT_LOCATION`:
-        This is a intermediate node,
-        placeholder descriptions` file in the `nodes/` directory.
 - `INT_ORDERS_PIVOTED`:
         This is a intermediate node,
         placeholder descriptions` file in the `nodes/` directory.
@@ -131,16 +89,10 @@ data migration and processing tasks.
 - `INT_ORDERS_PIVOTED_RS_3`:
         This is a intermediate node,
         placeholder descriptions` file in the `nodes/` directory.
-- `INT_PAYMENTS_WITH_METHODS`:
-        This is a intermediate node,
-        placeholder descriptions` file in the `nodes/` directory.
 - `JAFFLE_SHOP_CUSTOMERS`:
         This is a Others node,
         placeholder descriptions` file in the `nodes/` directory.
 - `JAFFLE_SHOP_ORDERS`:
-        This is a Others node,
-        placeholder descriptions` file in the `nodes/` directory.
-- `STG_CALLS`:
         This is a Others node,
         placeholder descriptions` file in the `nodes/` directory.
 - `STG_CUSTOMERS`:
@@ -150,12 +102,6 @@ data migration and processing tasks.
         This is a Others node,
         placeholder descriptions` file in the `nodes/` directory.
 - `STG_PAYMENTS`:
-        This is a Others node,
-        placeholder descriptions` file in the `nodes/` directory.
-- `STG_TICKET`:
-        This is a Others node,
-        placeholder descriptions` file in the `nodes/` directory.
-- `STG_TICKETS`:
         This is a Others node,
         placeholder descriptions` file in the `nodes/` directory.
 - `STRIPE_PAYMENT`:
