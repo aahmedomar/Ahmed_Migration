@@ -1,4 +1,3 @@
-
 steps:
   DIM_CUSTOMERS_RS_2-286ca2e9df7252c7248a8be688e823b511e8a4128f66c617ec808fee814f329b:
     operation:
@@ -98,7 +97,6 @@ steps:
                   - columnCounter: da8886e71ebf69fce91a631292113f9c1b1b15d15ab149f676024c0d2a5f249b
                     stepCounter: 3996660bfc1545c9a8a6396bbdef83d56bc5e59a4040fff481617b8bf0057350
                 transform: ""
-        cteString: ""
         enabledColumnTestIDs: []
         sourceMapping:
           - customSQL:

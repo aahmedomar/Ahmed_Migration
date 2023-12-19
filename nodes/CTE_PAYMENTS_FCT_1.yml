@@ -1,4 +1,3 @@
-
 steps:
   CTE_PAYMENTS_FCT_1-d2ff571edafd653094684c9a8b483a5239c03fb6807fcd74f91d18830354a850:
     operation:
@@ -78,7 +77,6 @@ steps:
                   - columnCounter: d35b687f6ca6d8ce1b5d507d5ed6e79c1e30a1087f0c0e631e2b54fb70a97883
                     stepCounter: b02d9b7245db82faa2b9a20407f63bd971cc13ce8bc333a21cf4f485063985ba
                 transform: ""
-        cteString: ""
         enabledColumnTestIDs: []
         sourceMapping:
           - customSQL:

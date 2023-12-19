@@ -1,4 +1,3 @@
-
 steps:
   CTE_FINAL_FCT_1-e2e513394a77e140dadcf9f6dffb7b4305baf1d4b7453972db0cc68cdb0ac299:
     operation:
@@ -98,7 +97,6 @@ steps:
                   - columnCounter: 75c0a8fdefa08ebbf1ed7795011947eca2cef7a75a4b0ed3797973441c753113
                     stepCounter: 3e6e9cd529b018df0f97c86fd944204768b65af83555eff998ed33bef8f45a96
                 transform: ""
-        cteString: ""
         enabledColumnTestIDs: []
         sourceMapping:
           - customSQL:

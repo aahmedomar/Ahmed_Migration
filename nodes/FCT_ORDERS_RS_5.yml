@@ -1,4 +1,3 @@
-
 steps:
   FCT_ORDERS_RS_5-dfd3955f051309557669ad6b4c170496930d4bbac8bfe69d51d893b51097b7d0:
     operation:
@@ -98,7 +97,6 @@ steps:
                   - columnCounter: f099cbf0cbcd7dc09d55c132a5077db0e705a728cd4fc4bf4bfdab642e4d3f48
                     stepCounter: e2e513394a77e140dadcf9f6dffb7b4305baf1d4b7453972db0cc68cdb0ac299
                 transform: ""
-        cteString: ""
         enabledColumnTestIDs: []
         sourceMapping:
           - customSQL:

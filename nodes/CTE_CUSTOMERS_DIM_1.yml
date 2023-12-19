@@ -1,4 +1,3 @@
-
 steps:
   CTE_CUSTOMERS_DIM_1-550ec08da16546559d594b1c3cacfeac9a5b3c7c76f1560d875c1e6465f54195:
     operation:
@@ -78,7 +77,6 @@ steps:
                   - columnCounter: 38995cb842733ede7ec04a25e977be95a14e6e2d348ac9fea0672c9ad2535c33
                     stepCounter: d6428a8bfcd303023bef01fd0c90e8eb00507e113fcc0f07f31fdcd96f329f35
                 transform: ""
-        cteString: ""
         enabledColumnTestIDs: []
         sourceMapping:
           - customSQL:
@@ -87,7 +85,10 @@ steps:
               - locationName: DBT_GGITHIRI
                 nodeName: DIM_CUSTOMERS_RS_1
             join:
-                joinCondition: FROM {{ ref('DBT_GGITHIRI', 'DIM_CUSTOMERS_RS_1') }} "DIM_CUSTOMERS_RS_1"
+                joinCondition: |-
+                  FROM {{ ref('DBT_GGITHIRI', 'DIM_CUSTOMERS_RS_1') }} "DIM_CUSTOMERS_RS_1"
+                  LEFT JOIN {{ ref('DBT_GGITHIRI', 'DIM_CUSTOMERS_RS_3') }} "DIM_CUSTOMERS_RS_3" 
+                  ON "CTE_CUSTOMERS_DIM_1"."CUSTOMER_ID" = "DIM_CUSTOMERS_RS_3"."CUSTOMER_ID"
             name: CTE_CUSTOMERS_DIM_1
             noLinkRefs: []
       name: CTE_CUSTOMERS_DIM_1

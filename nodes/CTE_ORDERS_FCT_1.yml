@@ -1,4 +1,3 @@
-
 steps:
   CTE_ORDERS_FCT_1-858270e2fed0d6e20099c88e762bd982807aa77e881e579dbaadfc623ae90eb5:
     operation:
@@ -78,7 +77,6 @@ steps:
                   - columnCounter: d3af21e973fcb06d0f5d7195ef51541f27a9a18718b4250721ad8c2c13aa1416
                     stepCounter: 8e2ab271baabf88f42bf431e5830683386862f6895c1dc237c9c7a46263f2326
                 transform: ""
-        cteString: ""
         enabledColumnTestIDs: []
         sourceMapping:
           - customSQL:
@@ -87,7 +85,10 @@ steps:
               - locationName: DBT_GGITHIRI
                 nodeName: FCT_ORDERS_RS_1
             join:
-                joinCondition: FROM {{ ref('DBT_GGITHIRI', 'FCT_ORDERS_RS_1') }} "FCT_ORDERS_RS_1"
+                joinCondition: |-
+                  FROM {{ ref('DBT_GGITHIRI', 'FCT_ORDERS_RS_1') }} "FCT_ORDERS_RS_1"
+                  LEFT JOIN {{ ref('DBT_GGITHIRI', 'FCT_ORDERS_RS_3') }} "FCT_ORDERS_RS_3" 
+                  ON "CTE_ORDERS_FCT_1"."ORDER_ID" = "FCT_ORDERS_RS_3"."ORDER_ID"
             name: CTE_ORDERS_FCT_1
             noLinkRefs: []
       name: CTE_ORDERS_FCT_1

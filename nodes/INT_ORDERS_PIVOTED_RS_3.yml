@@ -1,4 +1,3 @@
-
 steps:
   INT_ORDERS__PIVOTED_RS_3-a8f7d92cdb37a92a82262d1d2bbb979a4b63a246f652a825456819e85df8750e:
     operation:
@@ -118,7 +117,6 @@ steps:
                   - columnCounter: 8b62bac24e46bcdba18fff18e1976de057bac5e31edcf70a5cf92c0d4ff5fc45
                     stepCounter: ea6efbe3cf151bbf6a699139168eddace3ac661067e8a0de43ebca197fbc96f8
                 transform: ""
-        cteString: ""
         enabledColumnTestIDs: []
         sourceMapping:
           - customSQL:
