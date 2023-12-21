@@ -1,0 +1,96 @@
+steps:
+  STG_CUSTOMERS_RS_1-285b8677c083c31eff89927940a0e6a41eab919c4e17eb874ef13d438ce842d9:
+    operation:
+      config:
+        insertStrategy: INSERT
+        postSQL: ""
+        preSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      deployEnabled: true
+      description: ""
+      isDataVault: false
+      isMultisource: true
+      locationName: BI
+      materializationType: view
+      metadata:
+        appliedNodeTests: []
+        columns:
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: 3343d47bbf113a822e943fcb23e5e1b19122c5ba86ddbddd489396db8da5bc1d
+              stepCounter: 285b8677c083c31eff89927940a0e6a41eab919c4e17eb874ef13d438ce842d9
+            dataType: ""
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: CUSTOMER_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 65e38218288d9e36e9785f2512e9aa21269c1865e3a914ec0d56ba06abe9b04d
+                    stepCounter: b74b683c4a8df0471640660dea753bb0418d2a4ceb3ec96a1e6ca4e2f4d4d25d
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: afbf7e116cd69fcdaccb9b0fbf54060933592007676eba432ce6a7f92bb0dd9c
+              stepCounter: 285b8677c083c31eff89927940a0e6a41eab919c4e17eb874ef13d438ce842d9
+            dataType: ""
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: FIRST_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 587a3e8659efcf8309dcbe89e5a844d13d3af078e64115fda66d7688d8e0c5df
+                    stepCounter: b74b683c4a8df0471640660dea753bb0418d2a4ceb3ec96a1e6ca4e2f4d4d25d
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: 4843869a7da89d024d3e47e29911faf9eded62b1ef91cfecf31603392ce2681f
+              stepCounter: 285b8677c083c31eff89927940a0e6a41eab919c4e17eb874ef13d438ce842d9
+            dataType: ""
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: LAST_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: ea713a19601502b27bf4b22b8a014462e0141884b238325f3c68743e71a70b1b
+                    stepCounter: b74b683c4a8df0471640660dea753bb0418d2a4ceb3ec96a1e6ca4e2f4d4d25d
+                transform: ""
+        enabledColumnTestIDs: []
+        sourceMapping:
+          - customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: BI
+                nodeName: STG_PREP_CUSTOMERS
+            join:
+                joinCondition: FROM {{ ref('BI', 'STG_PREP_CUSTOMERS') }} "STG_PREP_CUSTOMERS"
+            name: STG_CUSTOMERS_RS_1
+            noLinkRefs: []
+      name: STG_CUSTOMERS_RS_1
+      overrideSQL: false
+      schema: ""
+      sqlType: Stage
+      type: sql
+    stepCounter: 285b8677c083c31eff89927940a0e6a41eab919c4e17eb874ef13d438ce842d9

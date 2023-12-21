@@ -1,0 +1,96 @@
+steps:
+  STG_ORDERS_BY_MONTH_RS_2-900f1c219c29ca06452ecd3c419e8b90148e10415ece5b9a6beb8716b3ae8e73:
+    operation:
+      config:
+        insertStrategy: INSERT
+        postSQL: ""
+        preSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      deployEnabled: true
+      description: ""
+      isDataVault: false
+      isMultisource: true
+      locationName: BI
+      materializationType: view
+      metadata:
+        appliedNodeTests: []
+        columns:
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: b97bdb1a08d82d0b290617ed19875d11d49b423d0b04701245d98ed386a78f0d
+              stepCounter: 900f1c219c29ca06452ecd3c419e8b90148e10415ece5b9a6beb8716b3ae8e73
+            dataType: ""
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: AMOUNT_MONTH_GTEQ_2
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: None
+                    stepCounter: d9efcbccd1b945ba01299867a78fb9eb676e4a54ebb04b7397acaecb596b3349
+                transform: sum(case when month(user_amount.first_order_date) >= 2 then user_amount.total_amount else 0 end)
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: 53bfa4ad198575a05e15015e797866cb347fcd43dbb5c0d36c32335bad1854d9
+              stepCounter: 900f1c219c29ca06452ecd3c419e8b90148e10415ece5b9a6beb8716b3ae8e73
+            dataType: ""
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: AMOUNT_MONTH_LT_1
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: None
+                    stepCounter: d9efcbccd1b945ba01299867a78fb9eb676e4a54ebb04b7397acaecb596b3349
+                transform: sum(case when month(user_amount.first_order_date) < 2 then user_amount.total_amount else 0 end)
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: 29b63131aac8db5730203b4086d279b4905fcf71ebca9a6632f73bcfc553e42c
+              stepCounter: 900f1c219c29ca06452ecd3c419e8b90148e10415ece5b9a6beb8716b3ae8e73
+            dataType: ""
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: CUSTOMER_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: d279cd5e448f0e3cfcc2cc5ec611327cf3ad1f1ee0520398cadaa77fc24a5594
+                    stepCounter: d9efcbccd1b945ba01299867a78fb9eb676e4a54ebb04b7397acaecb596b3349
+                transform: ""
+        enabledColumnTestIDs: []
+        sourceMapping:
+          - customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: BI
+                nodeName: CTE_USER_AMOUNT_1
+            join:
+                joinCondition: FROM {{ ref('BI', 'CTE_USER_AMOUNT_1') }} "CTE_USER_AMOUNT_1"
+            name: STG_ORDERS_BY_MONTH_RS_2
+            noLinkRefs: []
+      name: STG_ORDERS_BY_MONTH_RS_2
+      overrideSQL: false
+      schema: ""
+      sqlType: Stage
+      type: sql
+    stepCounter: 900f1c219c29ca06452ecd3c419e8b90148e10415ece5b9a6beb8716b3ae8e73

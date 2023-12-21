@@ -1,0 +1,56 @@
+steps:
+  STG_UNION_CUST_COUNT_RS_4-fad345a376a7fa3de7093f3c6a3468b2912eca5565fa3e8882565a2f00b1377b:
+    operation:
+      config:
+        insertStrategy: INSERT
+        postSQL: ""
+        preSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      deployEnabled: true
+      description: ""
+      isDataVault: false
+      isMultisource: true
+      locationName: BI
+      materializationType: view
+      metadata:
+        appliedNodeTests: []
+        columns:
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: 40eed36429a8e512adf14e2f53085fab24644d2094a706b81e7686c4f7e3d82c
+              stepCounter: fad345a376a7fa3de7093f3c6a3468b2912eca5565fa3e8882565a2f00b1377b
+            dataType: ""
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: SOURCE_NUMBER
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 5a83a3567f5a503ede1cfa742864e85177695670f40cffcbc971943cda830028
+                    stepCounter: ee51109bc776b2f0a5cbd7b67b15b27290a01ab28593b58a6f512170b05db1e6
+                transform: ""
+        enabledColumnTestIDs: []
+        sourceMapping:
+          - customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: BI
+                nodeName: CTE_USER_GTEQ_51_1
+            join:
+                joinCondition: FROM {{ ref('BI', 'CTE_USER_GTEQ_51_1') }} "CTE_USER_GTEQ_51_1"
+            name: STG_UNION_CUST_COUNT_RS_4
+            noLinkRefs: []
+      name: STG_UNION_CUST_COUNT_RS_4
+      overrideSQL: false
+      schema: ""
+      sqlType: Stage
+      type: sql
+    stepCounter: fad345a376a7fa3de7093f3c6a3468b2912eca5565fa3e8882565a2f00b1377b

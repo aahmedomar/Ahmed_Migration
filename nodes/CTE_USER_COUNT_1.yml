@@ -1,0 +1,56 @@
+steps:
+  CTE_USER_COUNT_1-6bce272a46de60dcaf790547f518fd6efcfd9fbcb02bbdde4863025254a08980:
+    operation:
+      config:
+        insertStrategy: INSERT
+        postSQL: ""
+        preSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      deployEnabled: true
+      description: ""
+      isDataVault: false
+      isMultisource: true
+      locationName: BI
+      materializationType: view
+      metadata:
+        appliedNodeTests: []
+        columns:
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: 4a1ed8aa7d203b2c26c8f8b8c5d6b65cab39802f2e7e8dddad0f139665dd1ff0
+              stepCounter: 6bce272a46de60dcaf790547f518fd6efcfd9fbcb02bbdde4863025254a08980
+            dataType: ""
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: CUSTOMER_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: da3c41a9144012259232cf1cd88fcabb93f1b619309d819a2b8656097cc2c6c4
+                    stepCounter: 1356e85a185d6f5fe490c440002e526f92dbeb6a4595ee6b5394264a8f5c54cc
+                transform: ""
+        enabledColumnTestIDs: []
+        sourceMapping:
+          - customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: BI
+                nodeName: STG_CUSTOMER_ID_51_100_RS_1
+            join:
+                joinCondition: FROM {{ ref('BI', 'STG_CUSTOMER_ID_51_100_RS_1') }} "STG_CUSTOMER_ID_51_100_RS_1"
+            name: CTE_USER_COUNT_1
+            noLinkRefs: []
+      name: CTE_USER_COUNT_1
+      overrideSQL: false
+      schema: ""
+      sqlType: Stage
+      type: sql
+    stepCounter: 6bce272a46de60dcaf790547f518fd6efcfd9fbcb02bbdde4863025254a08980
