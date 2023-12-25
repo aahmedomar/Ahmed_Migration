@@ -74,7 +74,7 @@ steps:
             nullable: false
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: d279cd5e448f0e3cfcc2cc5ec611327cf3ad1f1ee0520398cadaa77fc24a5594
+                  - columnCounter: 08b9ae701b043377474941e8f26fce67437c4d5b2509034d1977f1d1b716df8b
                     stepCounter: d9efcbccd1b945ba01299867a78fb9eb676e4a54ebb04b7397acaecb596b3349
                 transform: ""
         enabledColumnTestIDs: []
@@ -83,9 +83,9 @@ steps:
               customSQL: ""
             dependencies:
               - locationName: BI
-                nodeName: CTE_USER_AMOUNT_1
+                nodeName: STG_ORDERS_BY_MONTH_CTE_USER_AMOUNT_1
             join:
-                joinCondition: FROM {{ ref('BI', 'CTE_USER_AMOUNT_1') }} "CTE_USER_AMOUNT_1"
+                joinCondition: FROM {{ ref('BI', 'STG_ORDERS_BY_MONTH_CTE_USER_AMOUNT_1') }} "STG_ORDERS_BY_MONTH_CTE_USER_AMOUNT_1"
             name: STG_ORDERS_BY_MONTH_RS_2
             noLinkRefs: []
       name: STG_ORDERS_BY_MONTH_RS_2

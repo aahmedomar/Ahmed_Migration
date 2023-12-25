@@ -34,7 +34,7 @@ steps:
             nullable: false
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: c653806626e172d84064fb84f3f69876c517277be01b1c484fe60c3e06b79ef4
+                  - columnCounter: None
                     stepCounter: aa44dee34588628f537db6a47dd91fb8661dee53bafca64f10e2726a5b5cc2f7
                 transform: ""
         enabledColumnTestIDs: []
@@ -43,9 +43,9 @@ steps:
               customSQL: ""
             dependencies:
               - locationName: BI
-                nodeName: CTE_FINAL_1
+                nodeName: STG_CUSTOMER_ID_0_50_CTE_FINAL_1
             join:
-                joinCondition: FROM {{ ref('BI', 'CTE_FINAL_1') }} "CTE_FINAL_1"
+                joinCondition: FROM {{ ref('BI', 'STG_CUSTOMER_ID_0_50_CTE_FINAL_1') }} "STG_CUSTOMER_ID_0_50_CTE_FINAL_1"
             name: STG_CUSTOMER_ID_0_50_RS_3
             noLinkRefs: []
       name: STG_CUSTOMER_ID_0_50_RS_3
