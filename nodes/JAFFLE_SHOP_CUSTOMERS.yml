@@ -1,5 +1,5 @@
 steps:
-  CUSTOMERS-80f419e7f68f545805695210dd9543ea675f365ee2e13bdf7a3b2e4192bd260a:
+  CUSTOMERS-175075184946b715adc96b32e5ac3cb7cbb58fabc3154374909c66465eee817b:
     operation:
       database: ""
       dataset: ""
@@ -16,8 +16,8 @@ steps:
               hasNull: true
               isDistinct: false
             columnReference:
-              columnCounter: 361085689750b75cddcaa89e5a26ee0bd10e2bd0b7d566716fa9186784365afd
-              stepCounter: 80f419e7f68f545805695210dd9543ea675f365ee2e13bdf7a3b2e4192bd260a
+              columnCounter: 0079f090a6555a229475573be9e97b8492a428469fc0160c29a212817a59a077
+              stepCounter: 175075184946b715adc96b32e5ac3cb7cbb58fabc3154374909c66465eee817b
             config: 
             dataType: 
             defaultValue: ""
@@ -33,8 +33,8 @@ steps:
               hasNull: true
               isDistinct: false
             columnReference:
-              columnCounter: c844279ef84a509dd173d279a32e48dd170dc2685a2298196b6a3128cfbc9660
-              stepCounter: 80f419e7f68f545805695210dd9543ea675f365ee2e13bdf7a3b2e4192bd260a
+              columnCounter: 339ffa61e5fbd68b1038d9ebab2e880f71a98d2d3d6fbb078814e5d91e5b3ea3
+              stepCounter: 175075184946b715adc96b32e5ac3cb7cbb58fabc3154374909c66465eee817b
             config: 
             dataType: 
             defaultValue: ""
@@ -50,8 +50,8 @@ steps:
               hasNull: true
               isDistinct: false
             columnReference:
-              columnCounter: c28a8d79652c2b31e4a4c4ccfbdd85b675cec4b08c98585ce6b82e0df7887410
-              stepCounter: 80f419e7f68f545805695210dd9543ea675f365ee2e13bdf7a3b2e4192bd260a
+              columnCounter: 426106e68bb8f6e389c1d92c77f5fe20de79a688fc22fe74ff75c0d62b90551e
+              stepCounter: 175075184946b715adc96b32e5ac3cb7cbb58fabc3154374909c66465eee817b
             config: 
             dataType: 
             defaultValue: ""
@@ -67,4 +67,4 @@ steps:
       sqlType: Source
       table: CUSTOMERS
       type: sourceInput
-    stepCounter: 80f419e7f68f545805695210dd9543ea675f365ee2e13bdf7a3b2e4192bd260a
+    stepCounter: 175075184946b715adc96b32e5ac3cb7cbb58fabc3154374909c66465eee817b
