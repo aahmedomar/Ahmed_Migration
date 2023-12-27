@@ -1,0 +1,77 @@
+steps:
+  STG_UNION_CUST_COUNT-868fadcc0981337ef7a9bacf4da8ae239732bce144a5557d3da63167bfed55df:
+    operation:
+      config:
+        insertStrategy: INSERT
+        postSQL: ""
+        preSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      deployEnabled: true
+      description: ""
+      isDataVault: false
+      isMultisource: true
+      locationName: BI
+      materializationType: view
+      metadata:
+        appliedNodeTests: []
+        columns:
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: 20fb72f0c4a65d0eae44a4409345334f3e26872bee872f6711de9f998f367e72
+              stepCounter: 868fadcc0981337ef7a9bacf4da8ae239732bce144a5557d3da63167bfed55df
+            dataType: ""
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: SOURCE_NUMBER
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: df5987b702142f527abf3b75cd1c9dafbf2277c90266349b95050a3907562254
+                    stepCounter: 765f8561d4801f4ea731b03d84ec028f14fadeed5a83a325dbb28f35dc19a3ea
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: 4f51eabdb099dd98482d5fe01d29d29da5c59cc08164e5e3e2c8b448a4a1b14b
+              stepCounter: 868fadcc0981337ef7a9bacf4da8ae239732bce144a5557d3da63167bfed55df
+            dataType: ""
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: CUST_ID_50_COUNT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: None
+                    stepCounter: None
+                transform: ""
+        cteString: ""
+        enabledColumnTestIDs: []
+        sourceMapping:
+          - customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: BI
+                nodeName: STG_UNION_CUST_COUNT_RS-2
+            join:
+                joinCondition: FROM {{ ref('BI', 'STG_UNION_CUST_COUNT_RS-2') }} "STG_UNION_CUST_COUNT_RS-2"
+            name: STG_UNION_CUST_COUNT
+            noLinkRefs: []
+      name: STG_UNION_CUST_COUNT
+      overrideSQL: false
+      schema: ""
+      sqlType: Stage
+      type: sql
+    stepCounter: 868fadcc0981337ef7a9bacf4da8ae239732bce144a5557d3da63167bfed55df

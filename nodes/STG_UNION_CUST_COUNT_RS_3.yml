@@ -1,0 +1,56 @@
+steps:
+  STG_UNION_CUST_COUNT_RS_3-df9f4df9bb1666e94623b1694a275aa8348616048d5535ba1ad11605600bb5ba:
+    operation:
+      config:
+        insertStrategy: INSERT
+        postSQL: ""
+        preSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      deployEnabled: true
+      description: ""
+      isDataVault: false
+      isMultisource: true
+      locationName: BI
+      materializationType: view
+      metadata:
+        appliedNodeTests: []
+        columns:
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: caefade10e0c4af5d3b5ad3ce6de95e2513efb9bc2092bb97b393dedc6c06de4
+              stepCounter: df9f4df9bb1666e94623b1694a275aa8348616048d5535ba1ad11605600bb5ba
+            dataType: ""
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: SOURCE_NUMBER
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: None
+                    stepCounter: 26c828646178b12ce7628192b7fae1b44aa9bff6e966bd12da434b02f87dd1a6
+                transform: 'query2'
+        enabledColumnTestIDs: []
+        sourceMapping:
+          - customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: BI
+                nodeName: STG_CUSTOMER_ID_51_100
+            join:
+                joinCondition: FROM {{ ref('BI', 'STG_CUSTOMER_ID_51_100') }} "STG_CUSTOMER_ID_51_100"
+            name: STG_UNION_CUST_COUNT_RS_3
+            noLinkRefs: []
+      name: STG_UNION_CUST_COUNT_RS_3
+      overrideSQL: false
+      schema: ""
+      sqlType: Stage
+      type: sql
+    stepCounter: df9f4df9bb1666e94623b1694a275aa8348616048d5535ba1ad11605600bb5ba
