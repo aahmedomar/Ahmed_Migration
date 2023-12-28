@@ -1,5 +1,5 @@
 steps:
-  ORDERS-13dfd0651cdd5276d99ecd36161a0f701a238e72021e459ef8b3828821890d8b:
+  ORDERS-53b0122a1e825b2d24899dffdf8857c52abba5cf3617a816f22d5afaa49ee7ab:
     operation:
       database: ""
       dataset: ""
@@ -16,8 +16,25 @@ steps:
               hasNull: true
               isDistinct: false
             columnReference:
-              columnCounter: 49f0641349b950c87f55cc6d337642628915a33694296a4046e6af84dfe401ad
-              stepCounter: 13dfd0651cdd5276d99ecd36161a0f701a238e72021e459ef8b3828821890d8b
+              columnCounter: 85d90f0c91956ef65b111c142ac37ef21374d7fcbe8197ad23741928b5cb3579
+              stepCounter: 53b0122a1e825b2d24899dffdf8857c52abba5cf3617a816f22d5afaa49ee7ab
+            config: 
+            dataType: 
+            defaultValue: ""
+            description: ""
+            name: AMOUNT
+            nullable: false
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: fa2db5c57c55715afcce85589a88b628aad71289b7f69b67d57ae4829be91793
+              stepCounter: 53b0122a1e825b2d24899dffdf8857c52abba5cf3617a816f22d5afaa49ee7ab
             config: 
             dataType: 
             defaultValue: ""
@@ -33,8 +50,8 @@ steps:
               hasNull: true
               isDistinct: false
             columnReference:
-              columnCounter: 926d990e1451ac9d31539a8e49adfc059ac85b1186be088d2851111559b347e5
-              stepCounter: 13dfd0651cdd5276d99ecd36161a0f701a238e72021e459ef8b3828821890d8b
+              columnCounter: ae54970fa7055d82969a23968bc234195cd54fb3730db39de2be94c91deca327
+              stepCounter: 53b0122a1e825b2d24899dffdf8857c52abba5cf3617a816f22d5afaa49ee7ab
             config: 
             dataType: 
             defaultValue: ""
@@ -50,8 +67,8 @@ steps:
               hasNull: true
               isDistinct: false
             columnReference:
-              columnCounter: c1a9c40dca09fc2e9ea86596fc116a32f5147013664d28b25bac4ad8e1151555
-              stepCounter: 13dfd0651cdd5276d99ecd36161a0f701a238e72021e459ef8b3828821890d8b
+              columnCounter: 1536001f0ca104f58ded64e14258b71a49d579f151d7aa8d0e3a545a3dd5eaac
+              stepCounter: 53b0122a1e825b2d24899dffdf8857c52abba5cf3617a816f22d5afaa49ee7ab
             config: 
             dataType: 
             defaultValue: ""
@@ -67,8 +84,8 @@ steps:
               hasNull: true
               isDistinct: false
             columnReference:
-              columnCounter: 6989100032c5c257198a8974003baceb94f8398dcdab9df88b1fa11264c2a28d
-              stepCounter: 13dfd0651cdd5276d99ecd36161a0f701a238e72021e459ef8b3828821890d8b
+              columnCounter: 0d58dae788e341ebaa212844b543c027594bf79c8ceab4c2de6159b1aa4784b7
+              stepCounter: 53b0122a1e825b2d24899dffdf8857c52abba5cf3617a816f22d5afaa49ee7ab
             config: 
             dataType: 
             defaultValue: ""
@@ -84,4 +101,4 @@ steps:
       sqlType: Source
       table: ORDERS
       type: sourceInput
-    stepCounter: 13dfd0651cdd5276d99ecd36161a0f701a238e72021e459ef8b3828821890d8b
+    stepCounter: 53b0122a1e825b2d24899dffdf8857c52abba5cf3617a816f22d5afaa49ee7ab

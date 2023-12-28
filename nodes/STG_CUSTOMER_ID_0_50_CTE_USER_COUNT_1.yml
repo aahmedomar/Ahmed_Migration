@@ -1,0 +1,56 @@
+steps:
+  STG_CUSTOMER_ID_0_50_CTE_USER_COUNT_1-6bce272a46de60dcaf790547f518fd6efcfd9fbcb02bbdde4863025254a08980:
+    operation:
+      config:
+        insertStrategy: INSERT
+        postSQL: ""
+        preSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      deployEnabled: true
+      description: ""
+      isDataVault: false
+      isMultisource: true
+      locationName: BI
+      materializationType: view
+      metadata:
+        appliedNodeTests: []
+        columns:
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: eb6c4cbc56495d52a4c94fa5fcd4446fd55960752782399ea8e1eb5a8873b1d2
+              stepCounter: 6bce272a46de60dcaf790547f518fd6efcfd9fbcb02bbdde4863025254a08980
+            dataType: ""
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: CUSTOMER_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 15e6a7992549e6c0211059a5e8f5ad8172d272a9a4f324f2b8662abe2ea9ae7d
+                    stepCounter: 537c21fb9b45bcb9e0f5dfb88e70a223e90096c3920847ec60be10de84720c1e
+                transform: ""
+        enabledColumnTestIDs: []
+        sourceMapping:
+          - customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: BI
+                nodeName: STG_CUSTOMER_ID_0_50_RS_1
+            join:
+                joinCondition: FROM {{ ref('BI', 'STG_CUSTOMER_ID_0_50_RS_1') }} "STG_CUSTOMER_ID_0_50_RS_1"
+            name: STG_CUSTOMER_ID_0_50_CTE_USER_COUNT_1
+            noLinkRefs: []
+      name: STG_CUSTOMER_ID_0_50_CTE_USER_COUNT_1
+      overrideSQL: false
+      schema: ""
+      sqlType: Stage
+      type: sql
+    stepCounter: 6bce272a46de60dcaf790547f518fd6efcfd9fbcb02bbdde4863025254a08980

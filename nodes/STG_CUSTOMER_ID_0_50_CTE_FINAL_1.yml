@@ -1,0 +1,56 @@
+steps:
+  STG_CUSTOMER_ID_0_50_CTE_FINAL_1-aa44dee34588628f537db6a47dd91fb8661dee53bafca64f10e2726a5b5cc2f7:
+    operation:
+      config:
+        insertStrategy: INSERT
+        postSQL: ""
+        preSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      deployEnabled: true
+      description: ""
+      isDataVault: false
+      isMultisource: true
+      locationName: BI
+      materializationType: view
+      metadata:
+        appliedNodeTests: []
+        columns:
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: c653806626e172d84064fb84f3f69876c517277be01b1c484fe60c3e06b79ef4
+              stepCounter: aa44dee34588628f537db6a47dd91fb8661dee53bafca64f10e2726a5b5cc2f7
+            dataType: ""
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: CUST_ID_50_COUNT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 8bbea1bb34c8c359a7678ddb32b1b328b520aebac7a341eb881ef662d39ea479
+                    stepCounter: 2076b19eb68bac2cf16740161a7a2cc8ebcca3736a5caff638e778587b9377a6
+                transform: ""
+        enabledColumnTestIDs: []
+        sourceMapping:
+          - customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: BI
+                nodeName: STG_CUSTOMER_ID_0_50_RS_2
+            join:
+                joinCondition: FROM {{ ref('BI', 'STG_CUSTOMER_ID_0_50_RS_2') }} "STG_CUSTOMER_ID_0_50_RS_2"
+            name: STG_CUSTOMER_ID_0_50_CTE_FINAL_1
+            noLinkRefs: []
+      name: STG_CUSTOMER_ID_0_50_CTE_FINAL_1
+      overrideSQL: false
+      schema: ""
+      sqlType: Stage
+      type: sql
+    stepCounter: aa44dee34588628f537db6a47dd91fb8661dee53bafca64f10e2726a5b5cc2f7

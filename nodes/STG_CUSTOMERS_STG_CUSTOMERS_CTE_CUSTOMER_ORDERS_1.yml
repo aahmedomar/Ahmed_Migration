@@ -1,0 +1,136 @@
+steps:
+  STG_CUSTOMERS_STG_CUSTOMERS_CTE_CUSTOMER_ORDERS_1-6f37abd6de8d5f1ad875827b55a82839a1019995ee31b69ef5dd6b68de793b02:
+    operation:
+      config:
+        insertStrategy: INSERT
+        postSQL: ""
+        preSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      deployEnabled: true
+      description: ""
+      isDataVault: false
+      isMultisource: true
+      locationName: BI
+      materializationType: view
+      metadata:
+        appliedNodeTests: []
+        columns:
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: dc82204bae66abfdefdae8c79829e586927122cdb584a7461e36fd48730b35c7
+              stepCounter: 6f37abd6de8d5f1ad875827b55a82839a1019995ee31b69ef5dd6b68de793b02
+            dataType: ""
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: CUSTOMER_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 233677a36ccb5157b27b1b6efe93ac769a8bc7484882cba4feafeac5c9282e1f
+                    stepCounter: fb62b74db832fbdc640e5cae197cce7dc090ae268c65ca258b62ff8ee734c234
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: 5c7b796429d2982791e2dd5886fa63849e398cc2c6024d1cda1a3f6b7c187b29
+              stepCounter: 6f37abd6de8d5f1ad875827b55a82839a1019995ee31b69ef5dd6b68de793b02
+            dataType: ""
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: FIRST_ORDER_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: cafa34cfb1183425804e83fab07b5f713d84a0a93df83deea140dee613ba7e29
+                    stepCounter: fb62b74db832fbdc640e5cae197cce7dc090ae268c65ca258b62ff8ee734c234
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: d290ffaa38574307a4e62fd7240e42f33a7b15c9eaac07966557e911ef2e2655
+              stepCounter: 6f37abd6de8d5f1ad875827b55a82839a1019995ee31b69ef5dd6b68de793b02
+            dataType: ""
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: MOST_RECENT_ORDER_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 2e018eab2721c60cd8f7891f56244f190ffcd884159164924123c12a5edef913
+                    stepCounter: fb62b74db832fbdc640e5cae197cce7dc090ae268c65ca258b62ff8ee734c234
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: 42ba7148c56d67ad5abf801cf8dc44b6ebeb32d46ffde55e2fec674cf1ab3b81
+              stepCounter: 6f37abd6de8d5f1ad875827b55a82839a1019995ee31b69ef5dd6b68de793b02
+            dataType: ""
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: NUMBER_OF_ORDERS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 6a1e5b6702516dc93ea335944d4356d197259a36566e09f534ea3f2ddec947c0
+                    stepCounter: fb62b74db832fbdc640e5cae197cce7dc090ae268c65ca258b62ff8ee734c234
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: f334ede71dc60059771c094719600353d3fa68c81aad3f520bea13330d459e49
+              stepCounter: 6f37abd6de8d5f1ad875827b55a82839a1019995ee31b69ef5dd6b68de793b02
+            dataType: ""
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: TOTAL_AMOUNT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 23405ee2975225431fddd21013dbbef1eb3154c48ffe11e11877812c4fa6afc8
+                    stepCounter: fb62b74db832fbdc640e5cae197cce7dc090ae268c65ca258b62ff8ee734c234
+                transform: ""
+        enabledColumnTestIDs: []
+        sourceMapping:
+          - customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: BI
+                nodeName: RS_3
+            join:
+                joinCondition: FROM {{ ref('BI', 'RS_3') }} "RS_3"
+            name: STG_CUSTOMERS_STG_CUSTOMERS_CTE_CUSTOMER_ORDERS_1
+            noLinkRefs: []
+      name: STG_CUSTOMERS_STG_CUSTOMERS_CTE_CUSTOMER_ORDERS_1
+      overrideSQL: false
+      schema: ""
+      sqlType: Stage
+      type: sql
+    stepCounter: 6f37abd6de8d5f1ad875827b55a82839a1019995ee31b69ef5dd6b68de793b02
