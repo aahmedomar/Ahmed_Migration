@@ -1,5 +1,5 @@
 steps:
-  STG_CUSTOMERS_RS_2-57717f683a1c3fecd7fa585a97108ccc1a9a516a721d5ebd66ee65ad19784f8a:
+  FCT_ORDERS_RS_5-dfd3955f051309557669ad6b4c170496930d4bbac8bfe69d51d893b51097b7d0:
     operation:
       config:
         insertStrategy: INSERT
@@ -12,7 +12,7 @@ steps:
       description: ""
       isDataVault: false
       isMultisource: true
-      locationName: BI
+      locationName: DBT_GGITHIRI
       materializationType: view
       metadata:
         appliedNodeTests: []
@@ -24,8 +24,8 @@ steps:
               hasNull: true
               isDistinct: false
             columnReference:
-              columnCounter: 95f317d7dcd6a374c3c3cb89ea274c9f52263422fb9b5b19a075ef8aeb7dc6ed
-              stepCounter: 57717f683a1c3fecd7fa585a97108ccc1a9a516a721d5ebd66ee65ad19784f8a
+              columnCounter: bb1215d9a4f8b76d1bee0c3b458a66a00515f85a47c14a99de908828ecd8b8a5
+              stepCounter: dfd3955f051309557669ad6b4c170496930d4bbac8bfe69d51d893b51097b7d0
             dataType: ""
             description: ""
             hashColumns: []
@@ -34,8 +34,8 @@ steps:
             nullable: false
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: ef709a7710b07825b48853f2c834bad10d392d6b8e57f8efb592f74b128746a0
-                    stepCounter: 51f74b36adee28eddca5a3bffc48e06e5b2ac2d8ed4be9047c6f423301f8a15c
+                  - columnCounter: a2fd97a65f9cbe19469b46b3b24bae4272d5c62cefe22e4afebc1846af7053fc
+                    stepCounter: e2e513394a77e140dadcf9f6dffb7b4305baf1d4b7453972db0cc68cdb0ac299
                 transform: ""
           - acceptedValues:
               strictMatch: true
@@ -44,8 +44,8 @@ steps:
               hasNull: true
               isDistinct: false
             columnReference:
-              columnCounter: 830691b069fe3a84d2e68f2d6079a678051942e04412b9f924d997b65f98b97c
-              stepCounter: 57717f683a1c3fecd7fa585a97108ccc1a9a516a721d5ebd66ee65ad19784f8a
+              columnCounter: 87b520612d1f7129bf2596a8c5f997ce4bb8d8109bd1999e9a3456f47bd69829
+              stepCounter: dfd3955f051309557669ad6b4c170496930d4bbac8bfe69d51d893b51097b7d0
             dataType: ""
             description: ""
             hashColumns: []
@@ -54,8 +54,8 @@ steps:
             nullable: false
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 4e674c6d4585bae8500ee66285c50d1689d9c980b373c3df3815a0b8be1d90b8
-                    stepCounter: 51f74b36adee28eddca5a3bffc48e06e5b2ac2d8ed4be9047c6f423301f8a15c
+                  - columnCounter: b6904b7b80a4375b364d509529762d31e25595911904f27d97c6d7990bcb8ecf
+                    stepCounter: e2e513394a77e140dadcf9f6dffb7b4305baf1d4b7453972db0cc68cdb0ac299
                 transform: ""
           - acceptedValues:
               strictMatch: true
@@ -64,8 +64,8 @@ steps:
               hasNull: true
               isDistinct: false
             columnReference:
-              columnCounter: d6ca15b3b1f7ad96c0f46139436b11366cad5b8066ea3b4921272d6a27a5d80f
-              stepCounter: 57717f683a1c3fecd7fa585a97108ccc1a9a516a721d5ebd66ee65ad19784f8a
+              columnCounter: a190048965ae5a0ce3ebcd7f60fba3d4f941943fbc6819ea331f26de3ee0fbea
+              stepCounter: dfd3955f051309557669ad6b4c170496930d4bbac8bfe69d51d893b51097b7d0
             dataType: ""
             description: ""
             hashColumns: []
@@ -74,8 +74,8 @@ steps:
             nullable: false
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: c4e241c9e5b089300265abe52e46f4eb1ce4b05c0608bbdf7fdd376957f8a45e
-                    stepCounter: 51f74b36adee28eddca5a3bffc48e06e5b2ac2d8ed4be9047c6f423301f8a15c
+                  - columnCounter: 1e67d5b24909ac783f6b9ee9cc0d5d93f1aa6ac719cb2f6ec3d2999e51ccbc53
+                    stepCounter: e2e513394a77e140dadcf9f6dffb7b4305baf1d4b7453972db0cc68cdb0ac299
                 transform: ""
           - acceptedValues:
               strictMatch: true
@@ -84,8 +84,8 @@ steps:
               hasNull: true
               isDistinct: false
             columnReference:
-              columnCounter: 23022fac9ad7c64e6c6a1c02c9174d31d6c37d2c2883ef53a9ea8ab4ad34dd9d
-              stepCounter: 57717f683a1c3fecd7fa585a97108ccc1a9a516a721d5ebd66ee65ad19784f8a
+              columnCounter: 2fef65e4deae601e098df263c2ce673e974206fa8e579bc7e40c8a892d02c6d9
+              stepCounter: dfd3955f051309557669ad6b4c170496930d4bbac8bfe69d51d893b51097b7d0
             dataType: ""
             description: ""
             hashColumns: []
@@ -94,23 +94,23 @@ steps:
             nullable: false
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: e47bf1696f770dd548a368c3f9151f18140b937f9995e275f1b4e4488991848e
-                    stepCounter: 51f74b36adee28eddca5a3bffc48e06e5b2ac2d8ed4be9047c6f423301f8a15c
+                  - columnCounter: f099cbf0cbcd7dc09d55c132a5077db0e705a728cd4fc4bf4bfdab642e4d3f48
+                    stepCounter: e2e513394a77e140dadcf9f6dffb7b4305baf1d4b7453972db0cc68cdb0ac299
                 transform: ""
         enabledColumnTestIDs: []
         sourceMapping:
           - customSQL:
               customSQL: ""
             dependencies:
-              - locationName: BI
-                nodeName: STG_PREP_ORDERS
+              - locationName: DBT_GGITHIRI
+                nodeName: FCT_ORDERS_CTE_FINAL_FCT_1
             join:
-                joinCondition: FROM {{ ref('BI', 'STG_PREP_ORDERS') }} "STG_PREP_ORDERS"
-            name: STG_CUSTOMERS_RS_2
+                joinCondition: FROM {{ ref('DBT_GGITHIRI', 'FCT_ORDERS_CTE_FINAL_FCT_1') }} "FCT_ORDERS_CTE_FINAL_FCT_1"
+            name: FCT_ORDERS_RS_5
             noLinkRefs: []
-      name: STG_CUSTOMERS_RS_2
+      name: FCT_ORDERS_RS_5
       overrideSQL: false
       schema: ""
       sqlType: Stage
       type: sql
-    stepCounter: 57717f683a1c3fecd7fa585a97108ccc1a9a516a721d5ebd66ee65ad19784f8a
+    stepCounter: dfd3955f051309557669ad6b4c170496930d4bbac8bfe69d51d893b51097b7d0

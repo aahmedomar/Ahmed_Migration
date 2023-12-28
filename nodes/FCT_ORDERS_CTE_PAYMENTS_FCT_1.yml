@@ -1,5 +1,5 @@
 steps:
-  STG_ORDERS_BY_MONTH-84e02c78fd354a121974e00dc4906485c0431cc6a92b479cdaeb796cf2acf702:
+  FCT_ORDERS_CTE_PAYMENTS_FCT_1-d2ff571edafd653094684c9a8b483a5239c03fb6807fcd74f91d18830354a850:
     operation:
       config:
         insertStrategy: INSERT
@@ -12,7 +12,7 @@ steps:
       description: ""
       isDataVault: false
       isMultisource: true
-      locationName: BI
+      locationName: DBT_GGITHIRI
       materializationType: view
       metadata:
         appliedNodeTests: []
@@ -24,18 +24,18 @@ steps:
               hasNull: true
               isDistinct: false
             columnReference:
-              columnCounter: 047806e2218f1797e0ece863a7d0a9ae1e895b481bd7bf3af07d24550da2e784
-              stepCounter: 84e02c78fd354a121974e00dc4906485c0431cc6a92b479cdaeb796cf2acf702
+              columnCounter: 7a7cd2d09c7caa57ae76d2c4c30ec39f652069c559f5ee42f7134c5c61e3cdbe
+              stepCounter: d2ff571edafd653094684c9a8b483a5239c03fb6807fcd74f91d18830354a850
             dataType: ""
             description: ""
             hashColumns: []
             hashDetails: null
-            name: CUSTOMER_ID
+            name: AMOUNT
             nullable: false
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 134d280941e469e416fd0e1f2da6b415b81b33b98c5a27d7979c86b3c3a3487d
-                    stepCounter: 37471c049f021a316f9da19653e947c0d7f55b757d4b7d9f6de5dad28388d31f
+                  - columnCounter: e4dc20f7fd07da16c78bbc0e5d623d049dea0d2ddca9ecfb276bfe43eb015231
+                    stepCounter: b02d9b7245db82faa2b9a20407f63bd971cc13ce8bc333a21cf4f485063985ba
                 transform: ""
           - acceptedValues:
               strictMatch: true
@@ -44,18 +44,18 @@ steps:
               hasNull: true
               isDistinct: false
             columnReference:
-              columnCounter: e9f503863a5bd9fd86cccc0ae7072e1fd5661a88123e631274bdb45e5b68adb2
-              stepCounter: 84e02c78fd354a121974e00dc4906485c0431cc6a92b479cdaeb796cf2acf702
+              columnCounter: 461538f05a23db09e667b182717e67094cbd940773c8a6b9e9164faa6b835108
+              stepCounter: d2ff571edafd653094684c9a8b483a5239c03fb6807fcd74f91d18830354a850
             dataType: ""
             description: ""
             hashColumns: []
             hashDetails: null
-            name: AMOUNT_MONTH_LT_1
+            name: ORDER_ID
             nullable: false
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 63e51079720d342413dad07afc6b85843c9a26d3b88b7cbd8859ceee78dad259
-                    stepCounter: 37471c049f021a316f9da19653e947c0d7f55b757d4b7d9f6de5dad28388d31f
+                  - columnCounter: 684d727b504a075195b09a5e06f2a6817482d49b2e8ee85e2d2a44bf1b34e1dc
+                    stepCounter: b02d9b7245db82faa2b9a20407f63bd971cc13ce8bc333a21cf4f485063985ba
                 transform: ""
           - acceptedValues:
               strictMatch: true
@@ -64,34 +64,33 @@ steps:
               hasNull: true
               isDistinct: false
             columnReference:
-              columnCounter: f71e7a0be8966dbdcab5b8a1ffce521ebf9f7194abca655e910a22ca68b49e64
-              stepCounter: 84e02c78fd354a121974e00dc4906485c0431cc6a92b479cdaeb796cf2acf702
+              columnCounter: 40a23869fae7eb1d13bcd4ef6a0bbb0a3671c4d28b2205ce257d405e9686ec65
+              stepCounter: d2ff571edafd653094684c9a8b483a5239c03fb6807fcd74f91d18830354a850
             dataType: ""
             description: ""
             hashColumns: []
             hashDetails: null
-            name: AMOUNT_MONTH_GTEQ_2
+            name: STATUS
             nullable: false
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 16dc94b132d852949ab5be4b1049b0852206b0b2cea907474f5ca466b6716211
-                    stepCounter: 37471c049f021a316f9da19653e947c0d7f55b757d4b7d9f6de5dad28388d31f
+                  - columnCounter: d35b687f6ca6d8ce1b5d507d5ed6e79c1e30a1087f0c0e631e2b54fb70a97883
+                    stepCounter: b02d9b7245db82faa2b9a20407f63bd971cc13ce8bc333a21cf4f485063985ba
                 transform: ""
-        cteString: ""
         enabledColumnTestIDs: []
         sourceMapping:
           - customSQL:
               customSQL: ""
             dependencies:
-              - locationName: BI
-                nodeName: STG_ORDERS_BY_MONTH_RS-3
+              - locationName: DBT_GGITHIRI
+                nodeName: FCT_ORDERS_RS_2
             join:
-                joinCondition: FROM {{ ref('BI', 'STG_ORDERS_BY_MONTH_RS-3') }} "STG_ORDERS_BY_MONTH_RS-3"
-            name: STG_ORDERS_BY_MONTH
+                joinCondition: FROM {{ ref('DBT_GGITHIRI', 'FCT_ORDERS_RS_2') }} "FCT_ORDERS_RS_2"
+            name: FCT_ORDERS_CTE_PAYMENTS_FCT_1
             noLinkRefs: []
-      name: STG_ORDERS_BY_MONTH
+      name: FCT_ORDERS_CTE_PAYMENTS_FCT_1
       overrideSQL: false
       schema: ""
       sqlType: Stage
       type: sql
-    stepCounter: 84e02c78fd354a121974e00dc4906485c0431cc6a92b479cdaeb796cf2acf702
+    stepCounter: d2ff571edafd653094684c9a8b483a5239c03fb6807fcd74f91d18830354a850

@@ -1,5 +1,5 @@
 steps:
-  STG_ORDERS_BY_MONTH_RS_2-900f1c219c29ca06452ecd3c419e8b90148e10415ece5b9a6beb8716b3ae8e73:
+  DIM_CUSTOMERS_CTE_CUSTOMERS_DIM_1-550ec08da16546559d594b1c3cacfeac9a5b3c7c76f1560d875c1e6465f54195:
     operation:
       config:
         insertStrategy: INSERT
@@ -12,7 +12,7 @@ steps:
       description: ""
       isDataVault: false
       isMultisource: true
-      locationName: BI
+      locationName: DBT_GGITHIRI
       materializationType: view
       metadata:
         appliedNodeTests: []
@@ -24,19 +24,19 @@ steps:
               hasNull: true
               isDistinct: false
             columnReference:
-              columnCounter: b97bdb1a08d82d0b290617ed19875d11d49b423d0b04701245d98ed386a78f0d
-              stepCounter: 900f1c219c29ca06452ecd3c419e8b90148e10415ece5b9a6beb8716b3ae8e73
+              columnCounter: f60a689df71bd1249e801e5ce63f53a29eb8dbcf212e3704b346807b401646cf
+              stepCounter: 550ec08da16546559d594b1c3cacfeac9a5b3c7c76f1560d875c1e6465f54195
             dataType: ""
             description: ""
             hashColumns: []
             hashDetails: null
-            name: AMOUNT_MONTH_GTEQ_2
+            name: FIRST_NAME
             nullable: false
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: None
-                    stepCounter: d9efcbccd1b945ba01299867a78fb9eb676e4a54ebb04b7397acaecb596b3349
-                transform: sum(case when month(user_amount.first_order_date) >= 2 then user_amount.total_amount else 0 end)
+                  - columnCounter: df36d9a927ede9c562edec4643131b8a9e669cd3a816d12224f0a38262161b16
+                    stepCounter: d6428a8bfcd303023bef01fd0c90e8eb00507e113fcc0f07f31fdcd96f329f35
+                transform: ""
           - acceptedValues:
               strictMatch: true
               values: []
@@ -44,19 +44,19 @@ steps:
               hasNull: true
               isDistinct: false
             columnReference:
-              columnCounter: 53bfa4ad198575a05e15015e797866cb347fcd43dbb5c0d36c32335bad1854d9
-              stepCounter: 900f1c219c29ca06452ecd3c419e8b90148e10415ece5b9a6beb8716b3ae8e73
+              columnCounter: 9e333997573288e34c7d3ce8063b2f9bf2972b504afdd36a8d6e2452afadff0c
+              stepCounter: 550ec08da16546559d594b1c3cacfeac9a5b3c7c76f1560d875c1e6465f54195
             dataType: ""
             description: ""
             hashColumns: []
             hashDetails: null
-            name: AMOUNT_MONTH_LT_1
+            name: LAST_NAME
             nullable: false
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: None
-                    stepCounter: d9efcbccd1b945ba01299867a78fb9eb676e4a54ebb04b7397acaecb596b3349
-                transform: sum(case when month(user_amount.first_order_date) < 2 then user_amount.total_amount else 0 end)
+                  - columnCounter: 6ce6a01b108552e9190dfe5646cab925337d436f7cb5fb796450e0b9371bd7e2
+                    stepCounter: d6428a8bfcd303023bef01fd0c90e8eb00507e113fcc0f07f31fdcd96f329f35
+                transform: ""
           - acceptedValues:
               strictMatch: true
               values: []
@@ -64,8 +64,8 @@ steps:
               hasNull: true
               isDistinct: false
             columnReference:
-              columnCounter: 29b63131aac8db5730203b4086d279b4905fcf71ebca9a6632f73bcfc553e42c
-              stepCounter: 900f1c219c29ca06452ecd3c419e8b90148e10415ece5b9a6beb8716b3ae8e73
+              columnCounter: a4f6d24e4044d882c7b517516773e84836dee6dd080c26236bc96d9d2af8f01c
+              stepCounter: 550ec08da16546559d594b1c3cacfeac9a5b3c7c76f1560d875c1e6465f54195
             dataType: ""
             description: ""
             hashColumns: []
@@ -74,23 +74,23 @@ steps:
             nullable: false
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 08b9ae701b043377474941e8f26fce67437c4d5b2509034d1977f1d1b716df8b
-                    stepCounter: d9efcbccd1b945ba01299867a78fb9eb676e4a54ebb04b7397acaecb596b3349
+                  - columnCounter: 38995cb842733ede7ec04a25e977be95a14e6e2d348ac9fea0672c9ad2535c33
+                    stepCounter: d6428a8bfcd303023bef01fd0c90e8eb00507e113fcc0f07f31fdcd96f329f35
                 transform: ""
         enabledColumnTestIDs: []
         sourceMapping:
           - customSQL:
               customSQL: ""
             dependencies:
-              - locationName: BI
-                nodeName: STG_ORDERS_BY_MONTH_CTE_USER_AMOUNT_1
+              - locationName: DBT_GGITHIRI
+                nodeName: DIM_CUSTOMERS_RS_1
             join:
-                joinCondition: FROM {{ ref('BI', 'STG_ORDERS_BY_MONTH_CTE_USER_AMOUNT_1') }} "STG_ORDERS_BY_MONTH_CTE_USER_AMOUNT_1"
-            name: STG_ORDERS_BY_MONTH_RS_2
+                joinCondition: FROM {{ ref('DBT_GGITHIRI', 'DIM_CUSTOMERS_RS_1') }} "DIM_CUSTOMERS_RS_1"
+            name: DIM_CUSTOMERS_CTE_CUSTOMERS_DIM_1
             noLinkRefs: []
-      name: STG_ORDERS_BY_MONTH_RS_2
+      name: DIM_CUSTOMERS_CTE_CUSTOMERS_DIM_1
       overrideSQL: false
       schema: ""
       sqlType: Stage
       type: sql
-    stepCounter: 900f1c219c29ca06452ecd3c419e8b90148e10415ece5b9a6beb8716b3ae8e73
+    stepCounter: 550ec08da16546559d594b1c3cacfeac9a5b3c7c76f1560d875c1e6465f54195
