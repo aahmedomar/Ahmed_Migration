@@ -77,26 +77,6 @@ steps:
                   - columnCounter: c5346e05cc0a7adbbc9b0bee4ba4a07e0e4516a334eeb09d3d761e6eadba533c
                     stepCounter: 66c06f5bb8cc25a83ef1b4916062895ab6ba235da434df783d4904569ad4a541
                 transform: ""
-          - acceptedValues:
-              strictMatch: true
-              values: []
-            appliedColumnTests:
-              hasNull: true
-              isDistinct: false
-            columnReference:
-              columnCounter: 47fd26514793bffa356573e6d37e25707e2fffb0e86d89724b1b9cda61fee539
-              stepCounter: c9d2541d06a3c71a72e659d0e5f39b7d526a6ede4fa6d067206b94260ba3cfaa
-            dataType: ""
-            description: ""
-            hashColumns: []
-            hashDetails: null
-            name: *
-            nullable: false
-            sourceColumnReferences:
-              - columnReferences:
-                  - columnCounter: None
-                    stepCounter: None
-                transform: ""
         cteString: ""
         enabledColumnTestIDs: []
         sourceMapping:

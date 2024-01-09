@@ -164,26 +164,6 @@ steps:
               hasNull: true
               isDistinct: false
             columnReference:
-              columnCounter: 96789ea88c96ea58eb31a20a8eb417a628151e84bbb8deba7f0f8c70c7eefa9b
-              stepCounter: 865cf4dc523c23fae20d548c5d632ea72091ea3d6108bb3bea0cf14b4317eeff
-            dataType: ""
-            description: ""
-            hashColumns: []
-            hashDetails: null
-            name: *
-            nullable: false
-            sourceColumnReferences:
-              - columnReferences:
-                  - columnCounter: 2653917e2329e3d1c528c39337cc825fb58c61ba2826421512c669e1bfe41a0a
-                    stepCounter: None
-                transform: ""
-          - acceptedValues:
-              strictMatch: true
-              values: []
-            appliedColumnTests:
-              hasNull: true
-              isDistinct: false
-            columnReference:
               columnCounter: 5ecf281c735e0f3632d7889900681a007f8ef86e4f2c530d91bccadcda12b2dc
               stepCounter: 865cf4dc523c23fae20d548c5d632ea72091ea3d6108bb3bea0cf14b4317eeff
             dataType: ""

@@ -37,26 +37,6 @@ steps:
                   - columnCounter: be477113932e68b181bb9dec2940f79726629e18e7dbaf088ace170de1029a89
                     stepCounter: 4e1178ef55f0814b3a578495f63820a5c96baed9dd4295a62398ef25f65c0d3d
                 transform: ""
-          - acceptedValues:
-              strictMatch: true
-              values: []
-            appliedColumnTests:
-              hasNull: true
-              isDistinct: false
-            columnReference:
-              columnCounter: 706cc9e0e7d99d238d300dffec108ee2e1f6985878d7850e611fcd8accae30d9
-              stepCounter: 27a0a7a5f5f98e17c769b566391959b73824cb6288953390f20741b5bce243a2
-            dataType: ""
-            description: ""
-            hashColumns: []
-            hashDetails: null
-            name: *
-            nullable: false
-            sourceColumnReferences:
-              - columnReferences:
-                  - columnCounter: b51b19a33689de2248d062614564636df8e21e12f05f3a3b20849c1011c2d297
-                    stepCounter: 57a628ea8b720be72b9f3538fd84a68bb92f991d2d2ef6d9b27af1b5170a6709
-                transform: ""
         cteString: ""
         enabledColumnTestIDs: []
         sourceMapping:

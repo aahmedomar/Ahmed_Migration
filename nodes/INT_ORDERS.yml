@@ -120,27 +120,6 @@ steps:
                   - columnCounter: None
                     stepCounter: None
                 transform: ""
-          - acceptedValues:
-              strictMatch: true
-              values: []
-            appliedColumnTests:
-              hasNull: true
-              isDistinct: false
-            columnReference:
-              columnCounter: fbbd0d05e12d80b2ff89f1fe79fd6f5ba943597a7640fe90c5d59674190cb5d9
-              stepCounter: 9a1f6997075db3ab7ce3ffbecd132e0435b9f19a91573dced62fad07d22583eb
-            dataType: ""
-            description: ""
-            hashColumns: []
-            hashDetails: null
-            isBusinessKey: true
-            name: *
-            nullable: false
-            sourceColumnReferences:
-              - columnReferences:
-                  - columnCounter: None
-                    stepCounter: None
-                transform: ""
         cteString: ""
         enabledColumnTestIDs: []
         sourceMapping:
