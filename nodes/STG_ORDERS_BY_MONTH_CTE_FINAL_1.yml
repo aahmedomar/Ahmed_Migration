@@ -1,5 +1,5 @@
 steps:
-  STG_ORDERS_BY_MONTH_CTE_FINAL_1-aa44dee34588628f537db6a47dd91fb8661dee53bafca64f10e2726a5b5cc2f7:
+  STG_ORDERS_BY_MONTH_CTE_FINAL_1-c97aea6e8f7f07a66267922dd2e5557e6cb11566500b8c91ffe35015f08c99b8:
     operation:
       config:
         insertStrategy: INSERT
@@ -24,8 +24,8 @@ steps:
               hasNull: true
               isDistinct: false
             columnReference:
-              columnCounter: f87f661079081dd66264c723cfb7b5500e55f55d657ac66f7322052610de7354
-              stepCounter: aa44dee34588628f537db6a47dd91fb8661dee53bafca64f10e2726a5b5cc2f7
+              columnCounter: d1fb1167e4ce44007a1d9a1b10e006d73d854c92dee8b1a74b74b437a5ff690a
+              stepCounter: c97aea6e8f7f07a66267922dd2e5557e6cb11566500b8c91ffe35015f08c99b8
             dataType: ""
             description: ""
             hashColumns: []
@@ -34,8 +34,8 @@ steps:
             nullable: false
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: b97bdb1a08d82d0b290617ed19875d11d49b423d0b04701245d98ed386a78f0d
-                    stepCounter: 900f1c219c29ca06452ecd3c419e8b90148e10415ece5b9a6beb8716b3ae8e73
+                  - columnCounter: 94611c2424a95a10b3fe50dff4f828f40445ae5ad6639675da408c8d3057ef58
+                    stepCounter: 37f365e8471103b41454fe4deb51208543f0799f5971289cffcd8f29d829162c
                 transform: ""
           - acceptedValues:
               strictMatch: true
@@ -44,8 +44,8 @@ steps:
               hasNull: true
               isDistinct: false
             columnReference:
-              columnCounter: 561bca56747df4a4d0066f63b56b681a8d1ffbfa393a50f7877b70f911c981c0
-              stepCounter: aa44dee34588628f537db6a47dd91fb8661dee53bafca64f10e2726a5b5cc2f7
+              columnCounter: e676ecf4afbd7f9d59737d1912c4e548408e1d31db8ddda5fcfd9e480ad80f04
+              stepCounter: c97aea6e8f7f07a66267922dd2e5557e6cb11566500b8c91ffe35015f08c99b8
             dataType: ""
             description: ""
             hashColumns: []
@@ -54,8 +54,8 @@ steps:
             nullable: false
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 53bfa4ad198575a05e15015e797866cb347fcd43dbb5c0d36c32335bad1854d9
-                    stepCounter: 900f1c219c29ca06452ecd3c419e8b90148e10415ece5b9a6beb8716b3ae8e73
+                  - columnCounter: 10935db703770600b238a7b779bee07839c97c7f0452852e206385f10a7611d6
+                    stepCounter: 37f365e8471103b41454fe4deb51208543f0799f5971289cffcd8f29d829162c
                 transform: ""
           - acceptedValues:
               strictMatch: true
@@ -64,8 +64,8 @@ steps:
               hasNull: true
               isDistinct: false
             columnReference:
-              columnCounter: 8e9bd14cab0730a006517931618d32bfc26eba43aeaf3ac3aaaa750a794e12c4
-              stepCounter: aa44dee34588628f537db6a47dd91fb8661dee53bafca64f10e2726a5b5cc2f7
+              columnCounter: fbb6c3da70add681cba9b56264c22205e7a8947087e6ad38b61455386bb9c4d7
+              stepCounter: c97aea6e8f7f07a66267922dd2e5557e6cb11566500b8c91ffe35015f08c99b8
             dataType: ""
             description: ""
             hashColumns: []
@@ -74,8 +74,8 @@ steps:
             nullable: false
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 29b63131aac8db5730203b4086d279b4905fcf71ebca9a6632f73bcfc553e42c
-                    stepCounter: 900f1c219c29ca06452ecd3c419e8b90148e10415ece5b9a6beb8716b3ae8e73
+                  - columnCounter: 185599cad5a545323c1892bff60a7b9d580095f69c5113fe2f03360d241e770b
+                    stepCounter: 37f365e8471103b41454fe4deb51208543f0799f5971289cffcd8f29d829162c
                 transform: ""
         enabledColumnTestIDs: []
         sourceMapping:
@@ -93,4 +93,4 @@ steps:
       schema: ""
       sqlType: Stage
       type: sql
-    stepCounter: aa44dee34588628f537db6a47dd91fb8661dee53bafca64f10e2726a5b5cc2f7
+    stepCounter: c97aea6e8f7f07a66267922dd2e5557e6cb11566500b8c91ffe35015f08c99b8

@@ -1,5 +1,5 @@
 steps:
-  STG_CUSTOMER_ID_0_50_RS_1-537c21fb9b45bcb9e0f5dfb88e70a223e90096c3920847ec60be10de84720c1e:
+  STG_CUSTOMER_ID_0_50_RS_1-1257b192abe96c73c3d43ff7566966203ff0f63758b6e813348cfc44f4f5a956:
     operation:
       config:
         insertStrategy: INSERT
@@ -24,8 +24,8 @@ steps:
               hasNull: true
               isDistinct: false
             columnReference:
-              columnCounter: 15e6a7992549e6c0211059a5e8f5ad8172d272a9a4f324f2b8662abe2ea9ae7d
-              stepCounter: 537c21fb9b45bcb9e0f5dfb88e70a223e90096c3920847ec60be10de84720c1e
+              columnCounter: 155e28423f9d79a4b3a3be204b28818937a8d8ceaee4cfe49a570c8664a301af
+              stepCounter: 1257b192abe96c73c3d43ff7566966203ff0f63758b6e813348cfc44f4f5a956
             dataType: ""
             description: ""
             hashColumns: []
@@ -34,8 +34,8 @@ steps:
             nullable: false
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 047806e2218f1797e0ece863a7d0a9ae1e895b481bd7bf3af07d24550da2e784
-                    stepCounter: 84e02c78fd354a121974e00dc4906485c0431cc6a92b479cdaeb796cf2acf702
+                  - columnCounter: 381b5e94619e9e49f0efaf6a6da28a1b412f1788b4a9f79bf058b7ee33594bac
+                    stepCounter: c9d2541d06a3c71a72e659d0e5f39b7d526a6ede4fa6d067206b94260ba3cfaa
                 transform: ""
         enabledColumnTestIDs: []
         sourceMapping:
@@ -53,4 +53,4 @@ steps:
       schema: ""
       sqlType: Stage
       type: sql
-    stepCounter: 537c21fb9b45bcb9e0f5dfb88e70a223e90096c3920847ec60be10de84720c1e
+    stepCounter: 1257b192abe96c73c3d43ff7566966203ff0f63758b6e813348cfc44f4f5a956

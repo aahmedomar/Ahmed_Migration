@@ -1,5 +1,5 @@
 steps:
-  STG_UNION_CUST_COUNT_RS_2-765f8561d4801f4ea731b03d84ec028f14fadeed5a83a325dbb28f35dc19a3ea:
+  STG_UNION_CUST_COUNT_RS_2-661d2c581971b77c115e8dda03bbb49f0a7ed34781fb243c141ffd77ede8ca26:
     operation:
       config:
         insertStrategy: INSERT
@@ -24,8 +24,8 @@ steps:
               hasNull: true
               isDistinct: false
             columnReference:
-              columnCounter: df5987b702142f527abf3b75cd1c9dafbf2277c90266349b95050a3907562254
-              stepCounter: 765f8561d4801f4ea731b03d84ec028f14fadeed5a83a325dbb28f35dc19a3ea
+              columnCounter: 9543721a361dc597a44afc98b6a8c1b2a0a7fb54e63b4d56490a27cb37f26469
+              stepCounter: 661d2c581971b77c115e8dda03bbb49f0a7ed34781fb243c141ffd77ede8ca26
             dataType: ""
             description: ""
             hashColumns: []
@@ -34,8 +34,8 @@ steps:
             nullable: false
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: ef2db6511f6d648ecb4175c90af55851ef06936fdf642e3f8ba5a2ae3602c376
-                    stepCounter: 1aeb949a20f1b7b99deee2f72aec1fbbc51a77687249cc6f1306f0db471289fa
+                  - columnCounter: dca751b7eefe6d69ec3511cef2d6a0700067cb66b5b65b955eec470e2596ee7f
+                    stepCounter: 7bb14e56cfb884f0b4c3f10fa0f42aae143c7b9d2dacbca6612b669bb9b758a3
                 transform: ""
         enabledColumnTestIDs: []
         sourceMapping:
@@ -53,4 +53,4 @@ steps:
       schema: ""
       sqlType: Stage
       type: sql
-    stepCounter: 765f8561d4801f4ea731b03d84ec028f14fadeed5a83a325dbb28f35dc19a3ea
+    stepCounter: 661d2c581971b77c115e8dda03bbb49f0a7ed34781fb243c141ffd77ede8ca26

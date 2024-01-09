@@ -1,5 +1,5 @@
 steps:
-  STG_ORDERS_BY_MONTH_RS_3-37471c049f021a316f9da19653e947c0d7f55b757d4b7d9f6de5dad28388d31f:
+  STG_ORDERS_BY_MONTH_RS_3-66c06f5bb8cc25a83ef1b4916062895ab6ba235da434df783d4904569ad4a541:
     operation:
       config:
         insertStrategy: INSERT
@@ -24,8 +24,8 @@ steps:
               hasNull: true
               isDistinct: false
             columnReference:
-              columnCounter: 16dc94b132d852949ab5be4b1049b0852206b0b2cea907474f5ca466b6716211
-              stepCounter: 37471c049f021a316f9da19653e947c0d7f55b757d4b7d9f6de5dad28388d31f
+              columnCounter: c5346e05cc0a7adbbc9b0bee4ba4a07e0e4516a334eeb09d3d761e6eadba533c
+              stepCounter: 66c06f5bb8cc25a83ef1b4916062895ab6ba235da434df783d4904569ad4a541
             dataType: ""
             description: ""
             hashColumns: []
@@ -34,8 +34,8 @@ steps:
             nullable: false
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: f87f661079081dd66264c723cfb7b5500e55f55d657ac66f7322052610de7354
-                    stepCounter: aa44dee34588628f537db6a47dd91fb8661dee53bafca64f10e2726a5b5cc2f7
+                  - columnCounter: d1fb1167e4ce44007a1d9a1b10e006d73d854c92dee8b1a74b74b437a5ff690a
+                    stepCounter: c97aea6e8f7f07a66267922dd2e5557e6cb11566500b8c91ffe35015f08c99b8
                 transform: ""
           - acceptedValues:
               strictMatch: true
@@ -44,8 +44,8 @@ steps:
               hasNull: true
               isDistinct: false
             columnReference:
-              columnCounter: 63e51079720d342413dad07afc6b85843c9a26d3b88b7cbd8859ceee78dad259
-              stepCounter: 37471c049f021a316f9da19653e947c0d7f55b757d4b7d9f6de5dad28388d31f
+              columnCounter: 64a00cf14fae9be3e6e15c389337087acc63049c83a52056a151d59480e0a649
+              stepCounter: 66c06f5bb8cc25a83ef1b4916062895ab6ba235da434df783d4904569ad4a541
             dataType: ""
             description: ""
             hashColumns: []
@@ -54,8 +54,8 @@ steps:
             nullable: false
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 561bca56747df4a4d0066f63b56b681a8d1ffbfa393a50f7877b70f911c981c0
-                    stepCounter: aa44dee34588628f537db6a47dd91fb8661dee53bafca64f10e2726a5b5cc2f7
+                  - columnCounter: e676ecf4afbd7f9d59737d1912c4e548408e1d31db8ddda5fcfd9e480ad80f04
+                    stepCounter: c97aea6e8f7f07a66267922dd2e5557e6cb11566500b8c91ffe35015f08c99b8
                 transform: ""
           - acceptedValues:
               strictMatch: true
@@ -64,8 +64,8 @@ steps:
               hasNull: true
               isDistinct: false
             columnReference:
-              columnCounter: 134d280941e469e416fd0e1f2da6b415b81b33b98c5a27d7979c86b3c3a3487d
-              stepCounter: 37471c049f021a316f9da19653e947c0d7f55b757d4b7d9f6de5dad28388d31f
+              columnCounter: 7c4cc196cab877134ca1d0b8cc2279d5bed2d028b60063960fb24ffdc5d0955a
+              stepCounter: 66c06f5bb8cc25a83ef1b4916062895ab6ba235da434df783d4904569ad4a541
             dataType: ""
             description: ""
             hashColumns: []
@@ -74,8 +74,8 @@ steps:
             nullable: false
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 8e9bd14cab0730a006517931618d32bfc26eba43aeaf3ac3aaaa750a794e12c4
-                    stepCounter: aa44dee34588628f537db6a47dd91fb8661dee53bafca64f10e2726a5b5cc2f7
+                  - columnCounter: fbb6c3da70add681cba9b56264c22205e7a8947087e6ad38b61455386bb9c4d7
+                    stepCounter: c97aea6e8f7f07a66267922dd2e5557e6cb11566500b8c91ffe35015f08c99b8
                 transform: ""
         enabledColumnTestIDs: []
         sourceMapping:
@@ -93,4 +93,4 @@ steps:
       schema: ""
       sqlType: Stage
       type: sql
-    stepCounter: 37471c049f021a316f9da19653e947c0d7f55b757d4b7d9f6de5dad28388d31f
+    stepCounter: 66c06f5bb8cc25a83ef1b4916062895ab6ba235da434df783d4904569ad4a541

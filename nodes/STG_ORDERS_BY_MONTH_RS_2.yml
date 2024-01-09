@@ -1,5 +1,5 @@
 steps:
-  STG_ORDERS_BY_MONTH_RS_2-900f1c219c29ca06452ecd3c419e8b90148e10415ece5b9a6beb8716b3ae8e73:
+  STG_ORDERS_BY_MONTH_RS_2-37f365e8471103b41454fe4deb51208543f0799f5971289cffcd8f29d829162c:
     operation:
       config:
         insertStrategy: INSERT
@@ -24,8 +24,8 @@ steps:
               hasNull: true
               isDistinct: false
             columnReference:
-              columnCounter: b97bdb1a08d82d0b290617ed19875d11d49b423d0b04701245d98ed386a78f0d
-              stepCounter: 900f1c219c29ca06452ecd3c419e8b90148e10415ece5b9a6beb8716b3ae8e73
+              columnCounter: 94611c2424a95a10b3fe50dff4f828f40445ae5ad6639675da408c8d3057ef58
+              stepCounter: 37f365e8471103b41454fe4deb51208543f0799f5971289cffcd8f29d829162c
             dataType: ""
             description: ""
             hashColumns: []
@@ -35,7 +35,7 @@ steps:
             sourceColumnReferences:
               - columnReferences:
                   - columnCounter: None
-                    stepCounter: d9efcbccd1b945ba01299867a78fb9eb676e4a54ebb04b7397acaecb596b3349
+                    stepCounter: 8cae52109ddf910150ea210247b8b43e366667b500b59563f1031317098e8a48
                 transform: sum(case when month(user_amount.first_order_date) >= 2 then user_amount.total_amount else 0 end)
           - acceptedValues:
               strictMatch: true
@@ -44,8 +44,8 @@ steps:
               hasNull: true
               isDistinct: false
             columnReference:
-              columnCounter: 53bfa4ad198575a05e15015e797866cb347fcd43dbb5c0d36c32335bad1854d9
-              stepCounter: 900f1c219c29ca06452ecd3c419e8b90148e10415ece5b9a6beb8716b3ae8e73
+              columnCounter: 10935db703770600b238a7b779bee07839c97c7f0452852e206385f10a7611d6
+              stepCounter: 37f365e8471103b41454fe4deb51208543f0799f5971289cffcd8f29d829162c
             dataType: ""
             description: ""
             hashColumns: []
@@ -55,7 +55,7 @@ steps:
             sourceColumnReferences:
               - columnReferences:
                   - columnCounter: None
-                    stepCounter: d9efcbccd1b945ba01299867a78fb9eb676e4a54ebb04b7397acaecb596b3349
+                    stepCounter: 8cae52109ddf910150ea210247b8b43e366667b500b59563f1031317098e8a48
                 transform: sum(case when month(user_amount.first_order_date) < 2 then user_amount.total_amount else 0 end)
           - acceptedValues:
               strictMatch: true
@@ -64,8 +64,8 @@ steps:
               hasNull: true
               isDistinct: false
             columnReference:
-              columnCounter: 29b63131aac8db5730203b4086d279b4905fcf71ebca9a6632f73bcfc553e42c
-              stepCounter: 900f1c219c29ca06452ecd3c419e8b90148e10415ece5b9a6beb8716b3ae8e73
+              columnCounter: 185599cad5a545323c1892bff60a7b9d580095f69c5113fe2f03360d241e770b
+              stepCounter: 37f365e8471103b41454fe4deb51208543f0799f5971289cffcd8f29d829162c
             dataType: ""
             description: ""
             hashColumns: []
@@ -74,8 +74,8 @@ steps:
             nullable: false
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: d279cd5e448f0e3cfcc2cc5ec611327cf3ad1f1ee0520398cadaa77fc24a5594
-                    stepCounter: d9efcbccd1b945ba01299867a78fb9eb676e4a54ebb04b7397acaecb596b3349
+                  - columnCounter: 9d168f0fed555b3a5142ec0df41dae6a5f62f2b36b921ec1cff23938ac6030fd
+                    stepCounter: 8cae52109ddf910150ea210247b8b43e366667b500b59563f1031317098e8a48
                 transform: ""
         enabledColumnTestIDs: []
         sourceMapping:
@@ -93,4 +93,4 @@ steps:
       schema: ""
       sqlType: Stage
       type: sql
-    stepCounter: 900f1c219c29ca06452ecd3c419e8b90148e10415ece5b9a6beb8716b3ae8e73
+    stepCounter: 37f365e8471103b41454fe4deb51208543f0799f5971289cffcd8f29d829162c

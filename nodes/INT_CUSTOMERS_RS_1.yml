@@ -1,5 +1,5 @@
 steps:
-  STG_CUSTOMERS_STG_CUSTOMERS_CTE_CUSTOMERS_1-18a2b813dfad97d5a46a90217115598784e664d39126bbc8857f3269949a1f09:
+  INT_CUSTOMERS_RS_1-12d2082ff1c63b2b4939871d57919eaeb9ad4f9e5e86b864911509ec95e3820c:
     operation:
       config:
         insertStrategy: INSERT
@@ -12,7 +12,7 @@ steps:
       description: ""
       isDataVault: false
       isMultisource: true
-      locationName: BI
+      locationName: JAFFLE_SHOP
       materializationType: view
       metadata:
         appliedNodeTests: []
@@ -24,8 +24,8 @@ steps:
               hasNull: true
               isDistinct: false
             columnReference:
-              columnCounter: 6332a657c00e07d5a84c2663b04a526c39b44459bcbd087a508ba4ffb7a788a6
-              stepCounter: 18a2b813dfad97d5a46a90217115598784e664d39126bbc8857f3269949a1f09
+              columnCounter: 0375176f701c6b80b54ca6562e820262f3e1ca946c4673704d3b622b807ca983
+              stepCounter: 12d2082ff1c63b2b4939871d57919eaeb9ad4f9e5e86b864911509ec95e3820c
             dataType: ""
             description: ""
             hashColumns: []
@@ -34,8 +34,8 @@ steps:
             nullable: false
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 2efb3bc80421684d952e0b657d350739751a624feb7be03e54da5aa909dfa734
-                    stepCounter: 83a7b85c1527fd73e989c60e3a7b3a69ec4f266282f00ff31f5cffe1faed285e
+                  - columnCounter: None
+                    stepCounter: 
                 transform: ""
           - acceptedValues:
               strictMatch: true
@@ -44,8 +44,8 @@ steps:
               hasNull: true
               isDistinct: false
             columnReference:
-              columnCounter: 54ee5dd349a196237ff82e6212c2c05b5dc64c4b2af6d76cedf4c233f41d79a2
-              stepCounter: 18a2b813dfad97d5a46a90217115598784e664d39126bbc8857f3269949a1f09
+              columnCounter: b5a9e527d265680191da48a6491472df5409713215bfd94cf4d644224bbb4273
+              stepCounter: 12d2082ff1c63b2b4939871d57919eaeb9ad4f9e5e86b864911509ec95e3820c
             dataType: ""
             description: ""
             hashColumns: []
@@ -54,8 +54,8 @@ steps:
             nullable: false
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 0d8afb31f085dc9a164b21a52d390b25e695d9bbc366953909aee816787d6e0c
-                    stepCounter: 83a7b85c1527fd73e989c60e3a7b3a69ec4f266282f00ff31f5cffe1faed285e
+                  - columnCounter: be26325a1fa51c7e6ee20863d334af869bf5de84f8a502314d433a0beaed7f2e
+                    stepCounter: 
                 transform: ""
           - acceptedValues:
               strictMatch: true
@@ -64,8 +64,8 @@ steps:
               hasNull: true
               isDistinct: false
             columnReference:
-              columnCounter: 07b63da12130a31ec3a17d4ca981e50a7ce0d0d7e4854240470f3a017f97fc8e
-              stepCounter: 18a2b813dfad97d5a46a90217115598784e664d39126bbc8857f3269949a1f09
+              columnCounter: abad2926aa4d399e6c2d440ed5d3a211dd56807a8ad6f89c72ece2f3b2b973b9
+              stepCounter: 12d2082ff1c63b2b4939871d57919eaeb9ad4f9e5e86b864911509ec95e3820c
             dataType: ""
             description: ""
             hashColumns: []
@@ -74,23 +74,23 @@ steps:
             nullable: false
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 6f3d6c677a0643e4bbb6248cd255a752a297603b81a116982355981acd835755
-                    stepCounter: 83a7b85c1527fd73e989c60e3a7b3a69ec4f266282f00ff31f5cffe1faed285e
+                  - columnCounter: 4ca5ec602d22010251ec85ffd74de022c52c14d4c242d7ef908fb30ac070bd3f
+                    stepCounter: 
                 transform: ""
         enabledColumnTestIDs: []
         sourceMapping:
           - customSQL:
               customSQL: ""
             dependencies:
-              - locationName: BI
-                nodeName: RS_1
+              - locationName: JAFFLE_SHOP
+                nodeName: CUSTOMERS
             join:
-                joinCondition: FROM {{ ref('BI', 'RS_1') }} "RS_1"
-            name: STG_CUSTOMERS_STG_CUSTOMERS_CTE_CUSTOMERS_1
+                joinCondition: FROM {{ ref('JAFFLE_SHOP', 'CUSTOMERS') }} "CUSTOMERS"
+            name: INT_CUSTOMERS_RS_1
             noLinkRefs: []
-      name: STG_CUSTOMERS_STG_CUSTOMERS_CTE_CUSTOMERS_1
+      name: INT_CUSTOMERS_RS_1
       overrideSQL: false
       schema: ""
       sqlType: Stage
       type: sql
-    stepCounter: 18a2b813dfad97d5a46a90217115598784e664d39126bbc8857f3269949a1f09
+    stepCounter: 12d2082ff1c63b2b4939871d57919eaeb9ad4f9e5e86b864911509ec95e3820c

@@ -1,19 +1,17 @@
 steps:
-  STG_ORDERS_BY_MONTH-c9d2541d06a3c71a72e659d0e5f39b7d526a6ede4fa6d067206b94260ba3cfaa:
+  INT_CUSTOMERS-4980f78f61fe29bd02e589cba8b66204f0052fe8dfcaaed6e767ff5cefde4e0b:
     operation:
       config:
-        insertStrategy: INSERT
         postSQL: ""
         preSQL: ""
         testsEnabled: true
-        truncateBefore: true
       database: ""
       deployEnabled: true
       description: ""
       isDataVault: false
-      isMultisource: true
+      isMultisource: false
       locationName: BI
-      materializationType: view
+      materializationType: Table
       metadata:
         appliedNodeTests: []
         columns:
@@ -21,21 +19,22 @@ steps:
               strictMatch: true
               values: []
             appliedColumnTests:
-              hasNull: true
-              isDistinct: false
+              hasNull: false
+              isDistinct: true
             columnReference:
-              columnCounter: 381b5e94619e9e49f0efaf6a6da28a1b412f1788b4a9f79bf058b7ee33594bac
-              stepCounter: c9d2541d06a3c71a72e659d0e5f39b7d526a6ede4fa6d067206b94260ba3cfaa
+              columnCounter: 1445d60396d0c876afffccc61ab5f409901e0e5fb50349d2c8db464489bd3003
+              stepCounter: 4980f78f61fe29bd02e589cba8b66204f0052fe8dfcaaed6e767ff5cefde4e0b
             dataType: ""
             description: ""
             hashColumns: []
             hashDetails: null
+            isBusinessKey: true
             name: CUSTOMER_ID
             nullable: false
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 7c4cc196cab877134ca1d0b8cc2279d5bed2d028b60063960fb24ffdc5d0955a
-                    stepCounter: 66c06f5bb8cc25a83ef1b4916062895ab6ba235da434df783d4904569ad4a541
+                  - columnCounter: None
+                    stepCounter: None
                 transform: ""
           - acceptedValues:
               strictMatch: true
@@ -44,18 +43,19 @@ steps:
               hasNull: true
               isDistinct: false
             columnReference:
-              columnCounter: ad965620ae700ff804b449fbdc348a371f7d595f80fa569885b9f1e719fa1856
-              stepCounter: c9d2541d06a3c71a72e659d0e5f39b7d526a6ede4fa6d067206b94260ba3cfaa
+              columnCounter: c6fcb3e15f5b4275599402b0d7850128f498cffb32fd83cbf843c46c138a512c
+              stepCounter: 4980f78f61fe29bd02e589cba8b66204f0052fe8dfcaaed6e767ff5cefde4e0b
             dataType: ""
             description: ""
             hashColumns: []
             hashDetails: null
-            name: AMOUNT_MONTH_LT_1
+            isBusinessKey: true
+            name: FIRST_NAME
             nullable: false
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 64a00cf14fae9be3e6e15c389337087acc63049c83a52056a151d59480e0a649
-                    stepCounter: 66c06f5bb8cc25a83ef1b4916062895ab6ba235da434df783d4904569ad4a541
+                  - columnCounter: None
+                    stepCounter: None
                 transform: ""
           - acceptedValues:
               strictMatch: true
@@ -64,18 +64,19 @@ steps:
               hasNull: true
               isDistinct: false
             columnReference:
-              columnCounter: 171b65b4ec0cd392aba259f722b376bcf3a445e66ffeff68669bddd6ce6c19c4
-              stepCounter: c9d2541d06a3c71a72e659d0e5f39b7d526a6ede4fa6d067206b94260ba3cfaa
+              columnCounter: 00567fe5acf9e5f4c043e10803f35fa2309b593be713b767738c7fac637c5db8
+              stepCounter: 4980f78f61fe29bd02e589cba8b66204f0052fe8dfcaaed6e767ff5cefde4e0b
             dataType: ""
             description: ""
             hashColumns: []
             hashDetails: null
-            name: AMOUNT_MONTH_GTEQ_2
+            isBusinessKey: true
+            name: LAST_NAME
             nullable: false
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: c5346e05cc0a7adbbc9b0bee4ba4a07e0e4516a334eeb09d3d761e6eadba533c
-                    stepCounter: 66c06f5bb8cc25a83ef1b4916062895ab6ba235da434df783d4904569ad4a541
+                  - columnCounter: None
+                    stepCounter: None
                 transform: ""
           - acceptedValues:
               strictMatch: true
@@ -84,12 +85,13 @@ steps:
               hasNull: true
               isDistinct: false
             columnReference:
-              columnCounter: 47fd26514793bffa356573e6d37e25707e2fffb0e86d89724b1b9cda61fee539
-              stepCounter: c9d2541d06a3c71a72e659d0e5f39b7d526a6ede4fa6d067206b94260ba3cfaa
+              columnCounter: 2997a794fb62f23c66488254cf7f6b97520da4a1dad134730f506fa8240df86b
+              stepCounter: 4980f78f61fe29bd02e589cba8b66204f0052fe8dfcaaed6e767ff5cefde4e0b
             dataType: ""
             description: ""
             hashColumns: []
             hashDetails: null
+            isBusinessKey: true
             name: *
             nullable: false
             sourceColumnReferences:
@@ -103,15 +105,15 @@ steps:
           - customSQL:
               customSQL: ""
             dependencies:
-              - locationName: BI
-                nodeName: STG_ORDERS_BY_MONTH_RS-3
+              - locationName: JAFFLE_SHOP
+                nodeName: 
             join:
-                joinCondition: FROM {{ ref('BI', 'STG_ORDERS_BY_MONTH_RS-3') }} "STG_ORDERS_BY_MONTH_RS-3"
-            name: STG_ORDERS_BY_MONTH
-            noLinkRefs: []
-      name: STG_ORDERS_BY_MONTH
+              joinCondition: FROM {{ ref('JAFFLE_SHOP', '') }} ""
+              name: INT_CUSTOMERS
+              noLinkRefs: []
+      name: INT_CUSTOMERS
       overrideSQL: false
       schema: ""
-      sqlType: Stage
+      sqlType: Dimension
       type: sql
-    stepCounter: c9d2541d06a3c71a72e659d0e5f39b7d526a6ede4fa6d067206b94260ba3cfaa
+    stepCounter: 4980f78f61fe29bd02e589cba8b66204f0052fe8dfcaaed6e767ff5cefde4e0b

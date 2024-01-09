@@ -1,5 +1,5 @@
 steps:
-  STG_UNION_CUST_COUNT-868fadcc0981337ef7a9bacf4da8ae239732bce144a5557d3da63167bfed55df:
+  STG_UNION_CUST_COUNT-741e8afe335892edf4a5850884795618c2d723928307f97fdaf5a8eb0e57121c:
     operation:
       config:
         insertStrategy: INSERT
@@ -24,8 +24,8 @@ steps:
               hasNull: true
               isDistinct: false
             columnReference:
-              columnCounter: 20fb72f0c4a65d0eae44a4409345334f3e26872bee872f6711de9f998f367e72
-              stepCounter: 868fadcc0981337ef7a9bacf4da8ae239732bce144a5557d3da63167bfed55df
+              columnCounter: e9ea24b153a990c1c93266d7b3d16d09ee600ec61ca6bc6a360aabeef000b6fc
+              stepCounter: 741e8afe335892edf4a5850884795618c2d723928307f97fdaf5a8eb0e57121c
             dataType: ""
             description: ""
             hashColumns: []
@@ -34,8 +34,8 @@ steps:
             nullable: false
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: df5987b702142f527abf3b75cd1c9dafbf2277c90266349b95050a3907562254
-                    stepCounter: 765f8561d4801f4ea731b03d84ec028f14fadeed5a83a325dbb28f35dc19a3ea
+                  - columnCounter: 9543721a361dc597a44afc98b6a8c1b2a0a7fb54e63b4d56490a27cb37f26469
+                    stepCounter: 661d2c581971b77c115e8dda03bbb49f0a7ed34781fb243c141ffd77ede8ca26
                 transform: ""
           - acceptedValues:
               strictMatch: true
@@ -44,8 +44,8 @@ steps:
               hasNull: true
               isDistinct: false
             columnReference:
-              columnCounter: 4f51eabdb099dd98482d5fe01d29d29da5c59cc08164e5e3e2c8b448a4a1b14b
-              stepCounter: 868fadcc0981337ef7a9bacf4da8ae239732bce144a5557d3da63167bfed55df
+              columnCounter: a376ffe85576efdc5ef68e352084d45c076a8091d313670c51415c581e86595b
+              stepCounter: 741e8afe335892edf4a5850884795618c2d723928307f97fdaf5a8eb0e57121c
             dataType: ""
             description: ""
             hashColumns: []
@@ -74,4 +74,4 @@ steps:
       schema: ""
       sqlType: Stage
       type: sql
-    stepCounter: 868fadcc0981337ef7a9bacf4da8ae239732bce144a5557d3da63167bfed55df
+    stepCounter: 741e8afe335892edf4a5850884795618c2d723928307f97fdaf5a8eb0e57121c
