@@ -44,9 +44,9 @@ steps:
               customSQL: ""
             dependencies:
               - locationName: BI
-                nodeName: STG_CUSTOMER_ID_0_50_CTE_USER_COUNT_1
+                nodeName: STG_CUSTOMER_ID_0_50_RS_3
             join:
-                joinCondition: FROM {{ ref('BI', 'STG_CUSTOMER_ID_0_50_CTE_USER_COUNT_1') }} "STG_CUSTOMER_ID_0_50_CTE_USER_COUNT_1"
+                joinCondition: FROM {{ ref('BI', 'STG_CUSTOMER_ID_0_50_RS_3') }} "STG_CUSTOMER_ID_0_50_RS_3"
             name: STG_CUSTOMER_ID_0_50
             noLinkRefs: []
       name: STG_CUSTOMER_ID_0_50

@@ -1,5 +1,5 @@
 steps:
-  STG_CUSTOMER_ID_0_50_RS_2-0df262b24d0a8997db952b07849e64133799d228f02a3665998089f2e0ae4296:
+  STG_UNION_CUST_COUNT_CTE_FINAL_1-c97aea6e8f7f07a66267922dd2e5557e6cb11566500b8c91ffe35015f08c99b8:
     operation:
       config:
         insertStrategy: INSERT
@@ -24,33 +24,33 @@ steps:
               hasNull: true
               isDistinct: false
             columnReference:
-              columnCounter: e1c92c948783b8b7988244ea57bdef93fef716851a3e3cefd48583c1b9266ca9
-              stepCounter: 0df262b24d0a8997db952b07849e64133799d228f02a3665998089f2e0ae4296
+              columnCounter: 0ef628c3bc4d1f3ddcb4cd61269ffc57727cba0b2e2ee7ebeffacf7891f8c134
+              stepCounter: c97aea6e8f7f07a66267922dd2e5557e6cb11566500b8c91ffe35015f08c99b8
             dataType: ""
             description: ""
             hashColumns: []
             hashDetails: null
-            name: CUST_ID_50_COUNT
+            name: SOURCE_NUMBER
             nullable: false
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: None
-                    stepCounter: 57a628ea8b720be72b9f3538fd84a68bb92f991d2d2ef6d9b27af1b5170a6709
-                transform: count(user_count.customer_id)
+                  - columnCounter: 9543721a361dc597a44afc98b6a8c1b2a0a7fb54e63b4d56490a27cb37f26469
+                    stepCounter: 661d2c581971b77c115e8dda03bbb49f0a7ed34781fb243c141ffd77ede8ca26
+                transform: ""
         enabledColumnTestIDs: []
         sourceMapping:
           - customSQL:
               customSQL: ""
             dependencies:
               - locationName: BI
-                nodeName: STG_CUSTOMER_ID_0_50_CTE_USER_COUNT_1
+                nodeName: STG_UNION_CUST_COUNT_RS_2
             join:
-                joinCondition: FROM {{ ref('BI', 'STG_CUSTOMER_ID_0_50_CTE_USER_COUNT_1') }} "STG_CUSTOMER_ID_0_50_CTE_USER_COUNT_1"
-            name: STG_CUSTOMER_ID_0_50_RS_2
+                joinCondition: FROM {{ ref('BI', 'STG_UNION_CUST_COUNT_RS_2') }} "STG_UNION_CUST_COUNT_RS_2"
+            name: STG_UNION_CUST_COUNT_CTE_FINAL_1
             noLinkRefs: []
-      name: STG_CUSTOMER_ID_0_50_RS_2
+      name: STG_UNION_CUST_COUNT_CTE_FINAL_1
       overrideSQL: false
       schema: ""
       sqlType: Stage
       type: sql
-    stepCounter: 0df262b24d0a8997db952b07849e64133799d228f02a3665998089f2e0ae4296
+    stepCounter: c97aea6e8f7f07a66267922dd2e5557e6cb11566500b8c91ffe35015f08c99b8

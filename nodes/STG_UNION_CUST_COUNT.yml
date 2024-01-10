@@ -34,8 +34,8 @@ steps:
             nullable: false
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 9543721a361dc597a44afc98b6a8c1b2a0a7fb54e63b4d56490a27cb37f26469
-                    stepCounter: 661d2c581971b77c115e8dda03bbb49f0a7ed34781fb243c141ffd77ede8ca26
+                  - columnCounter: b4fa23f6588a37861be6bbf087edeea578d80cf35711ba16c5974f666943c8dd
+                    stepCounter: ea0379f045e57f7d7583a5f5b6bb0814f14ffe010b802111ca7874b3dd952e68
                 transform: ""
           - acceptedValues:
               strictMatch: true
@@ -64,9 +64,9 @@ steps:
               customSQL: ""
             dependencies:
               - locationName: BI
-                nodeName: STG_UNION_CUST_COUNT_RS_2
+                nodeName: STG_UNION_CUST_COUNT_RS_4
             join:
-                joinCondition: FROM {{ ref('BI', 'STG_UNION_CUST_COUNT_RS_2') }} "STG_UNION_CUST_COUNT_RS_2"
+                joinCondition: FROM {{ ref('BI', 'STG_UNION_CUST_COUNT_RS_4') }} "STG_UNION_CUST_COUNT_RS_4"
             name: STG_UNION_CUST_COUNT
             noLinkRefs: []
       name: STG_UNION_CUST_COUNT

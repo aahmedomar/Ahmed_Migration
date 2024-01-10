@@ -35,7 +35,7 @@ steps:
             sourceColumnReferences:
               - columnReferences:
                   - columnCounter: None
-                    stepCounter: 063f127d3d0d83efccbcb36c39b490ef8c602465c64438ac04c5e5a6818b4cda
+                    stepCounter: 57a628ea8b720be72b9f3538fd84a68bb92f991d2d2ef6d9b27af1b5170a6709
                 transform: count(user_count.customer_id)
         enabledColumnTestIDs: []
         sourceMapping:
@@ -43,9 +43,9 @@ steps:
               customSQL: ""
             dependencies:
               - locationName: BI
-                nodeName: RS-1
+                nodeName: STG_CUSTOMER_ID_51_100_CTE_USER_COUNT_1
             join:
-                joinCondition: FROM {{ ref('BI', 'RS-1') }} "RS-1"
+                joinCondition: FROM {{ ref('BI', 'STG_CUSTOMER_ID_51_100_CTE_USER_COUNT_1') }} "STG_CUSTOMER_ID_51_100_CTE_USER_COUNT_1"
             name: STG_CUSTOMER_ID_51_100_RS_2
             noLinkRefs: []
       name: STG_CUSTOMER_ID_51_100_RS_2
