@@ -1,0 +1,56 @@
+steps:
+  STG_UNION_CUST_COUNT_CTE_USER_GTEQ_51_1-ff05d354fc3bbb29370dfe74a93dc4be804734468f063841f50ebdddc7c7044d:
+    operation:
+      config:
+        insertStrategy: INSERT
+        postSQL: ""
+        preSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      deployEnabled: true
+      description: ""
+      isDataVault: false
+      isMultisource: true
+      locationName: BI
+      materializationType: view
+      metadata:
+        appliedNodeTests: []
+        columns:
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: b1bea25794fb8bf9e8fb12c19a07001e2e5be2051733b04733c4ac7a9180eb03
+              stepCounter: ff05d354fc3bbb29370dfe74a93dc4be804734468f063841f50ebdddc7c7044d
+            dataType: ""
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: SOURCE_NUMBER
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: d68e6b6441f7c8fea86c6411382fb2745b30b02deee98024bdcfdeed40142315
+                    stepCounter: 5389f2c542e133b57cc225efa204f796fd610eb0d02d17d334acafc968da6fc3
+                transform: ""
+        enabledColumnTestIDs: []
+        sourceMapping:
+          - customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: BI
+                nodeName: STG_UNION_CUST_COUNT_RS_3
+            join:
+                joinCondition: FROM {{ ref('BI', 'STG_UNION_CUST_COUNT_RS_3') }} "STG_UNION_CUST_COUNT_RS_3"
+            name: STG_UNION_CUST_COUNT_CTE_USER_GTEQ_51_1
+            noLinkRefs: []
+      name: STG_UNION_CUST_COUNT_CTE_USER_GTEQ_51_1
+      overrideSQL: false
+      schema: ""
+      sqlType: Stage
+      type: sql
+    stepCounter: ff05d354fc3bbb29370dfe74a93dc4be804734468f063841f50ebdddc7c7044d

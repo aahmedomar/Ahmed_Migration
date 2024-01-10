@@ -1,0 +1,56 @@
+steps:
+  STG_UNION_CUST_COUNT_CTE_USER_LT_51_1-7bb14e56cfb884f0b4c3f10fa0f42aae143c7b9d2dacbca6612b669bb9b758a3:
+    operation:
+      config:
+        insertStrategy: INSERT
+        postSQL: ""
+        preSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      deployEnabled: true
+      description: ""
+      isDataVault: false
+      isMultisource: true
+      locationName: BI
+      materializationType: view
+      metadata:
+        appliedNodeTests: []
+        columns:
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: dca751b7eefe6d69ec3511cef2d6a0700067cb66b5b65b955eec470e2596ee7f
+              stepCounter: 7bb14e56cfb884f0b4c3f10fa0f42aae143c7b9d2dacbca6612b669bb9b758a3
+            dataType: ""
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: SOURCE_NUMBER
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 783832272ae2324d98f987e477d2390efa4b89f41e55c0190b8b12df791b9a90
+                    stepCounter: 8abf10c9f820c7463a57cafd96231fe59fcf208dba8884fab3ab3f52a62789d2
+                transform: ""
+        enabledColumnTestIDs: []
+        sourceMapping:
+          - customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: BI
+                nodeName: STG_UNION_CUST_COUNT_RS_1
+            join:
+                joinCondition: FROM {{ ref('BI', 'STG_UNION_CUST_COUNT_RS_1') }} "STG_UNION_CUST_COUNT_RS_1"
+            name: STG_UNION_CUST_COUNT_CTE_USER_LT_51_1
+            noLinkRefs: []
+      name: STG_UNION_CUST_COUNT_CTE_USER_LT_51_1
+      overrideSQL: false
+      schema: ""
+      sqlType: Stage
+      type: sql
+    stepCounter: 7bb14e56cfb884f0b4c3f10fa0f42aae143c7b9d2dacbca6612b669bb9b758a3

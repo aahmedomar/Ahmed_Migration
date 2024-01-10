@@ -1,0 +1,96 @@
+steps:
+  STG_ORDERS_BY_MONTH_CTE_FINAL_1-c97aea6e8f7f07a66267922dd2e5557e6cb11566500b8c91ffe35015f08c99b8:
+    operation:
+      config:
+        insertStrategy: INSERT
+        postSQL: ""
+        preSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      deployEnabled: true
+      description: ""
+      isDataVault: false
+      isMultisource: true
+      locationName: BI
+      materializationType: view
+      metadata:
+        appliedNodeTests: []
+        columns:
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: d1fb1167e4ce44007a1d9a1b10e006d73d854c92dee8b1a74b74b437a5ff690a
+              stepCounter: c97aea6e8f7f07a66267922dd2e5557e6cb11566500b8c91ffe35015f08c99b8
+            dataType: ""
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: AMOUNT_MONTH_GTEQ_2
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 94611c2424a95a10b3fe50dff4f828f40445ae5ad6639675da408c8d3057ef58
+                    stepCounter: 37f365e8471103b41454fe4deb51208543f0799f5971289cffcd8f29d829162c
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: e676ecf4afbd7f9d59737d1912c4e548408e1d31db8ddda5fcfd9e480ad80f04
+              stepCounter: c97aea6e8f7f07a66267922dd2e5557e6cb11566500b8c91ffe35015f08c99b8
+            dataType: ""
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: AMOUNT_MONTH_LT_1
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 10935db703770600b238a7b779bee07839c97c7f0452852e206385f10a7611d6
+                    stepCounter: 37f365e8471103b41454fe4deb51208543f0799f5971289cffcd8f29d829162c
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: fbb6c3da70add681cba9b56264c22205e7a8947087e6ad38b61455386bb9c4d7
+              stepCounter: c97aea6e8f7f07a66267922dd2e5557e6cb11566500b8c91ffe35015f08c99b8
+            dataType: ""
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: CUSTOMER_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 185599cad5a545323c1892bff60a7b9d580095f69c5113fe2f03360d241e770b
+                    stepCounter: 37f365e8471103b41454fe4deb51208543f0799f5971289cffcd8f29d829162c
+                transform: ""
+        enabledColumnTestIDs: []
+        sourceMapping:
+          - customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: BI
+                nodeName: STG_ORDERS_BY_MONTH_RS_2
+            join:
+                joinCondition: FROM {{ ref('BI', 'STG_ORDERS_BY_MONTH_RS_2') }} "STG_ORDERS_BY_MONTH_RS_2"
+            name: STG_ORDERS_BY_MONTH_CTE_FINAL_1
+            noLinkRefs: []
+      name: STG_ORDERS_BY_MONTH_CTE_FINAL_1
+      overrideSQL: false
+      schema: ""
+      sqlType: Stage
+      type: sql
+    stepCounter: c97aea6e8f7f07a66267922dd2e5557e6cb11566500b8c91ffe35015f08c99b8

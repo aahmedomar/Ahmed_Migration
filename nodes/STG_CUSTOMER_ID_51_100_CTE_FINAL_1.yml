@@ -1,0 +1,56 @@
+steps:
+  STG_CUSTOMER_ID_51_100_CTE_FINAL_1-c97aea6e8f7f07a66267922dd2e5557e6cb11566500b8c91ffe35015f08c99b8:
+    operation:
+      config:
+        insertStrategy: INSERT
+        postSQL: ""
+        preSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      deployEnabled: true
+      description: ""
+      isDataVault: false
+      isMultisource: true
+      locationName: BI
+      materializationType: view
+      metadata:
+        appliedNodeTests: []
+        columns:
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: 1c17e4b15031eaba1fc8200c985202b0ce9059bb3c25a7f6aa3f5dd02d1c0a7e
+              stepCounter: c97aea6e8f7f07a66267922dd2e5557e6cb11566500b8c91ffe35015f08c99b8
+            dataType: ""
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: CUST_ID_50_COUNT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 0a91dc67f28869748d5dc2011f957f29a2ec689693d71977a95c01c0251912b9
+                    stepCounter: 2a6bb62df5600c0d737b4d75ef66611dc47c767da7e0f7272e61830056662202
+                transform: ""
+        enabledColumnTestIDs: []
+        sourceMapping:
+          - customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: BI
+                nodeName: STG_CUSTOMER_ID_51_100_RS_2
+            join:
+                joinCondition: FROM {{ ref('BI', 'STG_CUSTOMER_ID_51_100_RS_2') }} "STG_CUSTOMER_ID_51_100_RS_2"
+            name: STG_CUSTOMER_ID_51_100_CTE_FINAL_1
+            noLinkRefs: []
+      name: STG_CUSTOMER_ID_51_100_CTE_FINAL_1
+      overrideSQL: false
+      schema: ""
+      sqlType: Stage
+      type: sql
+    stepCounter: c97aea6e8f7f07a66267922dd2e5557e6cb11566500b8c91ffe35015f08c99b8

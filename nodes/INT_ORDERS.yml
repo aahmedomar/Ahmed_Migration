@@ -1,0 +1,140 @@
+steps:
+  INT_ORDERS-9a1f6997075db3ab7ce3ffbecd132e0435b9f19a91573dced62fad07d22583eb:
+    operation:
+      config:
+        postSQL: ""
+        preSQL: ""
+        testsEnabled: true
+      database: ""
+      deployEnabled: true
+      description: ""
+      isDataVault: false
+      isMultisource: false
+      locationName: BI
+      materializationType: Table
+      metadata:
+        appliedNodeTests: []
+        columns:
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: false
+              isDistinct: true
+            columnReference:
+              columnCounter: 1b1d93bf525e298040cba44a5aade1e36299ac599638401b91ff401df91a6267
+              stepCounter: 9a1f6997075db3ab7ce3ffbecd132e0435b9f19a91573dced62fad07d22583eb
+            dataType: ""
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            isBusinessKey: true
+            name: CUSTOMER_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: None
+                    stepCounter: None
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: false
+              isDistinct: true
+            columnReference:
+              columnCounter: 8f9dd6c6ba0931f3e134858df4c1dbcdbeb0c0c859bc01bad71dafecdb0af062
+              stepCounter: 9a1f6997075db3ab7ce3ffbecd132e0435b9f19a91573dced62fad07d22583eb
+            dataType: ""
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            isBusinessKey: true
+            name: ORDER_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: None
+                    stepCounter: None
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: ['']
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: e2f3e13d6668014354c4a0d7e2dd59c5eed8f6f512f395cfa825fb9757755155
+              stepCounter: 9a1f6997075db3ab7ce3ffbecd132e0435b9f19a91573dced62fad07d22583eb
+            dataType: ""
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            isBusinessKey: true
+            name: STATUS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: None
+                    stepCounter: None
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: 7bfbb5c6a0216337252f3fa64870deef4e358bad19a6ba169deb5d1228dcfed1
+              stepCounter: 9a1f6997075db3ab7ce3ffbecd132e0435b9f19a91573dced62fad07d22583eb
+            dataType: ""
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            isBusinessKey: true
+            name: ORDER_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: None
+                    stepCounter: None
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: cff0db621dc39ba8183e57aab52b0933fa1b134423a1c175ff47523a68e28391
+              stepCounter: 9a1f6997075db3ab7ce3ffbecd132e0435b9f19a91573dced62fad07d22583eb
+            dataType: ""
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            isBusinessKey: true
+            name: AMOUNT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: None
+                    stepCounter: None
+                transform: ""
+        cteString: ""
+        enabledColumnTestIDs: []
+        sourceMapping:
+          - customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: JAFFLE_SHOP
+                nodeName: 
+            join:
+              joinCondition: FROM {{ ref('JAFFLE_SHOP', '') }} ""
+              name: INT_ORDERS
+              noLinkRefs: []
+      name: INT_ORDERS
+      overrideSQL: false
+      schema: ""
+      sqlType: Dimension
+      type: sql
+    stepCounter: 9a1f6997075db3ab7ce3ffbecd132e0435b9f19a91573dced62fad07d22583eb

@@ -1,0 +1,56 @@
+steps:
+  STG_CUSTOMER_ID_0_50_RS_3-4e1178ef55f0814b3a578495f63820a5c96baed9dd4295a62398ef25f65c0d3d:
+    operation:
+      config:
+        insertStrategy: INSERT
+        postSQL: ""
+        preSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      deployEnabled: true
+      description: ""
+      isDataVault: false
+      isMultisource: true
+      locationName: BI
+      materializationType: view
+      metadata:
+        appliedNodeTests: []
+        columns:
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: be477113932e68b181bb9dec2940f79726629e18e7dbaf088ace170de1029a89
+              stepCounter: 4e1178ef55f0814b3a578495f63820a5c96baed9dd4295a62398ef25f65c0d3d
+            dataType: ""
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: CUST_ID_50_COUNT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: b85d6ad2bfc9c14599d82f9e1ee6f57af033579b640c8dad2803ec99068d3a43
+                    stepCounter: c97aea6e8f7f07a66267922dd2e5557e6cb11566500b8c91ffe35015f08c99b8
+                transform: ""
+        enabledColumnTestIDs: []
+        sourceMapping:
+          - customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: BI
+                nodeName: STG_CUSTOMER_ID_0_50_CTE_FINAL_1
+            join:
+                joinCondition: FROM {{ ref('BI', 'STG_CUSTOMER_ID_0_50_CTE_FINAL_1') }} "STG_CUSTOMER_ID_0_50_CTE_FINAL_1"
+            name: STG_CUSTOMER_ID_0_50_RS_3
+            noLinkRefs: []
+      name: STG_CUSTOMER_ID_0_50_RS_3
+      overrideSQL: false
+      schema: ""
+      sqlType: Stage
+      type: sql
+    stepCounter: 4e1178ef55f0814b3a578495f63820a5c96baed9dd4295a62398ef25f65c0d3d

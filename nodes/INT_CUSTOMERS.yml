@@ -1,0 +1,98 @@
+steps:
+  INT_CUSTOMERS-4980f78f61fe29bd02e589cba8b66204f0052fe8dfcaaed6e767ff5cefde4e0b:
+    operation:
+      config:
+        postSQL: ""
+        preSQL: ""
+        testsEnabled: true
+      database: ""
+      deployEnabled: true
+      description: ""
+      isDataVault: false
+      isMultisource: false
+      locationName: BI
+      materializationType: Table
+      metadata:
+        appliedNodeTests: []
+        columns:
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: false
+              isDistinct: true
+            columnReference:
+              columnCounter: 1445d60396d0c876afffccc61ab5f409901e0e5fb50349d2c8db464489bd3003
+              stepCounter: 4980f78f61fe29bd02e589cba8b66204f0052fe8dfcaaed6e767ff5cefde4e0b
+            dataType: ""
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            isBusinessKey: true
+            name: CUSTOMER_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: None
+                    stepCounter: None
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: c6fcb3e15f5b4275599402b0d7850128f498cffb32fd83cbf843c46c138a512c
+              stepCounter: 4980f78f61fe29bd02e589cba8b66204f0052fe8dfcaaed6e767ff5cefde4e0b
+            dataType: ""
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            isBusinessKey: true
+            name: FIRST_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: None
+                    stepCounter: None
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: 00567fe5acf9e5f4c043e10803f35fa2309b593be713b767738c7fac637c5db8
+              stepCounter: 4980f78f61fe29bd02e589cba8b66204f0052fe8dfcaaed6e767ff5cefde4e0b
+            dataType: ""
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            isBusinessKey: true
+            name: LAST_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: None
+                    stepCounter: None
+                transform: ""
+        cteString: ""
+        enabledColumnTestIDs: []
+        sourceMapping:
+          - customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: JAFFLE_SHOP
+                nodeName: 
+            join:
+              joinCondition: FROM {{ ref('JAFFLE_SHOP', '') }} ""
+              name: INT_CUSTOMERS
+              noLinkRefs: []
+      name: INT_CUSTOMERS
+      overrideSQL: false
+      schema: ""
+      sqlType: Dimension
+      type: sql
+    stepCounter: 4980f78f61fe29bd02e589cba8b66204f0052fe8dfcaaed6e767ff5cefde4e0b

@@ -1,0 +1,56 @@
+steps:
+  STG_CUSTOMER_ID_0_50_CTE_FINAL_1-c97aea6e8f7f07a66267922dd2e5557e6cb11566500b8c91ffe35015f08c99b8:
+    operation:
+      config:
+        insertStrategy: INSERT
+        postSQL: ""
+        preSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      deployEnabled: true
+      description: ""
+      isDataVault: false
+      isMultisource: true
+      locationName: BI
+      materializationType: view
+      metadata:
+        appliedNodeTests: []
+        columns:
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: b85d6ad2bfc9c14599d82f9e1ee6f57af033579b640c8dad2803ec99068d3a43
+              stepCounter: c97aea6e8f7f07a66267922dd2e5557e6cb11566500b8c91ffe35015f08c99b8
+            dataType: ""
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: CUST_ID_50_COUNT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: e1c92c948783b8b7988244ea57bdef93fef716851a3e3cefd48583c1b9266ca9
+                    stepCounter: 0df262b24d0a8997db952b07849e64133799d228f02a3665998089f2e0ae4296
+                transform: ""
+        enabledColumnTestIDs: []
+        sourceMapping:
+          - customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: BI
+                nodeName: STG_CUSTOMER_ID_0_50_RS_2
+            join:
+                joinCondition: FROM {{ ref('BI', 'STG_CUSTOMER_ID_0_50_RS_2') }} "STG_CUSTOMER_ID_0_50_RS_2"
+            name: STG_CUSTOMER_ID_0_50_CTE_FINAL_1
+            noLinkRefs: []
+      name: STG_CUSTOMER_ID_0_50_CTE_FINAL_1
+      overrideSQL: false
+      schema: ""
+      sqlType: Stage
+      type: sql
+    stepCounter: c97aea6e8f7f07a66267922dd2e5557e6cb11566500b8c91ffe35015f08c99b8

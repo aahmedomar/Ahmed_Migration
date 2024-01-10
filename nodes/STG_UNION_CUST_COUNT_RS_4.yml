@@ -1,0 +1,56 @@
+steps:
+  STG_UNION_CUST_COUNT_RS_4-ea0379f045e57f7d7583a5f5b6bb0814f14ffe010b802111ca7874b3dd952e68:
+    operation:
+      config:
+        insertStrategy: INSERT
+        postSQL: ""
+        preSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      deployEnabled: true
+      description: ""
+      isDataVault: false
+      isMultisource: true
+      locationName: BI
+      materializationType: view
+      metadata:
+        appliedNodeTests: []
+        columns:
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: b4fa23f6588a37861be6bbf087edeea578d80cf35711ba16c5974f666943c8dd
+              stepCounter: ea0379f045e57f7d7583a5f5b6bb0814f14ffe010b802111ca7874b3dd952e68
+            dataType: ""
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: SOURCE_NUMBER
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: b1bea25794fb8bf9e8fb12c19a07001e2e5be2051733b04733c4ac7a9180eb03
+                    stepCounter: ff05d354fc3bbb29370dfe74a93dc4be804734468f063841f50ebdddc7c7044d
+                transform: ""
+        enabledColumnTestIDs: []
+        sourceMapping:
+          - customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: BI
+                nodeName: STG_UNION_CUST_COUNT_CTE_USER_GTEQ_51_1
+            join:
+                joinCondition: FROM {{ ref('BI', 'STG_UNION_CUST_COUNT_CTE_USER_GTEQ_51_1') }} "STG_UNION_CUST_COUNT_CTE_USER_GTEQ_51_1"
+            name: STG_UNION_CUST_COUNT_RS_4
+            noLinkRefs: []
+      name: STG_UNION_CUST_COUNT_RS_4
+      overrideSQL: false
+      schema: ""
+      sqlType: Stage
+      type: sql
+    stepCounter: ea0379f045e57f7d7583a5f5b6bb0814f14ffe010b802111ca7874b3dd952e68
