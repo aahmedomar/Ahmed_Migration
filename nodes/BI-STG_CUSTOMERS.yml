@@ -1,0 +1,175 @@
+steps:
+  STG_CUSTOMERS-8613ded4-ec43-4c99-a7cf-64dc01687a90:
+    operation:
+      config:
+        groupByAll: false
+        insertStrategy: INSERT
+        postSQL: ""
+        preSQL: ""
+        selectDistinct: false
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      deployEnabled: true
+      description: ""
+      isMultisource: false
+      locationName: BI
+      materializationType: table
+      metadata:
+        appliedNodeTests:
+          - continueOnFailure: true
+            description: ""
+            name: ORDER_STATUS_ACCEPTED_VALUES
+            runOrder: After
+            templateString: |-
+              SELECT
+                1
+              WHERE
+                EXISTS (
+                  SELECT
+                    "STATUS"
+                  FROM
+                    "ANALYTICS"."BI"."STG_CUSTOMERS"
+                  WHERE
+                    "STATUS" NOT IN ('placed', 'shipped', 'completed', 'return_pending', 'returned')
+                )
+        columns:
+          - appliedColumnTests:
+              hasNull: true
+              isDistinct: true
+            columnReference:
+              columnCounter: 0b248672-f79b-4e0b-b42b-4f680c2be4a8
+              stepCounter: 8613ded4-ec43-4c99-a7cf-64dc01687a90
+            dataType: NUMBER(38,0)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: CUSTOMER_ID
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 37e4dbb4-647e-4a9f-807c-83a973a59f6a
+                    stepCounter: 8cca8afb-c403-4ba9-851c-e42deb5caf96
+                transform: ""
+          - appliedColumnTests:
+              hasNull: false
+              isDistinct: false
+            columnReference:
+              columnCounter: 607f8618-690a-4f2b-ba28-fb96f04f7ce4
+              stepCounter: 8613ded4-ec43-4c99-a7cf-64dc01687a90
+            dataType: VARCHAR(16777216)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: FIRST_NAME
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: e0e2f2a2-6c6d-418d-8050-4239c03aee3e
+                    stepCounter: 8cca8afb-c403-4ba9-851c-e42deb5caf96
+                transform: ""
+          - appliedColumnTests:
+              hasNull: false
+              isDistinct: false
+            columnReference:
+              columnCounter: 102b45d5-54e9-49c1-ac33-9edbce80cedd
+              stepCounter: 8613ded4-ec43-4c99-a7cf-64dc01687a90
+            dataType: VARCHAR(16777216)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: LAST_NAME
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 1483e5a8-ac6f-43cc-9010-79da68e80f00
+                    stepCounter: 8cca8afb-c403-4ba9-851c-e42deb5caf96
+                transform: ""
+          - appliedColumnTests:
+              hasNull: false
+              isDistinct: false
+            columnReference:
+              columnCounter: 2a927b27-7f75-4de2-8d85-2a40eb25008a
+              stepCounter: 8613ded4-ec43-4c99-a7cf-64dc01687a90
+            dataType: DATE
+            description: ""
+            name: FIRST_ORDER_DATE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: dff9b9f4-c601-4263-9fa4-abb2c42c75a9
+                    stepCounter: d4459d58-05c8-4737-944f-1603c4a0b4a7
+                transform: ""
+          - appliedColumnTests:
+              hasNull: false
+              isDistinct: false
+            columnReference:
+              columnCounter: 7bc6b0b9-bede-4ed7-9577-1545bf793ef3
+              stepCounter: 8613ded4-ec43-4c99-a7cf-64dc01687a90
+            dataType: DATE
+            description: ""
+            name: MOST_RECENT_ORDER_DATE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 4f43d0b6-6841-476a-9cfb-353555f02872
+                    stepCounter: d4459d58-05c8-4737-944f-1603c4a0b4a7
+                transform: ""
+          - appliedColumnTests:
+              hasNull: false
+              isDistinct: false
+            columnReference:
+              columnCounter: a6bc2902-999c-4b25-87c6-2028b76f127e
+              stepCounter: 8613ded4-ec43-4c99-a7cf-64dc01687a90
+            dataType: NUMBER
+            description: ""
+            name: NUMBER_OF_ORDERS
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: f72b719b-cf73-4414-9890-36c667d49c4d
+                    stepCounter: d4459d58-05c8-4737-944f-1603c4a0b4a7
+                transform: COALESCE("STG_CUSTOMER_ORDERS"."STATUS",0)
+          - appliedColumnTests:
+              hasNull: false
+              isDistinct: false
+            columnReference:
+              columnCounter: def4fa4c-e5df-4641-bfec-e0d2226782eb
+              stepCounter: 8613ded4-ec43-4c99-a7cf-64dc01687a90
+            dataType: NUMBER
+            description: ""
+            name: TOTAL_AMOUNT
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 77c3e958-0f63-4609-9072-7b20e216282c
+                    stepCounter: d4459d58-05c8-4737-944f-1603c4a0b4a7
+                transform: COALESCE("STG_CUSTOMER_ORDERS"."AMOUNT",0)
+        cteString: ""
+        enabledColumnTestIDs:
+          - hasNull
+          - isDistinct
+        sourceMapping:
+          - aliases:
+              STG_CUSTOMER_ORDERS: d4459d58-05c8-4737-944f-1603c4a0b4a7
+              STG_PREP_CUSTOMERS: 8cca8afb-c403-4ba9-851c-e42deb5caf96
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: BI
+                nodeName: STG_CUSTOMER_ORDERS
+              - locationName: BI
+                nodeName: STG_PREP_CUSTOMERS
+            join:
+              joinCondition: |-
+                FROM {{ ref('BI', 'STG_PREP_CUSTOMERS') }} "STG_PREP_CUSTOMERS"
+                LEFT JOIN {{ ref('BI', 'STG_CUSTOMER_ORDERS') }} "STG_CUSTOMER_ORDERS"
+                ON "STG_PREP_CUSTOMERS"."CUSTOMER_ID" = "STG_CUSTOMER_ORDERS"."CUSTOMER_ID"
+            name: STG_CUSTOMERS
+            noLinkRefs: []
+      name: STG_CUSTOMERS
+      overrideSQL: false
+      schema: ""
+      sqlType: "190"
+      type: sql
+    stepCounter: 8613ded4-ec43-4c99-a7cf-64dc01687a90

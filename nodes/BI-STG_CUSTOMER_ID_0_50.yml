@@ -1,0 +1,52 @@
+steps:
+  STG_CUSTOMER_ID_0_50-c63da3ea-f0ec-41fb-91db-81d7c12da1f0:
+    operation:
+      config:
+        groupByAll: false
+        insertStrategy: UNION
+        selectDistinct: false
+      database: ""
+      deployEnabled: true
+      description: ""
+      isMultisource: false
+      locationName: BI
+      materializationType: view
+      metadata:
+        appliedNodeTests: []
+        columns:
+          - columnReference:
+              columnCounter: 0808ae10-fed1-44a3-b117-67f2b4a3b6c5
+              stepCounter: c63da3ea-f0ec-41fb-91db-81d7c12da1f0
+            dataType: NUMBER(38,0)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: CUST_ID_50_COUNT
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 8107d48c-9cc6-4cb9-8a3f-13b1b7f57c2c
+                    stepCounter: 5be46563-e35c-4364-bfe4-c0b0017ca584
+                transform: COUNT("STG_ORDERS_BY_MONTH"."CUSTOMER_ID")
+        cteString: ""
+        enabledColumnTestIDs: []
+        sourceMapping:
+          - aliases:
+              STG_ORDERS_BY_MONTH: 5be46563-e35c-4364-bfe4-c0b0017ca584
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: BI
+                nodeName: STG_ORDERS_BY_MONTH
+            join:
+              joinCondition: |-
+                FROM {{ ref('BI', 'STG_ORDERS_BY_MONTH') }} "STG_ORDERS_BY_MONTH"
+                WHERE "STG_ORDERS_BY_MONTH"."CUSTOMER_ID" <= 50
+            name: STG_CUSTOMER_ID_0_50
+            noLinkRefs: []
+      name: STG_CUSTOMER_ID_0_50
+      overrideSQL: false
+      schema: ""
+      sqlType: "189"
+      type: sql
+    stepCounter: c63da3ea-f0ec-41fb-91db-81d7c12da1f0

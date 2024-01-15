@@ -1,0 +1,77 @@
+steps:
+  STG_PREP_CUSTOMERS-8cca8afb-c403-4ba9-851c-e42deb5caf96:
+    operation:
+      config:
+        groupByAll: false
+        insertStrategy: UNION
+        selectDistinct: false
+      database: ""
+      deployEnabled: true
+      description: ""
+      isMultisource: false
+      locationName: BI
+      materializationType: view
+      metadata:
+        appliedNodeTests: []
+        columns:
+          - columnReference:
+              columnCounter: 37e4dbb4-647e-4a9f-807c-83a973a59f6a
+              stepCounter: 8cca8afb-c403-4ba9-851c-e42deb5caf96
+            dataType: NUMBER(38,0)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: CUSTOMER_ID
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 9fab5aab-fd42-485d-9246-716a54166d7d
+                    stepCounter: b274593f-0f3c-45f2-a32e-80e3145189c1
+                transform: ""
+          - columnReference:
+              columnCounter: e0e2f2a2-6c6d-418d-8050-4239c03aee3e
+              stepCounter: 8cca8afb-c403-4ba9-851c-e42deb5caf96
+            dataType: VARCHAR(16777216)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: FIRST_NAME
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: a9af6cca-a60e-474f-9f95-e0d735c82797
+                    stepCounter: b274593f-0f3c-45f2-a32e-80e3145189c1
+                transform: ""
+          - columnReference:
+              columnCounter: 1483e5a8-ac6f-43cc-9010-79da68e80f00
+              stepCounter: 8cca8afb-c403-4ba9-851c-e42deb5caf96
+            dataType: VARCHAR(16777216)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: LAST_NAME
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 2684b7e2-8e7a-4ec6-9d18-3c004b98d731
+                    stepCounter: b274593f-0f3c-45f2-a32e-80e3145189c1
+                transform: ""
+        cteString: ""
+        enabledColumnTestIDs: []
+        sourceMapping:
+          - aliases: {}
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: JAFFLE_SHOP
+                nodeName: CUSTOMERS
+            join:
+              joinCondition: FROM {{ ref('JAFFLE_SHOP', 'CUSTOMERS') }} "CUSTOMERS"
+            name: STG_PREP_CUSTOMERS
+            noLinkRefs: []
+      name: STG_PREP_CUSTOMERS
+      overrideSQL: false
+      schema: ""
+      sqlType: "189"
+      type: sql
+    stepCounter: 8cca8afb-c403-4ba9-851c-e42deb5caf96

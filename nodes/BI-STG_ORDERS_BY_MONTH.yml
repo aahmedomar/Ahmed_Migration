@@ -1,0 +1,77 @@
+steps:
+  STG_ORDERS_BY_MONTH-5be46563-e35c-4364-bfe4-c0b0017ca584:
+    operation:
+      config:
+        groupByAll: true
+        insertStrategy: UNION
+        selectDistinct: false
+      database: ""
+      deployEnabled: true
+      description: ""
+      isMultisource: false
+      locationName: BI
+      materializationType: view
+      metadata:
+        appliedNodeTests: []
+        columns:
+          - columnReference:
+              columnCounter: 8107d48c-9cc6-4cb9-8a3f-13b1b7f57c2c
+              stepCounter: 5be46563-e35c-4364-bfe4-c0b0017ca584
+            dataType: NUMBER(38,0)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: CUSTOMER_ID
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 0b248672-f79b-4e0b-b42b-4f680c2be4a8
+                    stepCounter: 8613ded4-ec43-4c99-a7cf-64dc01687a90
+                transform: ""
+          - columnReference:
+              columnCounter: e2dc0df9-b76e-4a9b-8baf-cb27993b6bc9
+              stepCounter: 5be46563-e35c-4364-bfe4-c0b0017ca584
+            dataType: NUMBER
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: AMOUNT_MONTH_LT1
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 7bc6b0b9-bede-4ed7-9577-1545bf793ef3
+                    stepCounter: 8613ded4-ec43-4c99-a7cf-64dc01687a90
+                transform: SUM(CASE WHEN MONTH("STG_CUSTOMERS"."FIRST_ORDER_DATE") = 1 THEN "STG_CUSTOMERS"."TOTAL_AMOUNT" ELSE 0 END)
+          - columnReference:
+              columnCounter: 03d83676-d813-4601-b2d1-8f015a0365e3
+              stepCounter: 5be46563-e35c-4364-bfe4-c0b0017ca584
+            dataType: NUMBER
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: AMOUNT_MONTH_GTEQ2
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 7bc6b0b9-bede-4ed7-9577-1545bf793ef3
+                    stepCounter: 8613ded4-ec43-4c99-a7cf-64dc01687a90
+                transform: SUM(CASE WHEN MONTH("STG_CUSTOMERS"."FIRST_ORDER_DATE") >= 2 THEN "STG_CUSTOMERS"."TOTAL_AMOUNT" ELSE 0 END)
+        cteString: ""
+        enabledColumnTestIDs: []
+        sourceMapping:
+          - aliases: {}
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: BI
+                nodeName: STG_CUSTOMERS
+            join:
+              joinCondition: FROM {{ ref('BI', 'STG_CUSTOMERS') }} "STG_CUSTOMERS"
+            name: STG_ORDERS_BY_MONTH
+            noLinkRefs: []
+      name: STG_ORDERS_BY_MONTH
+      overrideSQL: false
+      schema: ""
+      sqlType: "189"
+      type: sql
+    stepCounter: 5be46563-e35c-4364-bfe4-c0b0017ca584

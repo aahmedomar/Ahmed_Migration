@@ -1,0 +1,88 @@
+steps:
+  STG_UNION_CUST_COUNT-76739eba-ca2a-4ffb-8cda-70af9f8935bd:
+    operation:
+      config:
+        groupByAll: false
+        insertStrategy: UNION
+        postSQL: ""
+        preSQL: ""
+        selectDistinct: false
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      deployEnabled: true
+      description: ""
+      isMultisource: true
+      locationName: BI
+      materializationType: table
+      metadata:
+        appliedNodeTests: []
+        columns:
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: db21925c-9b8e-473d-8b74-9c6dc217abb7
+              stepCounter: 76739eba-ca2a-4ffb-8cda-70af9f8935bd
+            config: {}
+            dataType: STRING
+            defaultValue: ""
+            description: ""
+            keyColumnType: None
+            name: SOURCE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: "0"
+                    stepCounter: "0"
+                transform: "'query1'"
+              - columnReferences: []
+                transform: "'query2'"
+            systemColumnType: None
+            transform: ""
+          - columnReference:
+              columnCounter: 88891956-aebd-48d8-9c1b-8afc5cd6dbdd
+              stepCounter: 76739eba-ca2a-4ffb-8cda-70af9f8935bd
+            dataType: NUMBER(38,0)
+            description: ""
+            name: CUSTOMER_BY_SOURCE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 0808ae10-fed1-44a3-b117-67f2b4a3b6c5
+                    stepCounter: c63da3ea-f0ec-41fb-91db-81d7c12da1f0
+                transform: ""
+              - columnReferences:
+                  - columnCounter: 048980ad-b50d-4f04-b4ca-322f0bb1647e
+                    stepCounter: b5d39ee2-0bdb-4e08-9079-62aba1c05420
+                transform: ""
+        enabledColumnTestIDs: []
+        sourceMapping:
+          - aliases: {}
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: BI
+                nodeName: STG_CUSTOMER_ID_0_50
+            join:
+              joinCondition: FROM {{ ref('BI', 'STG_CUSTOMER_ID_0_50') }} "STG_CUSTOMER_ID_0_50"
+            name: STG_CUSTOMER_ID_0_50
+            noLinkRefs: []
+          - aliases:
+              STG_CUSTOMER_ID_51_100: b5d39ee2-0bdb-4e08-9079-62aba1c05420
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: BI
+                nodeName: STG_CUSTOMER_ID_51_100
+            join:
+              joinCondition: FROM {{ ref('BI', 'STG_CUSTOMER_ID_51_100') }} "STG_CUSTOMER_ID_51_100"
+            name: STG_CUSTOMER_ID_50_100
+            noLinkRefs: []
+      name: STG_UNION_CUST_COUNT
+      overrideSQL: false
+      schema: ""
+      sqlType: "190"
+      type: sql
+    stepCounter: 76739eba-ca2a-4ffb-8cda-70af9f8935bd

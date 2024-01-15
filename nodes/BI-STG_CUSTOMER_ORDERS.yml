@@ -1,0 +1,107 @@
+steps:
+  STG_CUSTOMER_ORDERS-d4459d58-05c8-4737-944f-1603c4a0b4a7:
+    operation:
+      config:
+        cleanup_pit: false
+        groupByAll: true
+        insertStrategy: UNION
+        selectDistinct: false
+      database: ""
+      deployEnabled: true
+      description: ""
+      isMultisource: false
+      locationName: BI
+      materializationType: view
+      metadata:
+        appliedNodeTests: []
+        columns:
+          - columnReference:
+              columnCounter: 3df6b258-9379-43f7-96ca-0b05a59b3b7e
+              stepCounter: d4459d58-05c8-4737-944f-1603c4a0b4a7
+            dataType: NUMBER(38,0)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: CUSTOMER_ID
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 7b8a46ea-adf8-42bc-bd34-1d87fb891a3f
+                    stepCounter: da22d2bd-54ee-4f29-beef-508c5c483d38
+                transform: ""
+          - columnReference:
+              columnCounter: dff9b9f4-c601-4263-9fa4-abb2c42c75a9
+              stepCounter: d4459d58-05c8-4737-944f-1603c4a0b4a7
+            dataType: DATE
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: FIRST_ORDER_DATE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 5c8ee331-9ec0-4f28-9599-6c5b5c715d06
+                    stepCounter: da22d2bd-54ee-4f29-beef-508c5c483d38
+                transform: min("STG_PREP_ORDERS"."ORDER_DATE")
+          - columnReference:
+              columnCounter: 4f43d0b6-6841-476a-9cfb-353555f02872
+              stepCounter: d4459d58-05c8-4737-944f-1603c4a0b4a7
+            dataType: DATE
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: MOST_RECENT_ORDER_DATE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 5c8ee331-9ec0-4f28-9599-6c5b5c715d06
+                    stepCounter: da22d2bd-54ee-4f29-beef-508c5c483d38
+                transform: max("STG_PREP_ORDERS"."ORDER_DATE")
+          - columnReference:
+              columnCounter: f72b719b-cf73-4414-9890-36c667d49c4d
+              stepCounter: d4459d58-05c8-4737-944f-1603c4a0b4a7
+            dataType: NUMBER
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: STATUS
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 47acfa8c-5c8b-4ce1-8c8d-8a337a8732e7
+                    stepCounter: da22d2bd-54ee-4f29-beef-508c5c483d38
+                transform: count("STG_PREP_ORDERS"."STATUS")
+          - columnReference:
+              columnCounter: 77c3e958-0f63-4609-9072-7b20e216282c
+              stepCounter: d4459d58-05c8-4737-944f-1603c4a0b4a7
+            dataType: NUMBER(38,0)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: AMOUNT
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: b59886a3-8aab-4d98-8a2d-0911979ae6b7
+                    stepCounter: da22d2bd-54ee-4f29-beef-508c5c483d38
+                transform: sum("STG_PREP_ORDERS"."AMOUNT")
+        cteString: ""
+        enabledColumnTestIDs: []
+        sourceMapping:
+          - aliases:
+              STG_PREP_ORDERS: da22d2bd-54ee-4f29-beef-508c5c483d38
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: BI
+                nodeName: STG_PREP_ORDERS
+            join:
+              joinCondition: FROM {{ ref('BI', 'STG_PREP_ORDERS') }} "STG_PREP_ORDERS"
+            name: STG_CUSTOMER_ORDERS
+            noLinkRefs: []
+      name: STG_CUSTOMER_ORDERS
+      overrideSQL: false
+      schema: ""
+      sqlType: "189"
+      type: sql
+    stepCounter: d4459d58-05c8-4737-944f-1603c4a0b4a7
