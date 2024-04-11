@@ -1,0 +1,98 @@
+steps:
+  INT_ORDER_PAYMENTS_PIVOTED_CTE_PAYMENTS_1-fc77a50ba2e1747bc50d422536cbbbd6719ccf3d2d24fe09f386108eb1e101b3:
+    operation:
+      config:
+        groupByAll: false
+        insertStrategy: UNION
+        postSQL: ""
+        preSQL: ""
+        selectDistinct: false
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      deployEnabled: true
+      description: ""
+      isDataVault: false
+      isMultisource: true
+      locationName: DEO
+      materializationType: view
+      metadata:
+        appliedNodeTests: []
+        columns:
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: 02614c61a1bccb2ed2478655b8b4e2cae5f0c263226a08e74a275b8d13b7bfe4
+              stepCounter: fc77a50ba2e1747bc50d422536cbbbd6719ccf3d2d24fe09f386108eb1e101b3
+            dataType: ""
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: AMOUNT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 2c10dde08e156ec06307f25473a60049e1ea13e83052c4679d2e1523cd2bf627
+                    stepCounter: 834d6d106326d5e6252a0fb812295d87c93435e8593a30c8f6b56acbffa51a44
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: ff2881cc10f06c8e16e69dec4b6dc16f3c89316a63c9f0532a1b4ec82b18f58d
+              stepCounter: fc77a50ba2e1747bc50d422536cbbbd6719ccf3d2d24fe09f386108eb1e101b3
+            dataType: ""
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: ORDER_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: a670315263fdcc74ad047f40f4641923a907ec2e92fc25bce81d087668ce3b04
+                    stepCounter: 834d6d106326d5e6252a0fb812295d87c93435e8593a30c8f6b56acbffa51a44
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: b498ffddcc13f55de1f7455ffc9cf572f58c8db5b35083ece9e34e17961b131f
+              stepCounter: fc77a50ba2e1747bc50d422536cbbbd6719ccf3d2d24fe09f386108eb1e101b3
+            dataType: ""
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: PAYMENT_METHOD
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: bd179ae0e607a73ef7274a0990f8c77dd99452bd85c651ccc666dd0c562ca782
+                    stepCounter: 834d6d106326d5e6252a0fb812295d87c93435e8593a30c8f6b56acbffa51a44
+                transform: ""
+        enabledColumnTestIDs: []
+        sourceMapping:
+          - customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: DEO
+                nodeName: STG_PAYMENTS
+            join:
+                joinCondition: FROM {{ ref('DEO', 'STG_PAYMENTS') }} "STG_PAYMENTS"
+            name: INT_ORDER_PAYMENTS_PIVOTED_CTE_PAYMENTS_1
+            noLinkRefs: []
+      name: INT_ORDER_PAYMENTS_PIVOTED_CTE_PAYMENTS_1
+      overrideSQL: false
+      schema: ""
+      sqlType: Stage
+      type: sql
+    stepCounter: fc77a50ba2e1747bc50d422536cbbbd6719ccf3d2d24fe09f386108eb1e101b3
