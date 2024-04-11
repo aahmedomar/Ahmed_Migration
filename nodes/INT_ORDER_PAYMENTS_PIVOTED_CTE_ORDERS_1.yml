@@ -1,0 +1,121 @@
+steps:
+  INT_ORDER_PAYMENTS_PIVOTED_CTE_ORDERS_1-0274e67738b9565fd423bcac317374ec98a80598eab5dd6d7a2ebd10a700ddd6:
+    operation:
+      config:
+        groupByAll: false
+        insertStrategy: UNION
+        postSQL: ""
+        preSQL: ""
+        selectDistinct: false
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      deployEnabled: true
+      description: ""
+      isDataVault: false
+      isMultisource: true
+      locationName: DEO
+      materializationType: view
+      metadata:
+        appliedNodeTests: []
+        columns:
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: 3195c2b0cfa9d6153b83634cd80bf7ab2e682d8c08122f9c79142579dda93224
+              stepCounter: 0274e67738b9565fd423bcac317374ec98a80598eab5dd6d7a2ebd10a700ddd6
+            dataType: ""
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: CUSTOMER_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 85b2ea0d3f9520bb8107ec32b8a32449699274f17438e0231bc06dc508707745
+                    stepCounter: 9d36429544bba44250068385ac1d3adcc30b2635fbedfefe73b2e32c577d6868
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: 20f4a682c2a8cdea38474ca7117547e2350435becaf6c1bc5594cd9a8a37a23a
+              stepCounter: 0274e67738b9565fd423bcac317374ec98a80598eab5dd6d7a2ebd10a700ddd6
+            dataType: ""
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: ORDER_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 3d7ccfd0137e3af26de2057a4a08c38ac6cb07179b1d2779ffba13716f08b3d5
+                    stepCounter: 9d36429544bba44250068385ac1d3adcc30b2635fbedfefe73b2e32c577d6868
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: 92cba08856efff48b60626ce2effc092fdbc13d7b97171b4004563bc5aa9610a
+              stepCounter: 0274e67738b9565fd423bcac317374ec98a80598eab5dd6d7a2ebd10a700ddd6
+            dataType: ""
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: STATUS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: ae9a040a23325afed9fbadfdea826b12b317eb177047480b1f14b0b1b6c2db02
+                    stepCounter: 9d36429544bba44250068385ac1d3adcc30b2635fbedfefe73b2e32c577d6868
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: ed5c767e41092708045c2a46276fac813a915e8af8d0d8a89d1ead7db5638b4a
+              stepCounter: 0274e67738b9565fd423bcac317374ec98a80598eab5dd6d7a2ebd10a700ddd6
+            dataType: ""
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: ORDER_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 54f3f26cba4430fcfba9dfaec0f1234379cdc23a60dcf744e4fe895fb8b263cb
+                    stepCounter: 9d36429544bba44250068385ac1d3adcc30b2635fbedfefe73b2e32c577d6868
+                transform: ""
+        enabledColumnTestIDs: []
+        sourceMapping:
+          - customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: DEO
+                nodeName: STG_ORDERS
+            join:
+                joinCondition: |-
+                  FROM {{ ref('DEO', 'STG_ORDERS') }} "STG_ORDERS"
+                  LEFT JOIN {{ ref('', 'INT_ORDER_PAYMENTS_PIVOTED_CTE_ORDER_PAYMENTS_1') }} "INT_ORDER_PAYMENTS_PIVOTED_CTE_ORDER_PAYMENTS_1" 
+                  ON "INT_ORDER_PAYMENTS_PIVOTED_CTE_ORDERS_1"."ORDER_ID" = "INT_ORDER_PAYMENTS_PIVOTED_CTE_ORDER_PAYMENTS_1"."ORDER_ID"
+            name: INT_ORDER_PAYMENTS_PIVOTED_CTE_ORDERS_1
+            noLinkRefs: []
+      name: INT_ORDER_PAYMENTS_PIVOTED_CTE_ORDERS_1
+      overrideSQL: false
+      schema: ""
+      sqlType: Stage
+      type: sql
+    stepCounter: 0274e67738b9565fd423bcac317374ec98a80598eab5dd6d7a2ebd10a700ddd6
