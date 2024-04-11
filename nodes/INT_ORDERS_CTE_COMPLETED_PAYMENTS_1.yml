@@ -1,0 +1,98 @@
+steps:
+  INT_ORDERS_CTE_COMPLETED_PAYMENTS_1-61649980c5c0932e944d3cd78dee651576d40d4bf2c988d81fed53329814694c:
+    operation:
+      config:
+        groupByAll: false
+        insertStrategy: UNION
+        postSQL: ""
+        preSQL: ""
+        selectDistinct: false
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      deployEnabled: true
+      description: ""
+      isDataVault: false
+      isMultisource: true
+      locationName: DEO
+      materializationType: view
+      metadata:
+        appliedNodeTests: []
+        columns:
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: 3f62cc7438c4900633b711debdc38f5651c0e12460dabdbf43b65b7ddcd7a227
+              stepCounter: 61649980c5c0932e944d3cd78dee651576d40d4bf2c988d81fed53329814694c
+            dataType: ""
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: ORDER_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: d293470a30c2347879bc43193a413669df0e20bc76ab2e46eeaffb79742290aa
+                    stepCounter: 6f851cc68b40d9b3fc21bc7bef46dead93f8eac1d8368298c684b793f19a29f1
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: 11d386d425200704920ac814efb1c2c71c7db13ebe2b95457d4527c7547f4039
+              stepCounter: 61649980c5c0932e944d3cd78dee651576d40d4bf2c988d81fed53329814694c
+            dataType: ""
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: PAYMENT_FINALIZED_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 44a397759658a7ffca30b4d8fc17ca3309f54ae28967a63e77ef7a602025d3ca
+                    stepCounter: 6f851cc68b40d9b3fc21bc7bef46dead93f8eac1d8368298c684b793f19a29f1
+                transform: max(created_at)
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: 455841d7eb1012d8c5c4722d8f55cd7fe687611d3e03365ce4a91ab4cf555dfd
+              stepCounter: 61649980c5c0932e944d3cd78dee651576d40d4bf2c988d81fed53329814694c
+            dataType: ""
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: TOTAL_AMOUNT_PAID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 44a397759658a7ffca30b4d8fc17ca3309f54ae28967a63e77ef7a602025d3ca
+                    stepCounter: 6f851cc68b40d9b3fc21bc7bef46dead93f8eac1d8368298c684b793f19a29f1
+                transform: sum(amount)
+        enabledColumnTestIDs: []
+        sourceMapping:
+          - customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: DEO
+                nodeName: INT_ORDERS_CTE_ORDERS_1
+            join:
+                joinCondition: FROM {{ ref('DEO', 'INT_ORDERS_CTE_ORDERS_1') }} "INT_ORDERS_CTE_ORDERS_1"
+            name: INT_ORDERS_CTE_COMPLETED_PAYMENTS_1
+            noLinkRefs: []
+      name: INT_ORDERS_CTE_COMPLETED_PAYMENTS_1
+      overrideSQL: false
+      schema: ""
+      sqlType: Stage
+      type: sql
+    stepCounter: 61649980c5c0932e944d3cd78dee651576d40d4bf2c988d81fed53329814694c
