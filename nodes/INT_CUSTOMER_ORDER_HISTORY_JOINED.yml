@@ -1,0 +1,182 @@
+steps:
+  INT_CUSTOMER_ORDER_HISTORY_JOINED-8827e91a5184b214a9b221918886ae726073f227d7df4e305c2c42f361335a62:
+    operation:
+      config:
+        postSQL: ""
+        preSQL: ""
+        testsEnabled: true
+      database: ""
+      deployEnabled: true
+      description: ""
+      isDataVault: false
+      isMultisource: false
+      locationName: DEO
+      materializationType: Table
+      metadata:
+        appliedNodeTests: []
+        columns:
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: 583c60bf8de3c4de8dbec22843f564ba41ef606d6e4880f5b543cafea37380d7
+              stepCounter: 8827e91a5184b214a9b221918886ae726073f227d7df4e305c2c42f361335a62
+            dataType: 
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            isBusinessKey: true
+            name: CUSTOMER_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 763a75862a0480e7e82e4bd9f7b1889b112d4ee5e723ccad65253a35738b1182
+                    stepCounter: 47392864eaebe83dcc29c3f58627f8b4453749abe5b4e69c4092060a0562861a
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: b1ed7c9572817de7341d482e1844257342d5e0663a56dfe2c8c74cccef8491e4
+              stepCounter: 8827e91a5184b214a9b221918886ae726073f227d7df4e305c2c42f361335a62
+            dataType: 
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            isBusinessKey: true
+            name: FIRST_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 763a75862a0480e7e82e4bd9f7b1889b112d4ee5e723ccad65253a35738b1182
+                    stepCounter: 47392864eaebe83dcc29c3f58627f8b4453749abe5b4e69c4092060a0562861a
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: 11ed661c4ab69e7d8f3f58b60e0837293d08267df07826cfc972be78193033c3
+              stepCounter: 8827e91a5184b214a9b221918886ae726073f227d7df4e305c2c42f361335a62
+            dataType: 
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            isBusinessKey: true
+            name: LAST_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 763a75862a0480e7e82e4bd9f7b1889b112d4ee5e723ccad65253a35738b1182
+                    stepCounter: 47392864eaebe83dcc29c3f58627f8b4453749abe5b4e69c4092060a0562861a
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: a55ffc2d8b413d37f55f4cf1c5f281c0bb76264962411646603641419f7e1e60
+              stepCounter: 8827e91a5184b214a9b221918886ae726073f227d7df4e305c2c42f361335a62
+            dataType: 
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            isBusinessKey: true
+            name: FIRST_ORDER
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 763a75862a0480e7e82e4bd9f7b1889b112d4ee5e723ccad65253a35738b1182
+                    stepCounter: 47392864eaebe83dcc29c3f58627f8b4453749abe5b4e69c4092060a0562861a
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: cb8ff3a0a7f745cab727f9a02e98ee5694baf64adb3cc6e5a8f021a5a9fe9f6a
+              stepCounter: 8827e91a5184b214a9b221918886ae726073f227d7df4e305c2c42f361335a62
+            dataType: 
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            isBusinessKey: true
+            name: MOST_RECENT_ORDER
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 763a75862a0480e7e82e4bd9f7b1889b112d4ee5e723ccad65253a35738b1182
+                    stepCounter: 47392864eaebe83dcc29c3f58627f8b4453749abe5b4e69c4092060a0562861a
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: 960150c1245627f11ef715fce8c4e889325ef71adf17458e72bc6459c6f3e8a3
+              stepCounter: 8827e91a5184b214a9b221918886ae726073f227d7df4e305c2c42f361335a62
+            dataType: 
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            isBusinessKey: true
+            name: CUSTOMER_STATUS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 763a75862a0480e7e82e4bd9f7b1889b112d4ee5e723ccad65253a35738b1182
+                    stepCounter: 47392864eaebe83dcc29c3f58627f8b4453749abe5b4e69c4092060a0562861a
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: 9baa6b4f768fba00a215dc0381b4368a7084818fc9cf3a2456cc16645a9490e2
+              stepCounter: 8827e91a5184b214a9b221918886ae726073f227d7df4e305c2c42f361335a62
+            dataType: 
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            isBusinessKey: true
+            name: NUMBER_OF_ORDERS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 763a75862a0480e7e82e4bd9f7b1889b112d4ee5e723ccad65253a35738b1182
+                    stepCounter: 47392864eaebe83dcc29c3f58627f8b4453749abe5b4e69c4092060a0562861a
+                transform: ""
+        cteString: ""
+        enabledColumnTestIDs: []
+        sourceMapping:
+          - customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: DEO
+                nodeName: INT_CUSTOMER_ORDER_HISTORY_JOINED_CTE_FINAL_1
+            join:
+              joinCondition: FROM {{ ref('DEO', 'INT_CUSTOMER_ORDER_HISTORY_JOINED_CTE_FINAL_1') }} "INT_CUSTOMER_ORDER_HISTORY_JOINED_CTE_FINAL_1"
+              name: INT_CUSTOMER_ORDER_HISTORY_JOINED
+              noLinkRefs: []
+      name: INT_CUSTOMER_ORDER_HISTORY_JOINED
+      overrideSQL: false
+      schema: ""
+      sqlType: Dimension
+      type: sql
+    stepCounter: 8827e91a5184b214a9b221918886ae726073f227d7df4e305c2c42f361335a62
