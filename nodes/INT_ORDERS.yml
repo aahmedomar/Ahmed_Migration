@@ -1,0 +1,161 @@
+steps:
+  INT_ORDERS-338edb924169f3f72dac2dd91b5d66e174aec10ed4b096142fe3edb9ac23fa36:
+    operation:
+      config:
+        postSQL: ""
+        preSQL: ""
+        testsEnabled: true
+      database: ""
+      deployEnabled: true
+      description: ""
+      isDataVault: false
+      isMultisource: false
+      locationName: DEO
+      materializationType: Table
+      metadata:
+        appliedNodeTests: []
+        columns:
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: false
+              isDistinct: true
+            columnReference:
+              columnCounter: 1b4436384e8d4b6b7750b6a24d58c4f870fe7d1b01a6cecb2557fe339b8f8263
+              stepCounter: 338edb924169f3f72dac2dd91b5d66e174aec10ed4b096142fe3edb9ac23fa36
+            dataType: 
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            isBusinessKey: true
+            name: ORDER_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: d29657e2f02f754c44b9acc6c56ea289765e171782d56fb23bed973390126b1d
+                    stepCounter: 61649980c5c0932e944d3cd78dee651576d40d4bf2c988d81fed53329814694c
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: 0d03ad48b038f47956d036f5c66c9e715c3e10a35d15a736dada0556f475ab7a
+              stepCounter: 338edb924169f3f72dac2dd91b5d66e174aec10ed4b096142fe3edb9ac23fa36
+            dataType: 
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            isBusinessKey: true
+            name: CUSTOMER_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: d29657e2f02f754c44b9acc6c56ea289765e171782d56fb23bed973390126b1d
+                    stepCounter: 61649980c5c0932e944d3cd78dee651576d40d4bf2c988d81fed53329814694c
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: 49975b9aab4dd1645b8d6960d44733770aea2fac5b6756143fcc8056be4f8cf9
+              stepCounter: 338edb924169f3f72dac2dd91b5d66e174aec10ed4b096142fe3edb9ac23fa36
+            dataType: 
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            isBusinessKey: true
+            name: ORDER_PLACED_AT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: d29657e2f02f754c44b9acc6c56ea289765e171782d56fb23bed973390126b1d
+                    stepCounter: 61649980c5c0932e944d3cd78dee651576d40d4bf2c988d81fed53329814694c
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: 99314a80781251e36091c614292f8eb399d1e0b5aef7fb3bf66d2ed060acad14
+              stepCounter: 338edb924169f3f72dac2dd91b5d66e174aec10ed4b096142fe3edb9ac23fa36
+            dataType: 
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            isBusinessKey: true
+            name: ORDER_STATUS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: d29657e2f02f754c44b9acc6c56ea289765e171782d56fb23bed973390126b1d
+                    stepCounter: 61649980c5c0932e944d3cd78dee651576d40d4bf2c988d81fed53329814694c
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: 6ab769ca52a468c874109b2c6b0d23144a9497a70d743b66db0faf957421e4e1
+              stepCounter: 338edb924169f3f72dac2dd91b5d66e174aec10ed4b096142fe3edb9ac23fa36
+            dataType: 
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            isBusinessKey: true
+            name: PAYMENT_FINALIZED_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: d29657e2f02f754c44b9acc6c56ea289765e171782d56fb23bed973390126b1d
+                    stepCounter: 61649980c5c0932e944d3cd78dee651576d40d4bf2c988d81fed53329814694c
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: 95df8219d85e70b5c1b64ef1d3429cf82fd45dcad77ec4a31b7718190ba71136
+              stepCounter: 338edb924169f3f72dac2dd91b5d66e174aec10ed4b096142fe3edb9ac23fa36
+            dataType: 
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            isBusinessKey: true
+            name: TOTAL_AMOUNT_PAID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: d29657e2f02f754c44b9acc6c56ea289765e171782d56fb23bed973390126b1d
+                    stepCounter: 61649980c5c0932e944d3cd78dee651576d40d4bf2c988d81fed53329814694c
+                transform: ""
+        cteString: ""
+        enabledColumnTestIDs: []
+        sourceMapping:
+          - customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: DEO
+                nodeName: INT_ORDERS_CTE_FINAL_1
+            join:
+              joinCondition: FROM {{ ref('DEO', 'INT_ORDERS_CTE_FINAL_1') }} "INT_ORDERS_CTE_FINAL_1"
+              name: INT_ORDERS
+              noLinkRefs: []
+      name: INT_ORDERS
+      overrideSQL: false
+      schema: ""
+      sqlType: Dimension
+      type: sql
+    stepCounter: 338edb924169f3f72dac2dd91b5d66e174aec10ed4b096142fe3edb9ac23fa36
