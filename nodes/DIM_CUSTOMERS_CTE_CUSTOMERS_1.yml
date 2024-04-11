@@ -1,0 +1,101 @@
+steps:
+  DIM_CUSTOMERS_CTE_CUSTOMERS_1-928e46fc90e35e2bb8efb1565a08f1acc588a799f507a1c8eb4e743cbb94f732:
+    operation:
+      config:
+        groupByAll: false
+        insertStrategy: UNION
+        postSQL: ""
+        preSQL: ""
+        selectDistinct: false
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      deployEnabled: true
+      description: ""
+      isDataVault: false
+      isMultisource: true
+      locationName: DEO
+      materializationType: view
+      metadata:
+        appliedNodeTests: []
+        columns:
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: 4cba86ca30854ac73752c8d838a4c358abae4bfee82acbb492a6c54e965738e9
+              stepCounter: 928e46fc90e35e2bb8efb1565a08f1acc588a799f507a1c8eb4e743cbb94f732
+            dataType: ""
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: FIRST_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 65b1ef70eabb622badfd6cf93e1fa97c3cffbac7fc6abacf97b7788bf6190821
+                    stepCounter: 7ea98fed3785285115163cb1877f8bb5021713d6bec4d6759141342db67f8cf6
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: 2afceb33bddeb63a2d1748677cd874926b3011ebd3b92ac73783a60d26aedb6d
+              stepCounter: 928e46fc90e35e2bb8efb1565a08f1acc588a799f507a1c8eb4e743cbb94f732
+            dataType: ""
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: LAST_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 6dedb40436cf519e5b94ae005883ccf26a50b1e7f93584d11f38911707a053ec
+                    stepCounter: 7ea98fed3785285115163cb1877f8bb5021713d6bec4d6759141342db67f8cf6
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: 058f7d644d5e90073e73b6da2315f471d402027925710138a6f92cd9befb2a43
+              stepCounter: 928e46fc90e35e2bb8efb1565a08f1acc588a799f507a1c8eb4e743cbb94f732
+            dataType: ""
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: CUSTOMER_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 149368eae2bcbe7ddfbdbf36e34db8f5b1541691a96d3445aa3521d4fde96d91
+                    stepCounter: 7ea98fed3785285115163cb1877f8bb5021713d6bec4d6759141342db67f8cf6
+                transform: ""
+        enabledColumnTestIDs: []
+        sourceMapping:
+          - customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: DEO
+                nodeName: STG_CUSTOMERS
+            join:
+                joinCondition: |-
+                  FROM {{ ref('DEO', 'STG_CUSTOMERS') }} "STG_CUSTOMERS"
+                  LEFT JOIN {{ ref('', 'DIM_CUSTOMERS_CTE_CUSTOMER_ORDERS_1') }} "DIM_CUSTOMERS_CTE_CUSTOMER_ORDERS_1" 
+                  ON "DIM_CUSTOMERS_CTE_CUSTOMERS_1"."CUSTOMER_ID" = "DIM_CUSTOMERS_CTE_CUSTOMER_ORDERS_1"."CUSTOMER_ID"
+            name: DIM_CUSTOMERS_CTE_CUSTOMERS_1
+            noLinkRefs: []
+      name: DIM_CUSTOMERS_CTE_CUSTOMERS_1
+      overrideSQL: false
+      schema: ""
+      sqlType: Stage
+      type: sql
+    stepCounter: 928e46fc90e35e2bb8efb1565a08f1acc588a799f507a1c8eb4e743cbb94f732
