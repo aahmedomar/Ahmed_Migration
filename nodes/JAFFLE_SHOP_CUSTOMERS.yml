@@ -19,7 +19,7 @@ steps:
               columnCounter: 8ff6f9e4dc471ae0314162fe7e38e1bf2a43701dea76b0e331cb8014b81b0efb
               stepCounter: 32a9b3060f1a88a74ce703b04733b2603890655cb20aed374e7ae48a52ba006c
             config: 
-            dataType: 
+            dataType: ""
             defaultValue: ""
             description: ""
             name: FIRST_NAME
@@ -36,7 +36,7 @@ steps:
               columnCounter: 76bb2c2a2fd738f5fee959c27d8b7e92e9fa382cdb782a58fc1face13f0bbf7e
               stepCounter: 32a9b3060f1a88a74ce703b04733b2603890655cb20aed374e7ae48a52ba006c
             config: 
-            dataType: 
+            dataType: ""
             defaultValue: ""
             description: ""
             name: ID
@@ -53,7 +53,7 @@ steps:
               columnCounter: 767fe9a60f9b07ccea3a62f01604ae140830b72fe7f0aa1db0d570f785218844
               stepCounter: 32a9b3060f1a88a74ce703b04733b2603890655cb20aed374e7ae48a52ba006c
             config: 
-            dataType: 
+            dataType: ""
             defaultValue: ""
             description: ""
             name: LAST_NAME

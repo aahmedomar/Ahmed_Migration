@@ -19,7 +19,7 @@ steps:
               columnCounter: 6638f73b6464b3b635f39cadbf39db25435d1b7a0b4bdc9b40d04f4ce6bc4aed
               stepCounter: 012b54268c7e1791fb3411186d3be1d2b449414730ce5c7eaa73c7ee216a034f
             config: 
-            dataType: 
+            dataType: ""
             defaultValue: ""
             description: ""
             name: AMOUNT
@@ -36,7 +36,7 @@ steps:
               columnCounter: 1a55a68a4e46bc50f9ac32b9a8f5c5ffe3c61da7a495765d97985e64eedcc27f
               stepCounter: 012b54268c7e1791fb3411186d3be1d2b449414730ce5c7eaa73c7ee216a034f
             config: 
-            dataType: 
+            dataType: ""
             defaultValue: ""
             description: ""
             name: CREATED
@@ -53,7 +53,7 @@ steps:
               columnCounter: 529f562f67476951fdd71c87b2f6f207738ed68d0102db3cb1db0da8d9459259
               stepCounter: 012b54268c7e1791fb3411186d3be1d2b449414730ce5c7eaa73c7ee216a034f
             config: 
-            dataType: 
+            dataType: ""
             defaultValue: ""
             description: ""
             name: ID
@@ -70,7 +70,7 @@ steps:
               columnCounter: 2c575a5519d403db58f5351289ad78426f5f3ccb736681f45e26178d8e453181
               stepCounter: 012b54268c7e1791fb3411186d3be1d2b449414730ce5c7eaa73c7ee216a034f
             config: 
-            dataType: 
+            dataType: ""
             defaultValue: ""
             description: ""
             name: ORDERID
@@ -87,7 +87,7 @@ steps:
               columnCounter: 2ca408cecfc2b02418ce4c969105ae1bf838a57f195bf118d82ce3299e1a080e
               stepCounter: 012b54268c7e1791fb3411186d3be1d2b449414730ce5c7eaa73c7ee216a034f
             config: 
-            dataType: 
+            dataType: ""
             defaultValue: ""
             description: ""
             name: PAYMENTMETHOD
@@ -104,7 +104,7 @@ steps:
               columnCounter: 3c7fdcf22a0a0bab817d84540d28b4faf0b7d40401ef10d3783166a115743049
               stepCounter: 012b54268c7e1791fb3411186d3be1d2b449414730ce5c7eaa73c7ee216a034f
             config: 
-            dataType: 
+            dataType: ""
             defaultValue: ""
             description: ""
             name: STATUS

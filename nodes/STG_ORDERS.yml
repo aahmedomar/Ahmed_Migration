@@ -28,7 +28,7 @@ steps:
             columnReference:
               columnCounter: 85b2ea0d3f9520bb8107ec32b8a32449699274f17438e0231bc06dc508707745
               stepCounter: 9d36429544bba44250068385ac1d3adcc30b2635fbedfefe73b2e32c577d6868
-            dataType: 
+            dataType: ""
             description: ""
             hashColumns: []
             hashDetails: null
@@ -48,7 +48,7 @@ steps:
             columnReference:
               columnCounter: 54f3f26cba4430fcfba9dfaec0f1234379cdc23a60dcf744e4fe895fb8b263cb
               stepCounter: 9d36429544bba44250068385ac1d3adcc30b2635fbedfefe73b2e32c577d6868
-            dataType: 
+            dataType: ""
             description: ""
             hashColumns: []
             hashDetails: null
@@ -68,7 +68,7 @@ steps:
             columnReference:
               columnCounter: ae9a040a23325afed9fbadfdea826b12b317eb177047480b1f14b0b1b6c2db02
               stepCounter: 9d36429544bba44250068385ac1d3adcc30b2635fbedfefe73b2e32c577d6868
-            dataType: 
+            dataType: ""
             description: ""
             hashColumns: []
             hashDetails: null
@@ -88,7 +88,7 @@ steps:
             columnReference:
               columnCounter: 3d7ccfd0137e3af26de2057a4a08c38ac6cb07179b1d2779ffba13716f08b3d5
               stepCounter: 9d36429544bba44250068385ac1d3adcc30b2635fbedfefe73b2e32c577d6868
-            dataType: 
+            dataType: ""
             description: ""
             hashColumns: []
             hashDetails: null
@@ -108,7 +108,7 @@ steps:
             columnReference:
               columnCounter: 4016ad55e454227c6c34e81c99870f4726c525776a975c6b6b1f590caaba50be
               stepCounter: 9d36429544bba44250068385ac1d3adcc30b2635fbedfefe73b2e32c577d6868
-            dataType: 
+            dataType: ""
             description: ""
             hashColumns: []
             hashDetails: null
