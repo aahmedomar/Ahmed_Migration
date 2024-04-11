@@ -1,0 +1,98 @@
+steps:
+  FCT_ORDERS_CTE_PAYMENTS_1-afca68a6fde0d7302518910d9d91c6399e3b19119f0c5487ebe88878d1738a6d:
+    operation:
+      config:
+        groupByAll: false
+        insertStrategy: UNION
+        postSQL: ""
+        preSQL: ""
+        selectDistinct: false
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      deployEnabled: true
+      description: ""
+      isDataVault: false
+      isMultisource: true
+      locationName: DEO
+      materializationType: view
+      metadata:
+        appliedNodeTests: []
+        columns:
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: 808d585ae8b4173dd164f24ba86e453c6232cdb7b7a41edbd94ed0cbc9c6f3f6
+              stepCounter: afca68a6fde0d7302518910d9d91c6399e3b19119f0c5487ebe88878d1738a6d
+            dataType: ""
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: AMOUNT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 2c10dde08e156ec06307f25473a60049e1ea13e83052c4679d2e1523cd2bf627
+                    stepCounter: 834d6d106326d5e6252a0fb812295d87c93435e8593a30c8f6b56acbffa51a44
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: 46c1ef5b9434cdc96664ac39085373117401c8a3814046891357e5f28df3d1a2
+              stepCounter: afca68a6fde0d7302518910d9d91c6399e3b19119f0c5487ebe88878d1738a6d
+            dataType: ""
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: ORDER_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: a670315263fdcc74ad047f40f4641923a907ec2e92fc25bce81d087668ce3b04
+                    stepCounter: 834d6d106326d5e6252a0fb812295d87c93435e8593a30c8f6b56acbffa51a44
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: f19de51b5575b483b621f1af660a7e8d14074032bfb827173dd855c83c524b56
+              stepCounter: afca68a6fde0d7302518910d9d91c6399e3b19119f0c5487ebe88878d1738a6d
+            dataType: ""
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: STATUS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 89a1f7e290ba0972aeb89a748cff8237e747c91dd01635ba0d9756d73f3f8e15
+                    stepCounter: 834d6d106326d5e6252a0fb812295d87c93435e8593a30c8f6b56acbffa51a44
+                transform: ""
+        enabledColumnTestIDs: []
+        sourceMapping:
+          - customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: DEO
+                nodeName: STG_PAYMENTS
+            join:
+                joinCondition: FROM {{ ref('DEO', 'STG_PAYMENTS') }} "STG_PAYMENTS"
+            name: FCT_ORDERS_CTE_PAYMENTS_1
+            noLinkRefs: []
+      name: FCT_ORDERS_CTE_PAYMENTS_1
+      overrideSQL: false
+      schema: ""
+      sqlType: Stage
+      type: sql
+    stepCounter: afca68a6fde0d7302518910d9d91c6399e3b19119f0c5487ebe88878d1738a6d
