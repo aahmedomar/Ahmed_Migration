@@ -1,0 +1,298 @@
+steps:
+  INT_ORDER_PAYMENTS_PIVOTED_CTE_FINAL_1-ebae40275d83b1808f0831dd5113094f50b967d4030e9845b7bdf48e718f64d9:
+    operation:
+      config:
+        groupByAll: false
+        insertStrategy: UNION
+        postSQL: ""
+        preSQL: ""
+        selectDistinct: false
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      deployEnabled: true
+      description: ""
+      isDataVault: false
+      isMultisource: true
+      locationName: DEO
+      materializationType: view
+      metadata:
+        appliedNodeTests: []
+        columns:
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: d10697f5838eaca8ec11124326fe7606436586cb940a5ccd9ce63120d2d76d08
+              stepCounter: ebae40275d83b1808f0831dd5113094f50b967d4030e9845b7bdf48e718f64d9
+            dataType: ""
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: AMOUNT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 02614c61a1bccb2ed2478655b8b4e2cae5f0c263226a08e74a275b8d13b7bfe4
+                    stepCounter: fc77a50ba2e1747bc50d422536cbbbd6719ccf3d2d24fe09f386108eb1e101b3
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: a12812b724de8cd054693bb78b9b35b51d4eebee830d827fa0299ecbb76fa511
+              stepCounter: ebae40275d83b1808f0831dd5113094f50b967d4030e9845b7bdf48e718f64d9
+            dataType: ""
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: BANK_TRANSFER_AMOUNT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 02614c61a1bccb2ed2478655b8b4e2cae5f0c263226a08e74a275b8d13b7bfe4
+                    stepCounter: fc77a50ba2e1747bc50d422536cbbbd6719ccf3d2d24fe09f386108eb1e101b3
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: 55b2460cef8c7a77623ae3e129bc00d46ea0b12687edc7cec9b07ef2f32a11cf
+              stepCounter: ebae40275d83b1808f0831dd5113094f50b967d4030e9845b7bdf48e718f64d9
+            dataType: ""
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: COUPON_AMOUNT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 02614c61a1bccb2ed2478655b8b4e2cae5f0c263226a08e74a275b8d13b7bfe4
+                    stepCounter: fc77a50ba2e1747bc50d422536cbbbd6719ccf3d2d24fe09f386108eb1e101b3
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: 162ebe6c308e7f51040d694d9d13b2394bebb0c51998119d9953c826d92861bc
+              stepCounter: ebae40275d83b1808f0831dd5113094f50b967d4030e9845b7bdf48e718f64d9
+            dataType: ""
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: CREDIT_CARD_AMOUNT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 02614c61a1bccb2ed2478655b8b4e2cae5f0c263226a08e74a275b8d13b7bfe4
+                    stepCounter: fc77a50ba2e1747bc50d422536cbbbd6719ccf3d2d24fe09f386108eb1e101b3
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: 2190270c2a9282f5f30518811db1aeca73b4f7a27bd109ec57d70a5e815bc2bc
+              stepCounter: ebae40275d83b1808f0831dd5113094f50b967d4030e9845b7bdf48e718f64d9
+            dataType: ""
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: CUSTOMER_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 02614c61a1bccb2ed2478655b8b4e2cae5f0c263226a08e74a275b8d13b7bfe4
+                    stepCounter: fc77a50ba2e1747bc50d422536cbbbd6719ccf3d2d24fe09f386108eb1e101b3
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: 9a56637f2366acabb9e48aa02f9d26b3fe91b6cd4939546d040a8ddded47ddaf
+              stepCounter: ebae40275d83b1808f0831dd5113094f50b967d4030e9845b7bdf48e718f64d9
+            dataType: ""
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: GIFT_CARD_AMOUNT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 02614c61a1bccb2ed2478655b8b4e2cae5f0c263226a08e74a275b8d13b7bfe4
+                    stepCounter: fc77a50ba2e1747bc50d422536cbbbd6719ccf3d2d24fe09f386108eb1e101b3
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: 7a580205ee7495a2d620dc1730ba3e5918dc3adb9ea62f3b0f0ca56a2452f972
+              stepCounter: ebae40275d83b1808f0831dd5113094f50b967d4030e9845b7bdf48e718f64d9
+            dataType: ""
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: HAD_BANK_TRANSFER_PAYMENT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 02614c61a1bccb2ed2478655b8b4e2cae5f0c263226a08e74a275b8d13b7bfe4
+                    stepCounter: fc77a50ba2e1747bc50d422536cbbbd6719ccf3d2d24fe09f386108eb1e101b3
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: 32996a6ffcad24cdd9a851a172ed08e9a905ba260a81f47595c3220a01fee1b2
+              stepCounter: ebae40275d83b1808f0831dd5113094f50b967d4030e9845b7bdf48e718f64d9
+            dataType: ""
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: HAD_COUPON_PAYMENT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 02614c61a1bccb2ed2478655b8b4e2cae5f0c263226a08e74a275b8d13b7bfe4
+                    stepCounter: fc77a50ba2e1747bc50d422536cbbbd6719ccf3d2d24fe09f386108eb1e101b3
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: 79998a9a26db6c31bfd510856f64b6377c87685b6877658de9fde1e7c3a5a21e
+              stepCounter: ebae40275d83b1808f0831dd5113094f50b967d4030e9845b7bdf48e718f64d9
+            dataType: ""
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: HAD_CREDIT_CARD_PAYMENT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 02614c61a1bccb2ed2478655b8b4e2cae5f0c263226a08e74a275b8d13b7bfe4
+                    stepCounter: fc77a50ba2e1747bc50d422536cbbbd6719ccf3d2d24fe09f386108eb1e101b3
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: dfcddc7f3dbc42b300c0d0af4bf3445328b1cb0d3130ddaa27e8bdecb8f852e9
+              stepCounter: ebae40275d83b1808f0831dd5113094f50b967d4030e9845b7bdf48e718f64d9
+            dataType: ""
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: HAD_GIFT_CARD_PAYMENT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 02614c61a1bccb2ed2478655b8b4e2cae5f0c263226a08e74a275b8d13b7bfe4
+                    stepCounter: fc77a50ba2e1747bc50d422536cbbbd6719ccf3d2d24fe09f386108eb1e101b3
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: 33732da0129468eb53f454097b960986b2ef30033cf6e00cbfc9b20ff974a68f
+              stepCounter: ebae40275d83b1808f0831dd5113094f50b967d4030e9845b7bdf48e718f64d9
+            dataType: ""
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: ORDER_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 02614c61a1bccb2ed2478655b8b4e2cae5f0c263226a08e74a275b8d13b7bfe4
+                    stepCounter: fc77a50ba2e1747bc50d422536cbbbd6719ccf3d2d24fe09f386108eb1e101b3
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: 15aef926a9aa81e938ccaf55189deea993f1c1f12fcfdcd3257993ab66bc520c
+              stepCounter: ebae40275d83b1808f0831dd5113094f50b967d4030e9845b7bdf48e718f64d9
+            dataType: ""
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: ORDER_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: ff2881cc10f06c8e16e69dec4b6dc16f3c89316a63c9f0532a1b4ec82b18f58d
+                    stepCounter: fc77a50ba2e1747bc50d422536cbbbd6719ccf3d2d24fe09f386108eb1e101b3
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: 0a68bb394921635d53571d548bc2037063d4f522faa7f942847850c7a98c6321
+              stepCounter: ebae40275d83b1808f0831dd5113094f50b967d4030e9845b7bdf48e718f64d9
+            dataType: ""
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: STATUS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 02614c61a1bccb2ed2478655b8b4e2cae5f0c263226a08e74a275b8d13b7bfe4
+                    stepCounter: fc77a50ba2e1747bc50d422536cbbbd6719ccf3d2d24fe09f386108eb1e101b3
+                transform: ""
+        enabledColumnTestIDs: []
+        sourceMapping:
+          - customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: DEO
+                nodeName: INT_ORDER_PAYMENTS_PIVOTED_CTE_PAYMENTS_1
+            join:
+                joinCondition: FROM {{ ref('DEO', 'INT_ORDER_PAYMENTS_PIVOTED_CTE_PAYMENTS_1') }} "INT_ORDER_PAYMENTS_PIVOTED_CTE_PAYMENTS_1"
+            name: INT_ORDER_PAYMENTS_PIVOTED_CTE_FINAL_1
+            noLinkRefs: []
+      name: INT_ORDER_PAYMENTS_PIVOTED_CTE_FINAL_1
+      overrideSQL: false
+      schema: ""
+      sqlType: Stage
+      type: sql
+    stepCounter: ebae40275d83b1808f0831dd5113094f50b967d4030e9845b7bdf48e718f64d9
