@@ -1,0 +1,101 @@
+steps:
+  FCT_CUSTOMER_ORDERS_CTE_CUSTOMERS_1-91a8a4265f671900d93dcd6bd72d9cbd985f261d8e85a57e2c47df97bacbcda3:
+    operation:
+      config:
+        groupByAll: false
+        insertStrategy: UNION
+        postSQL: ""
+        preSQL: ""
+        selectDistinct: false
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      deployEnabled: true
+      description: ""
+      isDataVault: false
+      isMultisource: true
+      locationName: DEO
+      materializationType: view
+      metadata:
+        appliedNodeTests: []
+        columns:
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: 8d8b00918586163dcf9644d8d282fc49c7909383d514e63b4d52a1ba3e932801
+              stepCounter: 91a8a4265f671900d93dcd6bd72d9cbd985f261d8e85a57e2c47df97bacbcda3
+            dataType: ""
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: FIRST_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 28ebfc4394f0aab48670c82a548cada3d135175689b3116bdd0a04b748bdce52
+                    stepCounter: 53b00a25504c514986b8bcc33374894b8383acc7413d8d721c38766380521289
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: 94654b4f09b9bc69c99f78426f9fc7957f9f1427836620ec7178cab189773ca4
+              stepCounter: 91a8a4265f671900d93dcd6bd72d9cbd985f261d8e85a57e2c47df97bacbcda3
+            dataType: ""
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: LAST_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 28ebfc4394f0aab48670c82a548cada3d135175689b3116bdd0a04b748bdce52
+                    stepCounter: 53b00a25504c514986b8bcc33374894b8383acc7413d8d721c38766380521289
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: b87f968007636271daa2e73595443b2037c6989339440dbc8ed988bfb0ba5d45
+              stepCounter: 91a8a4265f671900d93dcd6bd72d9cbd985f261d8e85a57e2c47df97bacbcda3
+            dataType: ""
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: CUSTOMER_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: ea0ab0031dc0a93a48823414485c24bbc3d88af68232e3315fdd4255f896723d
+                    stepCounter: 53b00a25504c514986b8bcc33374894b8383acc7413d8d721c38766380521289
+                transform: ""
+        enabledColumnTestIDs: []
+        sourceMapping:
+          - customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: DEO
+                nodeName: FCT_CUSTOMER_ORDERS_CTE_PAID_ORDERS_1
+            join:
+                joinCondition: |-
+                  FROM {{ ref('DEO', 'FCT_CUSTOMER_ORDERS_CTE_PAID_ORDERS_1') }} "FCT_CUSTOMER_ORDERS_CTE_PAID_ORDERS_1"
+                  LEFT JOIN {{ ref('', 'FCT_CUSTOMER_ORDERS_CTE_FINAL_1') }} "FCT_CUSTOMER_ORDERS_CTE_FINAL_1" 
+                  ON "FCT_CUSTOMER_ORDERS_CTE_CUSTOMERS_1"."CUSTOMER_ID" = "FCT_CUSTOMER_ORDERS_CTE_FINAL_1"."CUSTOMER_ID"
+            name: FCT_CUSTOMER_ORDERS_CTE_CUSTOMERS_1
+            noLinkRefs: []
+      name: FCT_CUSTOMER_ORDERS_CTE_CUSTOMERS_1
+      overrideSQL: false
+      schema: ""
+      sqlType: Stage
+      type: sql
+    stepCounter: 91a8a4265f671900d93dcd6bd72d9cbd985f261d8e85a57e2c47df97bacbcda3
