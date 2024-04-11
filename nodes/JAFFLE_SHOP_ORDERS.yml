@@ -77,23 +77,6 @@ steps:
             nullable: false
             primaryKey: false
             uniqueKey: false
-          - acceptedValues:
-              strictMatch: true
-              values: []
-            appliedColumnTests:
-              hasNull: true
-              isDistinct: false
-            columnReference:
-              columnCounter: 23ba7981b2f8457519922c74900b58bc8fc0e832eb162a6ce261bc99a9917fdc
-              stepCounter: c2b4695ca27ae1f60bc78d7f62ea2ba6e37feb733da737d477bdcffe7f18466f
-            config: 
-            dataType: ""
-            defaultValue: ""
-            description: ""
-            name: *
-            nullable: false
-            primaryKey: false
-            uniqueKey: false
         join:
           joinCondition: FROM { ref(f'JAFFLE_SHOP', 'ORDERS') }
       name: ORDERS
