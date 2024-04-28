@@ -138,7 +138,7 @@ steps:
               - columnReferences:
                   - columnCounter: 91b5381d38ef8463bd279864a3e25065204787d4970900f86e74441042dc8674
                     stepCounter: 2f3f1d12d028f350afe58889fb3b2a514129317e72f5e399c1b3428a3e7d2402
-                transform: 'TMED' DATASOURCE_PIT,
+                transform: ""
           - acceptedValues:
               strictMatch: true
               values: []
