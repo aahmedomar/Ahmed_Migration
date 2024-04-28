@@ -1,0 +1,560 @@
+steps:
+  DIM_DATE_DBT-1b5bd141553241b0d89d0dc75b397434488bad7c4f31873d76efc2c2c20533b7:
+    operation:
+      config:
+        postSQL: ""
+        preSQL: ""
+        testsEnabled: true
+      database: ""
+      deployEnabled: true
+      description: ""
+      isDataVault: false
+      isMultisource: false
+      locationName: OCTAVE_INFO
+      materializationType: Table
+      metadata:
+        appliedNodeTests: []
+        columns:
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: 0751e2f31dbd79070fa8a44475cb07f0997bd829b599ec4a2392aa532a80338f
+              stepCounter: 1b5bd141553241b0d89d0dc75b397434488bad7c4f31873d76efc2c2c20533b7
+            dataType: NUMBER
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            isBusinessKey: true
+            name: DATE_NK
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: Column Relation
+                    stepCounter: No Node Relation
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: 9bfea345eeba9da880d1a414df3c6558f6f899cf10c4efbac54d66cc52ab40c0
+              stepCounter: 1b5bd141553241b0d89d0dc75b397434488bad7c4f31873d76efc2c2c20533b7
+            dataType: DATE
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            isBusinessKey: true
+            name: FULL_DT
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: Column Relation
+                    stepCounter: No Node Relation
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: 0d3d0c11dda4367fa77b4dd6fde68534bf95048d7be9c800532b9be3cca12693
+              stepCounter: 1b5bd141553241b0d89d0dc75b397434488bad7c4f31873d76efc2c2c20533b7
+            dataType: NUMBER
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            isBusinessKey: true
+            name: DAYOFWEEK
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: Column Relation
+                    stepCounter: No Node Relation
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: 4204d4e6b40e4d313a438bbe48b2aebe031d281b3a1d11808f8334d82b181930
+              stepCounter: 1b5bd141553241b0d89d0dc75b397434488bad7c4f31873d76efc2c2c20533b7
+            dataType: NUMBER
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            isBusinessKey: true
+            name: DAYINMONTH_NBR
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: Column Relation
+                    stepCounter: No Node Relation
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: 932ea025c5567faf3301299fc358c75a12c872a1f8e7e583a0be577c8565bb3f
+              stepCounter: 1b5bd141553241b0d89d0dc75b397434488bad7c4f31873d76efc2c2c20533b7
+            dataType: NUMBER
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            isBusinessKey: true
+            name: DAYOVERALL_NBR
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: Column Relation
+                    stepCounter: No Node Relation
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: ff73ccd272135496575c875ac45cb82a346f62e70e4617bcd8f2aa2056df5f55
+              stepCounter: 1b5bd141553241b0d89d0dc75b397434488bad7c4f31873d76efc2c2c20533b7
+            dataType: TEXT
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            isBusinessKey: true
+            name: DAY_NM
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: Column Relation
+                    stepCounter: No Node Relation
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: 37dd4e1451c6387297579266502cde7a4fa508c0f8d6f32985d0521e06fc4b5f
+              stepCounter: 1b5bd141553241b0d89d0dc75b397434488bad7c4f31873d76efc2c2c20533b7
+            dataType: TEXT
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            isBusinessKey: true
+            name: DAYABBREV
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: Column Relation
+                    stepCounter: No Node Relation
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: 561f5c76987afa3ab36405cbe32e382d07a39c3913f80d59d8d0733994f680ee
+              stepCounter: 1b5bd141553241b0d89d0dc75b397434488bad7c4f31873d76efc2c2c20533b7
+            dataType: TEXT
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            isBusinessKey: true
+            name: WEEKDAYWEEKEND_DESC
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: Column Relation
+                    stepCounter: No Node Relation
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: 9f561c6dd05bf745977d3796dffb29deca0d4470ad13f4f4e4470de43e244367
+              stepCounter: 1b5bd141553241b0d89d0dc75b397434488bad7c4f31873d76efc2c2c20533b7
+            dataType: NUMBER
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            isBusinessKey: true
+            name: WEEKINYEAR_NBR
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: Column Relation
+                    stepCounter: No Node Relation
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: d6d1f324681b38312c5ee152a81187b4202100a435d4c61d33c4702c2e773f32
+              stepCounter: 1b5bd141553241b0d89d0dc75b397434488bad7c4f31873d76efc2c2c20533b7
+            dataType: NUMBER
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            isBusinessKey: true
+            name: WEEKOVERALL_NBR
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: Column Relation
+                    stepCounter: No Node Relation
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: 137a5ab8343a2551b7201131cf9d09b400b52a2e2bef1aa11acba4536c8489a2
+              stepCounter: 1b5bd141553241b0d89d0dc75b397434488bad7c4f31873d76efc2c2c20533b7
+            dataType: DATE
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            isBusinessKey: true
+            name: WEEKBEGIN_DT
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: Column Relation
+                    stepCounter: No Node Relation
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: ac8d9508cea4a253684932da634778f28f27db73cd9cd35f0c1eca43ec2b0c96
+              stepCounter: 1b5bd141553241b0d89d0dc75b397434488bad7c4f31873d76efc2c2c20533b7
+            dataType: NUMBER
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            isBusinessKey: true
+            name: WEEKBEGIN_NK
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: Column Relation
+                    stepCounter: No Node Relation
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: e08abcdcd76215580d2017fc181903c1719ecc05490f094de77c6009db2ad38a
+              stepCounter: 1b5bd141553241b0d89d0dc75b397434488bad7c4f31873d76efc2c2c20533b7
+            dataType: NUMBER
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            isBusinessKey: true
+            name: MONTHINYEAR_NBR
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: Column Relation
+                    stepCounter: No Node Relation
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: 47ccf3af01deffb0bf2645cf2fb179256d4ec4a0ae5585a90aa0854542cd495a
+              stepCounter: 1b5bd141553241b0d89d0dc75b397434488bad7c4f31873d76efc2c2c20533b7
+            dataType: NUMBER
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            isBusinessKey: true
+            name: MONTHOVERALL_NBR
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: Column Relation
+                    stepCounter: No Node Relation
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: 67ce21f7425fccf64fd12092e250d7f4ded505ea6e82298910edfff42f61bb40
+              stepCounter: 1b5bd141553241b0d89d0dc75b397434488bad7c4f31873d76efc2c2c20533b7
+            dataType: TEXT
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            isBusinessKey: true
+            name: MONTH_NM
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: Column Relation
+                    stepCounter: No Node Relation
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: 54acb0456f230b0b5c820349c3317ed871e41136b140fb53e8b7d6cb5463cd7e
+              stepCounter: 1b5bd141553241b0d89d0dc75b397434488bad7c4f31873d76efc2c2c20533b7
+            dataType: TEXT
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            isBusinessKey: true
+            name: MONTHABBREV
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: Column Relation
+                    stepCounter: No Node Relation
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: 241e6fdca1d4b048ffeca9aedc0f93fc5c784e9b9687481492c607af986f9704
+              stepCounter: 1b5bd141553241b0d89d0dc75b397434488bad7c4f31873d76efc2c2c20533b7
+            dataType: NUMBER
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            isBusinessKey: true
+            name: QUARTER_NBR
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: Column Relation
+                    stepCounter: No Node Relation
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: 81599b2b3fd5df4880541acba282fc79d9185374845c185bafcd7d472c00593d
+              stepCounter: 1b5bd141553241b0d89d0dc75b397434488bad7c4f31873d76efc2c2c20533b7
+            dataType: NUMBER
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            isBusinessKey: true
+            name: YEAR_NBR
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: Column Relation
+                    stepCounter: No Node Relation
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: ca9e270837a92be71a7cb8ee05b3143f5e7438602861be1648548b51235c01d2
+              stepCounter: 1b5bd141553241b0d89d0dc75b397434488bad7c4f31873d76efc2c2c20533b7
+            dataType: NUMBER
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            isBusinessKey: true
+            name: YEARMONTH_NBR
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: Column Relation
+                    stepCounter: No Node Relation
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: da1826044304fb9b2f404b93f56d1c351c1ed8a8313fe71035aace1e937f2762
+              stepCounter: 1b5bd141553241b0d89d0dc75b397434488bad7c4f31873d76efc2c2c20533b7
+            dataType: DATE
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            isBusinessKey: true
+            name: MONTHSTART_DT
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: Column Relation
+                    stepCounter: No Node Relation
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: 2d3f272b84f252a5de06d95fde972cf05e286953ed3eb086c92192531b00068e
+              stepCounter: 1b5bd141553241b0d89d0dc75b397434488bad7c4f31873d76efc2c2c20533b7
+            dataType: NUMBER
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            isBusinessKey: true
+            name: FISCALMONTH_NBR
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: Column Relation
+                    stepCounter: No Node Relation
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: c9a4044a701158dfdd043b1007160a783612f64e27f7e01397732a37de004d24
+              stepCounter: 1b5bd141553241b0d89d0dc75b397434488bad7c4f31873d76efc2c2c20533b7
+            dataType: NUMBER
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            isBusinessKey: true
+            name: FISCALQUARTER_NBR
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: Column Relation
+                    stepCounter: No Node Relation
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: 50a1300cd13eb0d4c3e29c701ea708effc79f2887e454a68c04c0ac8c18a1449
+              stepCounter: 1b5bd141553241b0d89d0dc75b397434488bad7c4f31873d76efc2c2c20533b7
+            dataType: NUMBER
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            isBusinessKey: true
+            name: FISCALYEAR_NBR
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: Column Relation
+                    stepCounter: No Node Relation
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: 9aa81cbab8274c6845449edd7fe19a292b358ab0360fa5d3edbb7088ac00c54a
+              stepCounter: 1b5bd141553241b0d89d0dc75b397434488bad7c4f31873d76efc2c2c20533b7
+            dataType: TEXT
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            isBusinessKey: true
+            name: MONTHEND_DESC
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: Column Relation
+                    stepCounter: No Node Relation
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: 2861ae1df8f2643890407489995e9025b7307b3efa4ab5d2bcca68ea71412ddb
+              stepCounter: 1b5bd141553241b0d89d0dc75b397434488bad7c4f31873d76efc2c2c20533b7
+            dataType: DATE
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            isBusinessKey: true
+            name: SAMEDAYYEARAGO_DT
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: Column Relation
+                    stepCounter: No Node Relation
+                transform: ""
+        cteString: ""
+        enabledColumnTestIDs: []
+        sourceMapping:
+          - customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: default_storage_location
+                nodeName: None
+            join:
+              joinCondition: FROM {{ ref('default_storage_location', 'None') }} "None"
+              name: DIM_DATE_DBT
+              noLinkRefs: []
+      name: DIM_DATE_DBT
+      overrideSQL: false
+      schema: ""
+      sqlType: Dimension
+      type: sql
+    stepCounter: 1b5bd141553241b0d89d0dc75b397434488bad7c4f31873d76efc2c2c20533b7

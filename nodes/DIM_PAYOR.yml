@@ -1,0 +1,98 @@
+steps:
+  DIM_PAYOR-8707ac290f42a514ff3c3d07086e20ef414a3352dd13344d7df25f66d73385a5:
+    operation:
+      config:
+        postSQL: ""
+        preSQL: ""
+        testsEnabled: true
+      database: ""
+      deployEnabled: true
+      description: ""
+      isDataVault: false
+      isMultisource: false
+      locationName: 
+      materializationType: Table
+      metadata:
+        appliedNodeTests: []
+        columns:
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: 2df4963c2dc0101e565e529387424575cf41aed14fc9fd6c8ab70ba71085926c
+              stepCounter: 8707ac290f42a514ff3c3d07086e20ef414a3352dd13344d7df25f66d73385a5
+            dataType: 
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            isBusinessKey: true
+            name: PAYOR_BK
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: Column Relation
+                    stepCounter: No Node Relation
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: dba8f65d5d3325a73a1c7ebd1869548b23cc9eeeebe3e105a99a1ea07475bc46
+              stepCounter: 8707ac290f42a514ff3c3d07086e20ef414a3352dd13344d7df25f66d73385a5
+            dataType: 
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            isBusinessKey: true
+            name: PAYOR_NAME
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: Column Relation
+                    stepCounter: No Node Relation
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: b3ed167e0c28de75d159071616febe101ef3cd09cdecae39078e847d0ae1fc1a
+              stepCounter: 8707ac290f42a514ff3c3d07086e20ef414a3352dd13344d7df25f66d73385a5
+            dataType: 
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            isBusinessKey: true
+            name: SNAPSHOT__TIMESTAMP
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: Column Relation
+                    stepCounter: No Node Relation
+                transform: ""
+        cteString: ""
+        enabledColumnTestIDs: []
+        sourceMapping:
+          - customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: default_storage_location
+                nodeName: None
+            join:
+              joinCondition: FROM {{ ref('default_storage_location', 'None') }} "None"
+              name: DIM_PAYOR
+              noLinkRefs: []
+      name: DIM_PAYOR
+      overrideSQL: false
+      schema: ""
+      sqlType: Dimension
+      type: sql
+    stepCounter: 8707ac290f42a514ff3c3d07086e20ef414a3352dd13344d7df25f66d73385a5

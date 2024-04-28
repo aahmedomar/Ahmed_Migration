@@ -1,0 +1,455 @@
+steps:
+  DIM_HCPCS-58bbb40f47b2bade8ed938307344c75dcf494c7b3865706ee26c4aeef41f070b:
+    operation:
+      config:
+        postSQL: ""
+        preSQL: ""
+        testsEnabled: true
+      database: ""
+      deployEnabled: true
+      description: ""
+      isDataVault: false
+      isMultisource: false
+      locationName: OCTAVE_INFO
+      materializationType: Table
+      metadata:
+        appliedNodeTests: []
+        columns:
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: a721e694d35d62de33f63eaf0f7c5e2d057465b11e458cb89f1feeb66a8a4438
+              stepCounter: 58bbb40f47b2bade8ed938307344c75dcf494c7b3865706ee26c4aeef41f070b
+            dataType: TEXT
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            isBusinessKey: true
+            name: HCPCS_PROC_CD
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: Column Relation
+                    stepCounter: No Node Relation
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: 710032871fb7aebf2ac866b9626f54210bf5b654ad729b88cd7c5199d8d92795
+              stepCounter: 58bbb40f47b2bade8ed938307344c75dcf494c7b3865706ee26c4aeef41f070b
+            dataType: TEXT
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            isBusinessKey: true
+            name: PREV_HCPCS_PROC_CD
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: Column Relation
+                    stepCounter: No Node Relation
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: ccd216fe6bb1d1aaaa2593b04ce8aad7bfc80bcf40aa3713be49fe3667e5157c
+              stepCounter: 58bbb40f47b2bade8ed938307344c75dcf494c7b3865706ee26c4aeef41f070b
+            dataType: TEXT
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            isBusinessKey: true
+            name: CHANGE_IND
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: Column Relation
+                    stepCounter: No Node Relation
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: d4cf0dd84b47c105eaafad771378f01920a993929a4e21139c7b61e9d2686f6e
+              stepCounter: 58bbb40f47b2bade8ed938307344c75dcf494c7b3865706ee26c4aeef41f070b
+            dataType: DATE
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            isBusinessKey: true
+            name: RW_EFF_DT
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: Column Relation
+                    stepCounter: No Node Relation
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: a5c8a3d93f720e77b2483b2032f4d503d42277ceff9c4869d5bd581528a7b564
+              stepCounter: 58bbb40f47b2bade8ed938307344c75dcf494c7b3865706ee26c4aeef41f070b
+            dataType: DATE
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            isBusinessKey: true
+            name: RW_EXP_DT
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: Column Relation
+                    stepCounter: No Node Relation
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: 9f9b603570a08d0e4c7ff0404b0e8ca88443a2bb66bf6c95b78976aaaa0765eb
+              stepCounter: 58bbb40f47b2bade8ed938307344c75dcf494c7b3865706ee26c4aeef41f070b
+            dataType: TEXT
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            isBusinessKey: true
+            name: HCPCS_PROC_ABB_DSC
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: Column Relation
+                    stepCounter: No Node Relation
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: 5599ee063117f7397b60e4a0b18ed177682101e9c32c57ddf0244b2405864ff7
+              stepCounter: 58bbb40f47b2bade8ed938307344c75dcf494c7b3865706ee26c4aeef41f070b
+            dataType: TEXT
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            isBusinessKey: true
+            name: HCPCS_PROC_MOD_1_CD
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: Column Relation
+                    stepCounter: No Node Relation
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: c77d4130f029194285e828e5d7491195e4a9e2767b86cf70adff8b8747a956c1
+              stepCounter: 58bbb40f47b2bade8ed938307344c75dcf494c7b3865706ee26c4aeef41f070b
+            dataType: TEXT
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            isBusinessKey: true
+            name: HCPCS_PROC_MOD_2_CD
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: Column Relation
+                    stepCounter: No Node Relation
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: 674ac1c25426f3e11c6587bd047f10b9aeb50dc8343556c47e776096a4b9fc92
+              stepCounter: 58bbb40f47b2bade8ed938307344c75dcf494c7b3865706ee26c4aeef41f070b
+            dataType: TEXT
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            isBusinessKey: true
+            name: HCPCS_PROC_MOD_3_CD
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: Column Relation
+                    stepCounter: No Node Relation
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: bafa34ab17967a50879f9788f440424c1e39f297a2b30f317b3418d70a7eca2c
+              stepCounter: 58bbb40f47b2bade8ed938307344c75dcf494c7b3865706ee26c4aeef41f070b
+            dataType: TEXT
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            isBusinessKey: true
+            name: HCPCS_PROC_MOD_4_CD
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: Column Relation
+                    stepCounter: No Node Relation
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: 295cda8b6116fe877976f3cde3130208002e6c0253eb3ab6e3fb4dc88cb5f7b2
+              stepCounter: 58bbb40f47b2bade8ed938307344c75dcf494c7b3865706ee26c4aeef41f070b
+            dataType: TEXT
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            isBusinessKey: true
+            name: HCPCS_PROC_MOD_5_CD
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: Column Relation
+                    stepCounter: No Node Relation
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: a425e6991d3e0ef8aa8a258d3edc8cb4561bfa518421e52b3bba926a20ba0ff1
+              stepCounter: 58bbb40f47b2bade8ed938307344c75dcf494c7b3865706ee26c4aeef41f070b
+            dataType: TEXT
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            isBusinessKey: true
+            name: HCPCS_PROC_MOD_6_CD
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: Column Relation
+                    stepCounter: No Node Relation
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: 245168fd0e2c1603866a07498542147f18ed4adb0af0867c1f9ad1ed92c07c1b
+              stepCounter: 58bbb40f47b2bade8ed938307344c75dcf494c7b3865706ee26c4aeef41f070b
+            dataType: TEXT
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            isBusinessKey: true
+            name: HCPCS_PROC_MOD_7_CD
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: Column Relation
+                    stepCounter: No Node Relation
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: 58f49cf7e612284f4dc74a7fda84e902967ca21d0d79a750842a3e7e1b61630a
+              stepCounter: 58bbb40f47b2bade8ed938307344c75dcf494c7b3865706ee26c4aeef41f070b
+            dataType: TEXT
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            isBusinessKey: true
+            name: HCPCS_PROC_MOD_CLS_1_CD
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: Column Relation
+                    stepCounter: No Node Relation
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: 454b36637f61d7b88b0db61eb440d7a99dddb3130ad7936745865ae212eccdd7
+              stepCounter: 58bbb40f47b2bade8ed938307344c75dcf494c7b3865706ee26c4aeef41f070b
+            dataType: TEXT
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            isBusinessKey: true
+            name: HCPCS_PROC_MOD_CLS_2_CD
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: Column Relation
+                    stepCounter: No Node Relation
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: 5adda69e4c973debf4c14b8661ffb9fc1f5cfd29a06cde4a5564c455694d0ae0
+              stepCounter: 58bbb40f47b2bade8ed938307344c75dcf494c7b3865706ee26c4aeef41f070b
+            dataType: TEXT
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            isBusinessKey: true
+            name: HCPCS_PROC_MOD_CLS_3_CD
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: Column Relation
+                    stepCounter: No Node Relation
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: c97a112cf57a1c8b9b7132459bd0ea99dedb47425bed016d116324d11524b425
+              stepCounter: 58bbb40f47b2bade8ed938307344c75dcf494c7b3865706ee26c4aeef41f070b
+            dataType: TEXT
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            isBusinessKey: true
+            name: HCPCS_PROC_MOD_CLS_4_CD
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: Column Relation
+                    stepCounter: No Node Relation
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: dd165082d351ff24707fbadc1ae846cc039547a7e6e127c5e5a5c97a788a523e
+              stepCounter: 58bbb40f47b2bade8ed938307344c75dcf494c7b3865706ee26c4aeef41f070b
+            dataType: TEXT
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            isBusinessKey: true
+            name: HCPCS_PROC_MOD_CLS_5_CD
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: Column Relation
+                    stepCounter: No Node Relation
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: a999a1319a58a50ad7896b786a3799beb63440b42d75bc71f07d4740fc72521e
+              stepCounter: 58bbb40f47b2bade8ed938307344c75dcf494c7b3865706ee26c4aeef41f070b
+            dataType: TEXT
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            isBusinessKey: true
+            name: HCPCS_PROC_MOD_CLS_6_CD
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: Column Relation
+                    stepCounter: No Node Relation
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: c313f11c6d4fa38d3b218dff14071c32a436d9d28aa0ed7a8b6161134bf4a1b9
+              stepCounter: 58bbb40f47b2bade8ed938307344c75dcf494c7b3865706ee26c4aeef41f070b
+            dataType: TEXT
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            isBusinessKey: true
+            name: HCPCS_PROC_MOD_CLS_PRI_CD
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: Column Relation
+                    stepCounter: No Node Relation
+                transform: ""
+        cteString: ""
+        enabledColumnTestIDs: []
+        sourceMapping:
+          - customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: default_storage_location
+                nodeName: None
+            join:
+              joinCondition: FROM {{ ref('default_storage_location', 'None') }} "None"
+              name: DIM_HCPCS
+              noLinkRefs: []
+      name: DIM_HCPCS
+      overrideSQL: false
+      schema: ""
+      sqlType: Dimension
+      type: sql
+    stepCounter: 58bbb40f47b2bade8ed938307344c75dcf494c7b3865706ee26c4aeef41f070b

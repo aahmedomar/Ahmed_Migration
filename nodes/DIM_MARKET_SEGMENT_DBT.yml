@@ -1,0 +1,161 @@
+steps:
+  DIM_MARKET_SEGMENT_DBT-f9d7d3695cd2b612b5634506d19afef573126451631cd5898a55687370dfe8ba:
+    operation:
+      config:
+        postSQL: ""
+        preSQL: ""
+        testsEnabled: true
+      database: ""
+      deployEnabled: true
+      description: ""
+      isDataVault: false
+      isMultisource: false
+      locationName: OCTAVE_INFO
+      materializationType: Table
+      metadata:
+        appliedNodeTests: []
+        columns:
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: bae1eaa82ea7ff0d13c7949f55621842e226dc03add143f4227ce6b54449e3f6
+              stepCounter: f9d7d3695cd2b612b5634506d19afef573126451631cd5898a55687370dfe8ba
+            dataType: BINARY
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            isBusinessKey: true
+            name: DIM_MARKET_SEGMENT_HK
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: Column Relation
+                    stepCounter: No Node Relation
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: d75ab2977165aa2e78d66b9bee5e44757de6358a06d6041d43610f39eb9e6864
+              stepCounter: f9d7d3695cd2b612b5634506d19afef573126451631cd5898a55687370dfe8ba
+            dataType: BINARY
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            isBusinessKey: true
+            name: MARKET_SEGMENT_HK
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: Column Relation
+                    stepCounter: No Node Relation
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: 6fa946b170fe5239e500fca133861e6c81dd3b12cd7c3935a0e4c3a385211b3a
+              stepCounter: f9d7d3695cd2b612b5634506d19afef573126451631cd5898a55687370dfe8ba
+            dataType: TEXT
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            isBusinessKey: true
+            name: MARKET_SEGMENT_BK
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: Column Relation
+                    stepCounter: No Node Relation
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: 03fd3a8a4210a84ae1f4847aa1feafab504f75c46896a03eb5938525732ce4a5
+              stepCounter: f9d7d3695cd2b612b5634506d19afef573126451631cd5898a55687370dfe8ba
+            dataType: TIMESTAMP_NTZ
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            isBusinessKey: true
+            name: SNAPSHOT__TIMESTAMP
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: Column Relation
+                    stepCounter: No Node Relation
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: 2f97e9f09eddbeb92c2e920fb2437dcf0cd9bff9c83a1f29e5bc5e3da540390e
+              stepCounter: f9d7d3695cd2b612b5634506d19afef573126451631cd5898a55687370dfe8ba
+            dataType: TIMESTAMP_NTZ
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            isBusinessKey: true
+            name: END_SNAPSHOT__TIMESTAMP
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: Column Relation
+                    stepCounter: No Node Relation
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: 940eac9b4ce78db924f0c4013a5ba33b925afdeaf3001011c6a0fda580811a3b
+              stepCounter: f9d7d3695cd2b612b5634506d19afef573126451631cd5898a55687370dfe8ba
+            dataType: TEXT
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            isBusinessKey: true
+            name: MARKET_SEGMENT
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: Column Relation
+                    stepCounter: No Node Relation
+                transform: ""
+        cteString: ""
+        enabledColumnTestIDs: []
+        sourceMapping:
+          - customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: default_storage_location
+                nodeName: None
+            join:
+              joinCondition: FROM {{ ref('default_storage_location', 'None') }} "None"
+              name: DIM_MARKET_SEGMENT_DBT
+              noLinkRefs: []
+      name: DIM_MARKET_SEGMENT_DBT
+      overrideSQL: false
+      schema: ""
+      sqlType: Dimension
+      type: sql
+    stepCounter: f9d7d3695cd2b612b5634506d19afef573126451631cd5898a55687370dfe8ba

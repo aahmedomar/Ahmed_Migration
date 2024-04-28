@@ -1,0 +1,161 @@
+steps:
+  DIM_PROVIDER_NETWORK_TYPE_DBT-44196618af64589e0bf729cba3b8cd64f53c3f8c5389af4ec60a93daeccae88a:
+    operation:
+      config:
+        postSQL: ""
+        preSQL: ""
+        testsEnabled: true
+      database: ""
+      deployEnabled: true
+      description: ""
+      isDataVault: false
+      isMultisource: false
+      locationName: OCTAVE_INFO
+      materializationType: Table
+      metadata:
+        appliedNodeTests: []
+        columns:
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: 5ec02451579f2258d4ea9590d113fe1c3a6327e104bcb28d9cff91b7e7943598
+              stepCounter: 44196618af64589e0bf729cba3b8cd64f53c3f8c5389af4ec60a93daeccae88a
+            dataType: BINARY
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            isBusinessKey: true
+            name: DIM_PROVIDER_NETWORK_TYPE_HK
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: Column Relation
+                    stepCounter: No Node Relation
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: dc1adeef86dee81e9f8631c041be655d7df82374d46086e0cd91a64bbe82779a
+              stepCounter: 44196618af64589e0bf729cba3b8cd64f53c3f8c5389af4ec60a93daeccae88a
+            dataType: BINARY
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            isBusinessKey: true
+            name: PROVIDER_NETWORK_TYPE_HK
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: Column Relation
+                    stepCounter: No Node Relation
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: a14c4c6b717a882b5fe4a25ebb60cf3cf173e6cf6b3eace03cd106755daee294
+              stepCounter: 44196618af64589e0bf729cba3b8cd64f53c3f8c5389af4ec60a93daeccae88a
+            dataType: TEXT
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            isBusinessKey: true
+            name: PROVIDER_NETWORK_TYPE_BK
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: Column Relation
+                    stepCounter: No Node Relation
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: 43207784a5e439d579bd4ebb4b74e1f4da6b831023dc0d2f5dbb4f2a977d062b
+              stepCounter: 44196618af64589e0bf729cba3b8cd64f53c3f8c5389af4ec60a93daeccae88a
+            dataType: TIMESTAMP_NTZ
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            isBusinessKey: true
+            name: SNAPSHOT__TIMESTAMP
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: Column Relation
+                    stepCounter: No Node Relation
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: 52377f2d2576c0b9f74bee3183b15c6560a95d97dea770aec7cd72ad34e004af
+              stepCounter: 44196618af64589e0bf729cba3b8cd64f53c3f8c5389af4ec60a93daeccae88a
+            dataType: TIMESTAMP_NTZ
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            isBusinessKey: true
+            name: END_SNAPSHOT__TIMESTAMP
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: Column Relation
+                    stepCounter: No Node Relation
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: 5edb34a56f132f9eb733b3ef8a428becfbed7d90fe1c9f47886a43c15879c22d
+              stepCounter: 44196618af64589e0bf729cba3b8cd64f53c3f8c5389af4ec60a93daeccae88a
+            dataType: TEXT
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            isBusinessKey: true
+            name: NETWORK_TYPE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: Column Relation
+                    stepCounter: No Node Relation
+                transform: ""
+        cteString: ""
+        enabledColumnTestIDs: []
+        sourceMapping:
+          - customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: default_storage_location
+                nodeName: None
+            join:
+              joinCondition: FROM {{ ref('default_storage_location', 'None') }} "None"
+              name: DIM_PROVIDER_NETWORK_TYPE_DBT
+              noLinkRefs: []
+      name: DIM_PROVIDER_NETWORK_TYPE_DBT
+      overrideSQL: false
+      schema: ""
+      sqlType: Dimension
+      type: sql
+    stepCounter: 44196618af64589e0bf729cba3b8cd64f53c3f8c5389af4ec60a93daeccae88a

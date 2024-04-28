@@ -1,0 +1,140 @@
+steps:
+  DIM_PRACTICE_PROVIDER_ORGANIZATION_BSPA_DBT-553db83b1e954e1379688f65413ba7101f4686b16b8eb434774fe5852d204e07:
+    operation:
+      config:
+        postSQL: ""
+        preSQL: ""
+        testsEnabled: true
+      database: ""
+      deployEnabled: true
+      description: ""
+      isDataVault: false
+      isMultisource: false
+      locationName: OCTAVE_INFO
+      materializationType: Table
+      metadata:
+        appliedNodeTests: []
+        columns:
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: 848a369a61b5e63d78abfbde47623f67204a73d2a42271efeb862f6f3345488f
+              stepCounter: 553db83b1e954e1379688f65413ba7101f4686b16b8eb434774fe5852d204e07
+            dataType: BINARY
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            isBusinessKey: true
+            name: DIM_PROVIDER_ORGANIZATION_BSPA_HK
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: Column Relation
+                    stepCounter: No Node Relation
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: d494d2e1c46ee33c3ab1d3ea245b0673dc1d438737e5893a401a8adcf9fa0b6b
+              stepCounter: 553db83b1e954e1379688f65413ba7101f4686b16b8eb434774fe5852d204e07
+            dataType: BINARY
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            isBusinessKey: true
+            name: PROVIDER_ORGANIZATION_BSPA_HK
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: Column Relation
+                    stepCounter: No Node Relation
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: dc4b7efe392413b9d7d621e3a3df05bf3f5b64746f4c672f5e4cf34e83b6d9e1
+              stepCounter: 553db83b1e954e1379688f65413ba7101f4686b16b8eb434774fe5852d204e07
+            dataType: TEXT
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            isBusinessKey: true
+            name: PROVIDER_ORGANIZATION_BSPA_BK
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: Column Relation
+                    stepCounter: No Node Relation
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: 81d29794de320efebc55f81d8e1035570e85a1738a6c09dde8c8ef5c5a291427
+              stepCounter: 553db83b1e954e1379688f65413ba7101f4686b16b8eb434774fe5852d204e07
+            dataType: TIMESTAMP_NTZ
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            isBusinessKey: true
+            name: SNAPSHOT__TIMESTAMP
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: Column Relation
+                    stepCounter: No Node Relation
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: 849b2a1fa63d192b31dfd85cb052633ab4fe5c1b56a145e230b0199ae9d5bb62
+              stepCounter: 553db83b1e954e1379688f65413ba7101f4686b16b8eb434774fe5852d204e07
+            dataType: TIMESTAMP_NTZ
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            isBusinessKey: true
+            name: END_SNAPSHOT__TIMESTAMP
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: Column Relation
+                    stepCounter: No Node Relation
+                transform: ""
+        cteString: ""
+        enabledColumnTestIDs: []
+        sourceMapping:
+          - customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: default_storage_location
+                nodeName: None
+            join:
+              joinCondition: FROM {{ ref('default_storage_location', 'None') }} "None"
+              name: DIM_PRACTICE_PROVIDER_ORGANIZATION_BSPA_DBT
+              noLinkRefs: []
+      name: DIM_PRACTICE_PROVIDER_ORGANIZATION_BSPA_DBT
+      overrideSQL: false
+      schema: ""
+      sqlType: Dimension
+      type: sql
+    stepCounter: 553db83b1e954e1379688f65413ba7101f4686b16b8eb434774fe5852d204e07

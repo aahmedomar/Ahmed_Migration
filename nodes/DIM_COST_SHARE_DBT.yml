@@ -1,0 +1,161 @@
+steps:
+  DIM_COST_SHARE_DBT-426e3444881df5d100f9eaca40d85bcdde00e96b8ad1283026a1abbda3bd4127:
+    operation:
+      config:
+        postSQL: ""
+        preSQL: ""
+        testsEnabled: true
+      database: ""
+      deployEnabled: true
+      description: ""
+      isDataVault: false
+      isMultisource: false
+      locationName: OCTAVE_INFO
+      materializationType: Table
+      metadata:
+        appliedNodeTests: []
+        columns:
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: 927ede78684208c2c2de80b704bea44099b64d2077bdb020657186e24facde74
+              stepCounter: 426e3444881df5d100f9eaca40d85bcdde00e96b8ad1283026a1abbda3bd4127
+            dataType: BINARY
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            isBusinessKey: true
+            name: DIM_COST_SHARE_HK
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: Column Relation
+                    stepCounter: No Node Relation
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: 6e7cdd688eed6886832c79f6e25b7d6b397330ad298186abe9026b637bda6285
+              stepCounter: 426e3444881df5d100f9eaca40d85bcdde00e96b8ad1283026a1abbda3bd4127
+            dataType: BINARY
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            isBusinessKey: true
+            name: COST_SHARE_HK
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: Column Relation
+                    stepCounter: No Node Relation
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: 73337bc5bbc2a7c6927d9974c215ce487b621c589885190e997002f3ddd5fc5f
+              stepCounter: 426e3444881df5d100f9eaca40d85bcdde00e96b8ad1283026a1abbda3bd4127
+            dataType: TEXT
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            isBusinessKey: true
+            name: COST_SHARE_BK
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: Column Relation
+                    stepCounter: No Node Relation
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: 964d7be034c6c53524acf5e3e8dc9d3372f4eee8bd821c8aa5df2ff5dec699a8
+              stepCounter: 426e3444881df5d100f9eaca40d85bcdde00e96b8ad1283026a1abbda3bd4127
+            dataType: TIMESTAMP_NTZ
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            isBusinessKey: true
+            name: SNAPSHOT__TIMESTAMP
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: Column Relation
+                    stepCounter: No Node Relation
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: 54ea8bb4fbc94c7289151ef5127b40f8fb361301d77e819763a81a1d6bd575d9
+              stepCounter: 426e3444881df5d100f9eaca40d85bcdde00e96b8ad1283026a1abbda3bd4127
+            dataType: TIMESTAMP_NTZ
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            isBusinessKey: true
+            name: END_SNAPSHOT__TIMESTAMP
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: Column Relation
+                    stepCounter: No Node Relation
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: 6179b863859039830c7ba65c21ac2b940bdda0b246b49e4160f28e2fc747ecff
+              stepCounter: 426e3444881df5d100f9eaca40d85bcdde00e96b8ad1283026a1abbda3bd4127
+            dataType: TEXT
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            isBusinessKey: true
+            name: PRODUCT_GROUPING
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: Column Relation
+                    stepCounter: No Node Relation
+                transform: ""
+        cteString: ""
+        enabledColumnTestIDs: []
+        sourceMapping:
+          - customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: default_storage_location
+                nodeName: None
+            join:
+              joinCondition: FROM {{ ref('default_storage_location', 'None') }} "None"
+              name: DIM_COST_SHARE_DBT
+              noLinkRefs: []
+      name: DIM_COST_SHARE_DBT
+      overrideSQL: false
+      schema: ""
+      sqlType: Dimension
+      type: sql
+    stepCounter: 426e3444881df5d100f9eaca40d85bcdde00e96b8ad1283026a1abbda3bd4127

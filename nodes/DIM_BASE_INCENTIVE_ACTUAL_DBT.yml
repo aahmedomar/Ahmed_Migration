@@ -1,0 +1,371 @@
+steps:
+  DIM_BASE_INCENTIVE_ACTUAL_DBT-5c8049dc55c55c4fef86f799503973606954e90b337772772c3dfa8ae7441841:
+    operation:
+      config:
+        postSQL: ""
+        preSQL: ""
+        testsEnabled: true
+      database: ""
+      deployEnabled: true
+      description: ""
+      isDataVault: false
+      isMultisource: false
+      locationName: OCTAVE_INFO
+      materializationType: Table
+      metadata:
+        appliedNodeTests: []
+        columns:
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: fd063a69a0ca05bfab848da4b63f876f8c6773071860f4ce659af0829a69fdcd
+              stepCounter: 5c8049dc55c55c4fef86f799503973606954e90b337772772c3dfa8ae7441841
+            dataType: BINARY
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            isBusinessKey: true
+            name: DIM_PL_REF_BASE_INCENTIVE_ACTUAL_HK
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: No_Source_Column_Counter
+                    stepCounter: No_Source_Step_id
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: 13b0f436e2a2584d134e9037b9c8960ebbdacdc7649fdc362cfc7454b08a933d
+              stepCounter: 5c8049dc55c55c4fef86f799503973606954e90b337772772c3dfa8ae7441841
+            dataType: BINARY
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            isBusinessKey: true
+            name: PL_REF_BASE_INCENTIVE_ACTUAL_HK
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: No_Source_Column_Counter
+                    stepCounter: No_Source_Step_id
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: 2a8d9b3e7892f79de8f35c71a9aa9c7c59941d437639a53e3a0e89b459ba0b68
+              stepCounter: 5c8049dc55c55c4fef86f799503973606954e90b337772772c3dfa8ae7441841
+            dataType: TEXT
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            isBusinessKey: true
+            name: PAYOR_BK
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: c5d957f2a965a7d208718ee3b8dd4e0a8cb6b58d5eef71f863c335aefab88614
+                    stepCounter: 40967bffb9bc85c213753b51a34ac3ec2c48b6d15d5730149e12107dc4dbd0b1
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: 8f1c6d4520630e2c6c7a511238d80e2278cb6dd580f0fca70b2beba6a9ee2b95
+              stepCounter: 5c8049dc55c55c4fef86f799503973606954e90b337772772c3dfa8ae7441841
+            dataType: TEXT
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            isBusinessKey: true
+            name: PAYOR_NAME
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: No_Source_Column_Counter
+                    stepCounter: No_Source_Step_id
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: b292eab749bcd7234147f0c1118b233aa0bc31fa0229e8a18e5f2d4d1a74b9a4
+              stepCounter: 5c8049dc55c55c4fef86f799503973606954e90b337772772c3dfa8ae7441841
+            dataType: TEXT
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            isBusinessKey: true
+            name: LINE_OF_BUSINESS_BK
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: f0dc13273bd8659af51d4f805a4306aec7cefbc789fdf41fb2047dc22404bd18
+                    stepCounter: 40967bffb9bc85c213753b51a34ac3ec2c48b6d15d5730149e12107dc4dbd0b1
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: ceff702d5da68b5988616c5ef2547aba7aceaf64de2e3057511b0589788b4a49
+              stepCounter: 5c8049dc55c55c4fef86f799503973606954e90b337772772c3dfa8ae7441841
+            dataType: TEXT
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            isBusinessKey: true
+            name: NETWORK_TYPE_BK
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: No_Source_Column_Counter
+                    stepCounter: No_Source_Step_id
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: 0f49936fad31234d46fbcb86c2ce8e0a1672e76c003d66e41ae4dad08cbb321e
+              stepCounter: 5c8049dc55c55c4fef86f799503973606954e90b337772772c3dfa8ae7441841
+            dataType: TEXT
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            isBusinessKey: true
+            name: NETWORK_TYPE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: No_Source_Column_Counter
+                    stepCounter: No_Source_Step_id
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: 987f9356a75064f0e9b72a71d478a623f073a15f65568171bce00b34a7c4d6f5
+              stepCounter: 5c8049dc55c55c4fef86f799503973606954e90b337772772c3dfa8ae7441841
+            dataType: TEXT
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            isBusinessKey: true
+            name: OPERATING_UNIT_BK
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 1c71b0801d1314e9d082de0bae68e23823305d416bddb79d3c8ca9d748060dd5
+                    stepCounter: 40967bffb9bc85c213753b51a34ac3ec2c48b6d15d5730149e12107dc4dbd0b1
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: 5e68fc1ea2b02de316bec8e4cb019e656bedca1b8cebd32177726c663b481d01
+              stepCounter: 5c8049dc55c55c4fef86f799503973606954e90b337772772c3dfa8ae7441841
+            dataType: TEXT
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            isBusinessKey: true
+            name: OPERATING_UNIT_DESC
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: No_Source_Column_Counter
+                    stepCounter: No_Source_Step_id
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: fb52ddfe8810b31dc50b8bbc90e6a501584dcf78d863b0c24fcebf6ca49c0515
+              stepCounter: 5c8049dc55c55c4fef86f799503973606954e90b337772772c3dfa8ae7441841
+            dataType: TEXT
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            isBusinessKey: true
+            name: POD_BK
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: No_Source_Column_Counter
+                    stepCounter: No_Source_Step_id
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: eabcb60993e44c0f689c07bfebf4548ec32e22ba7b6c00d1d200b20bf80b0a20
+              stepCounter: 5c8049dc55c55c4fef86f799503973606954e90b337772772c3dfa8ae7441841
+            dataType: TEXT
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            isBusinessKey: true
+            name: SERVICE_YEAR_BK
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: No_Source_Column_Counter
+                    stepCounter: No_Source_Step_id
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: 7b2bbbeca2a7426a7af0a4d0f9072c60f5a657dd717f24c7f2f8e554b6c673f6
+              stepCounter: 5c8049dc55c55c4fef86f799503973606954e90b337772772c3dfa8ae7441841
+            dataType: TEXT
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            isBusinessKey: true
+            name: PRACTICE_BK
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: No_Source_Column_Counter
+                    stepCounter: No_Source_Step_id
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: 6568f80915764034245b1e661168ad1edf3f0fd511aefdb48cf566a10193db8d
+              stepCounter: 5c8049dc55c55c4fef86f799503973606954e90b337772772c3dfa8ae7441841
+            dataType: TEXT
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            isBusinessKey: true
+            name: BSPA_BK
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: No_Source_Column_Counter
+                    stepCounter: No_Source_Step_id
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: 7afd72800c888d11f4881bd2d16686664da4614077eaf2aed279f4a271d51692
+              stepCounter: 5c8049dc55c55c4fef86f799503973606954e90b337772772c3dfa8ae7441841
+            dataType: TIMESTAMP_NTZ
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            isBusinessKey: true
+            name: SNAPSHOT__TIMESTAMP
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: No_Source_Column_Counter
+                    stepCounter: No_Source_Step_id
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: 6a8fed35d038343339d402aab7e92d376f7e091b093ec253f9ec1756d30f93c0
+              stepCounter: 5c8049dc55c55c4fef86f799503973606954e90b337772772c3dfa8ae7441841
+            dataType: TIMESTAMP_NTZ
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            isBusinessKey: true
+            name: END_SNAPSHOT__TIMESTAMP
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: No_Source_Column_Counter
+                    stepCounter: No_Source_Step_id
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: 639fcfe1f7fe01be7883202dcfc68d6625705bc7506ba43614ad38437b0f808b
+              stepCounter: 5c8049dc55c55c4fef86f799503973606954e90b337772772c3dfa8ae7441841
+            dataType: NUMBER
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            isBusinessKey: true
+            name: VALUE_AMT
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: No_Source_Column_Counter
+                    stepCounter: No_Source_Step_id
+                transform: ""
+        cteString: ""
+        enabledColumnTestIDs: []
+        sourceMapping:
+          - customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: OCTAVE_INFO
+                nodeName: None
+            join:
+              joinCondition: FROM {{ ref('OCTAVE_INFO', 'None') }} "None"
+              name: DIM_BASE_INCENTIVE_ACTUAL_DBT
+              noLinkRefs: []
+      name: DIM_BASE_INCENTIVE_ACTUAL_DBT
+      overrideSQL: false
+      schema: ""
+      sqlType: Dimension
+      type: sql
+    stepCounter: 5c8049dc55c55c4fef86f799503973606954e90b337772772c3dfa8ae7441841

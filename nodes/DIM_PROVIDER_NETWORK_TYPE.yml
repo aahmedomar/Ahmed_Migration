@@ -1,0 +1,98 @@
+steps:
+  DIM_PROVIDER_NETWORK_TYPE-d6c3172d677aebd15374bb2994f0580a30cd61503f4784787782b11828819c5f:
+    operation:
+      config:
+        postSQL: ""
+        preSQL: ""
+        testsEnabled: true
+      database: ""
+      deployEnabled: true
+      description: ""
+      isDataVault: false
+      isMultisource: false
+      locationName: 
+      materializationType: Table
+      metadata:
+        appliedNodeTests: []
+        columns:
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: 37aaf11599951593b5680458f36f44f80382d37b36a27832fa9280870fa876c7
+              stepCounter: d6c3172d677aebd15374bb2994f0580a30cd61503f4784787782b11828819c5f
+            dataType: 
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            isBusinessKey: true
+            name: NETWORK_TYPE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: Column Relation
+                    stepCounter: No Node Relation
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: a45a90f2edc839a6ff37d59522cf0fe76d7e1e5599745e2b819438f628e8fed8
+              stepCounter: d6c3172d677aebd15374bb2994f0580a30cd61503f4784787782b11828819c5f
+            dataType: 
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            isBusinessKey: true
+            name: PROVIDER_NETWORK_TYPE_BK
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: Column Relation
+                    stepCounter: No Node Relation
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: e9050d000a59d53bb538930db8963a9de0d1635abcfa80584233a13d0e34116d
+              stepCounter: d6c3172d677aebd15374bb2994f0580a30cd61503f4784787782b11828819c5f
+            dataType: 
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            isBusinessKey: true
+            name: SNAPSHOT__TIMESTAMP
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: Column Relation
+                    stepCounter: No Node Relation
+                transform: ""
+        cteString: ""
+        enabledColumnTestIDs: []
+        sourceMapping:
+          - customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: default_storage_location
+                nodeName: None
+            join:
+              joinCondition: FROM {{ ref('default_storage_location', 'None') }} "None"
+              name: DIM_PROVIDER_NETWORK_TYPE
+              noLinkRefs: []
+      name: DIM_PROVIDER_NETWORK_TYPE
+      overrideSQL: false
+      schema: ""
+      sqlType: Dimension
+      type: sql
+    stepCounter: d6c3172d677aebd15374bb2994f0580a30cd61503f4784787782b11828819c5f

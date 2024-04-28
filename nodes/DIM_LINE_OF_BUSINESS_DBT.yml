@@ -1,0 +1,161 @@
+steps:
+  DIM_LINE_OF_BUSINESS_DBT-d6e3ae94fac72ac3b5b404c74a0b75b7225104c6b772efb35c7db3c6fadb3ea4:
+    operation:
+      config:
+        postSQL: ""
+        preSQL: ""
+        testsEnabled: true
+      database: ""
+      deployEnabled: true
+      description: ""
+      isDataVault: false
+      isMultisource: false
+      locationName: OCTAVE_INFO
+      materializationType: Table
+      metadata:
+        appliedNodeTests: []
+        columns:
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: 50148b757cbac0854f99d6137d055248e02ed98ca5d445da3bf33ffc3bb4a631
+              stepCounter: d6e3ae94fac72ac3b5b404c74a0b75b7225104c6b772efb35c7db3c6fadb3ea4
+            dataType: BINARY
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            isBusinessKey: true
+            name: DIM_LINE_OF_BUSINESS_HK
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: Column Relation
+                    stepCounter: No Node Relation
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: 452959c9284db9b0d7dd2d79bf07978c656828805e2c792a889dc1400d36b269
+              stepCounter: d6e3ae94fac72ac3b5b404c74a0b75b7225104c6b772efb35c7db3c6fadb3ea4
+            dataType: BINARY
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            isBusinessKey: true
+            name: LINE_OF_BUSINESS_HK
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: Column Relation
+                    stepCounter: No Node Relation
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: ed3b580b721668383ec210af6f99aba2d0375c4a0b5652d3df4cb9e5a2600cf0
+              stepCounter: d6e3ae94fac72ac3b5b404c74a0b75b7225104c6b772efb35c7db3c6fadb3ea4
+            dataType: TEXT
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            isBusinessKey: true
+            name: LINE_OF_BUSINESS_BK
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: Column Relation
+                    stepCounter: No Node Relation
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: 511fc6e7be3ec78f23f1db42d9252250eb098af3ee408552ade597a0d14a827c
+              stepCounter: d6e3ae94fac72ac3b5b404c74a0b75b7225104c6b772efb35c7db3c6fadb3ea4
+            dataType: TIMESTAMP_NTZ
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            isBusinessKey: true
+            name: SNAPSHOT__TIMESTAMP
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: Column Relation
+                    stepCounter: No Node Relation
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: 31c54b7b27ee32fb899e36555594dcfd7ce1dca4d7ebd141acf2daad4e6a22aa
+              stepCounter: d6e3ae94fac72ac3b5b404c74a0b75b7225104c6b772efb35c7db3c6fadb3ea4
+            dataType: TIMESTAMP_NTZ
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            isBusinessKey: true
+            name: END_SNAPSHOT__TIMESTAMP
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: Column Relation
+                    stepCounter: No Node Relation
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: 195045da3948c669b7f77521de78bee6121239439c68b2bf9455cc6ca7dac04e
+              stepCounter: d6e3ae94fac72ac3b5b404c74a0b75b7225104c6b772efb35c7db3c6fadb3ea4
+            dataType: TEXT
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            isBusinessKey: true
+            name: LINE_OF_BUSINESS
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: Column Relation
+                    stepCounter: No Node Relation
+                transform: ""
+        cteString: ""
+        enabledColumnTestIDs: []
+        sourceMapping:
+          - customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: default_storage_location
+                nodeName: None
+            join:
+              joinCondition: FROM {{ ref('default_storage_location', 'None') }} "None"
+              name: DIM_LINE_OF_BUSINESS_DBT
+              noLinkRefs: []
+      name: DIM_LINE_OF_BUSINESS_DBT
+      overrideSQL: false
+      schema: ""
+      sqlType: Dimension
+      type: sql
+    stepCounter: d6e3ae94fac72ac3b5b404c74a0b75b7225104c6b772efb35c7db3c6fadb3ea4
